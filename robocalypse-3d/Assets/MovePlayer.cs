@@ -22,26 +22,36 @@ public class MovePlayer : MonoBehaviour
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
         Vector3 vertical = new Vector3(0, 0, Input.GetAxis("Vertical"));
-        
+
         if (move != Vector3.zero)
         {
-            // Se déplacer uniquement sur l'axe vertical ou horizontal
-            if (horizontal.magnitude > vertical.magnitude)
-            {
-                controller.Move(Time.deltaTime * speed * horizontal);
-            }
-            else if (vertical.magnitude > horizontal.magnitude)
-            {
-                controller.Move(Time.deltaTime * speed * vertical);
-            }
-            else if (vertical.magnitude == horizontal.magnitude)
-            {
-                controller.Move(Time.deltaTime * speed * horizontal);
-            }
-
-            // gameObject.transform.Translate(move);
-            // controller.Move(  Time.deltaTime * speed * move);
+            gameObject.transform.Translate(bestAxis(horizontal, vertical));
+            controller.Move(Time.deltaTime * speed * (bestAxis(horizontal, vertical)));
         }
+    }
+
+    /**
+     * Choisit l'axe vertical ou horizontal pour ne pas faire de diagonale.
+     */
+    Vector3 bestAxis(Vector3 horizontal, Vector3 vertical)
+    {
+        // déplacement horizontal par défaut
+        Vector3 meilleurAxe = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         
+        // choix d'un des deux axes possibles
+        if (horizontal.magnitude > vertical.magnitude)
+        {
+            meilleurAxe.z = 0;
+        }
+        else if (horizontal.magnitude < vertical.magnitude)
+        {
+            meilleurAxe.x = 0;
+        } else
+        {
+            meilleurAxe.z = 0;
+        }
+
+        return meilleurAxe;
+
     }
 }
