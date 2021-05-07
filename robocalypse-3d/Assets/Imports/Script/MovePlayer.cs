@@ -1,32 +1,52 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
-namespace Imports.Script
+public class MovePlayer : MonoBehaviour
 {
-    public partial class MovePlayer : MonoBehaviour
+    public CharacterController controller;
+
+    public float speed = 6f;
+    
+    public float jumph;
+    public float jumpForce;
+        
+    private Vector3 jump;
+    private Rigidbody rigg;
+    private BoxCollider playerBoxCol;
+    private Transform playerTransform;
+        
+    private bool isGrounded;
+
+    private void Start()
     {
-
-        public float jumph;
-        public float jumpForce;
+        controller = gameObject.AddComponent<CharacterController>();
         
-        private Vector3 jump;
-        private Rigidbody rigg;
-        private BoxCollider playerBoxCol;
-        private Transform playerTransform;
-        
-        private bool isGrounded;
+        jump = new Vector3(0f, jumph, 0f);
+        rigg = GetComponent<Rigidbody>();
+        playerBoxCol = GetComponent<BoxCollider>();
+        playerTransform = GetComponent<Transform>();
+    }
 
-        // Start is called before the first frame update
-        private void  Start()
+    // Update is called once per frame
+    void Update()
+    {
+        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+        Vector3 vertical = new Vector3(0, 0, Input.GetAxis("Vertical"));
+
+        // déplacements G/D, 
+        if (move != Vector3.zero)
         {
-            jump = new Vector3(0f, jumph, 0f);
-            rigg = GetComponent<Rigidbody>();
-            playerBoxCol = GetComponent<BoxCollider>();
-            playerTransform = GetComponent<Transform>();
+            gameObject.transform.Translate(bestAxis(horizontal, vertical));
+            controller.Move(Time.deltaTime * speed * (bestAxis(horizontal, vertical)));
         }
-
-        private void Update()
-        {
-            if (Input.GetKeyDown("o"))
+        
+        // déplacements H/B
+        if (Input.GetKeyDown("o"))
             {
                 playerBoxCol.size = new Vector3(1, 0.5f, 0.5f);
                 playerTransform.localScale = new Vector3(1, 0.5f, 1);
@@ -46,6 +66,32 @@ namespace Imports.Script
                     rigg.AddForce(jump * jumpForce, ForceMode.Impulse);
                 }
             }
+    }
+
+    /**
+     * Choisit l'axe vertical ou horizontal pour ne pas faire de diagonale.
+     */
+    Vector3 bestAxis(Vector3 horizontal, Vector3 vertical)
+    {
+        // déplacement horizontal par défaut
+        Vector3 meilleurAxe = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        // choix d'un des deux axes possibles
+        if (horizontal.magnitude > vertical.magnitude)
+        {
+            // bloquer l'axe z
+            meilleurAxe.z = 0;
         }
+        else if (horizontal.magnitude < vertical.magnitude)
+        {
+            // bloquer l'axe x
+            meilleurAxe.x = 0;
+        }
+        else
+        {
+            // bloquer l'axe z
+            meilleurAxe.z = 0;
+        }
+        return meilleurAxe;
+            
     }
 }
