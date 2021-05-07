@@ -41,16 +41,18 @@ public class MovePlayer : MonoBehaviour
         // choix d'un des deux axes possibles
         if (horizontal.magnitude > vertical.magnitude)
         {
+            // bloquer l'axe z
             meilleurAxe.z = 0;
         }
         else if (horizontal.magnitude < vertical.magnitude)
         {
+            // bloquer l'axe x
             meilleurAxe.x = 0;
         } else
         {
+            // bloquer l'axe z
             meilleurAxe.z = 0;
         }
-
         return meilleurAxe;
 
     }
