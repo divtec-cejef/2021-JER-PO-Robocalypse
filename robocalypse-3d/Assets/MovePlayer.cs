@@ -37,7 +37,6 @@ public class MovePlayer : MonoBehaviour
     {
         // déplacement horizontal par défaut
         Vector3 meilleurAxe = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        
         // choix d'un des deux axes possibles
         if (horizontal.magnitude > vertical.magnitude)
         {
