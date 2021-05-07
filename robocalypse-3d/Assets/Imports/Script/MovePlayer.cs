@@ -10,25 +10,10 @@ public class MovePlayer : MonoBehaviour
     public CharacterController controller;
 
     public float speed = 6f;
-    
-    public float jumph;
-    public float jumpForce;
-        
-    private Vector3 jump;
-    private Rigidbody rigg;
-    private BoxCollider playerBoxCol;
-    private Transform playerTransform;
-        
-    private bool isGrounded;
 
     private void Start()
     {
         controller = gameObject.AddComponent<CharacterController>();
-        
-        jump = new Vector3(0f, jumph, 0f);
-        rigg = GetComponent<Rigidbody>();
-        playerBoxCol = GetComponent<BoxCollider>();
-        playerTransform = GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -38,34 +23,11 @@ public class MovePlayer : MonoBehaviour
         Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
         Vector3 vertical = new Vector3(0, 0, Input.GetAxis("Vertical"));
 
-        // déplacements G/D, 
         if (move != Vector3.zero)
         {
             gameObject.transform.Translate(bestAxis(horizontal, vertical));
             controller.Move(Time.deltaTime * speed * (bestAxis(horizontal, vertical)));
         }
-        
-        // déplacements H/B
-        if (Input.GetKeyDown("o"))
-            {
-                playerBoxCol.size = new Vector3(1, 0.5f, 0.5f);
-                playerTransform.localScale = new Vector3(1, 0.5f, 1);
-            }
-
-            if (Input.GetKeyUp("o"))
-            {
-                playerBoxCol.size = new Vector3(1, 1, 0.5f);
-                playerTransform.localScale = new Vector3(1, 1, 1);
-            }
-            
-            // jump
-            if (rigg.velocity.y == 0)
-            {
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    rigg.AddForce(jump * jumpForce, ForceMode.Impulse);
-                }
-            }
     }
 
     /**
@@ -92,6 +54,6 @@ public class MovePlayer : MonoBehaviour
             meilleurAxe.z = 0;
         }
         return meilleurAxe;
-            
+
     }
 }

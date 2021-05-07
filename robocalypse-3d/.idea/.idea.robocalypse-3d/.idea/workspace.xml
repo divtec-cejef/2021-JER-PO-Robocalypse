@@ -1,33 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3f5c4e5-5101-48c3-96ce-52c1c213f4eb" name="Default Changelist" comment="" />
+    <list default="true" id="7be3f807-18cf-4c6a-97f4-bd18e1c9489b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Imports/Script/MovePlayer.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayer.cs" />
-    </changedPaths>
-  </component>
-  <component name="ProjectId" id="1s1jLXUkjAjcg8OyHmVM63oPPAO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1sCdIPiVMbHsB82c5UuIyVoHmPi" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -64,24 +44,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a3f5c4e5-5101-48c3-96ce-52c1c213f4eb" name="Default Changelist" comment="" />
-      <created>1620046936295</created>
+      <changelist id="7be3f807-18cf-4c6a-97f4-bd18e1c9489b" name="Default Changelist" comment="" />
+      <created>1620380424937</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1620046936295</updated>
-      <workItem from="1620046940960" duration="898000" />
-      <workItem from="1620047894565" duration="58000" />
-      <workItem from="1620048017903" duration="2000" />
-      <workItem from="1620048056071" duration="2000" />
-      <workItem from="1620048096115" duration="1000" />
-      <workItem from="1620048195825" duration="272000" />
-      <workItem from="1620048512265" duration="458000" />
-      <workItem from="1620049226988" duration="265000" />
-      <workItem from="1620049649131" duration="50000" />
-      <workItem from="1620049754917" duration="332000" />
-      <workItem from="1620281476489" duration="1667000" />
-      <workItem from="1620284581248" duration="4135000" />
-      <workItem from="1620290243275" duration="4475000" />
+      <updated>1620380424937</updated>
+      <workItem from="1620380429810" duration="4000" />
     </task>
     <servers />
   </component>
