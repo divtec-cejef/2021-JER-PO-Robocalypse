@@ -47,7 +47,8 @@ public class MovePlayer : MonoBehaviour
         {
             // bloquer l'axe x
             meilleurAxe.x = 0;
-        } else
+        }
+        else
         {
             // bloquer l'axe z
             meilleurAxe.z = 0;
