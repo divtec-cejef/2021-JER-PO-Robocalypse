@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-
     <list default="true" id="a3f5c4e5-5101-48c3-96ce-52c1c213f4eb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,9 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayer2.cs" />
+      <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayer3.cs" />
+      <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayerAndJump.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s1jLXUkjAjcg8OyHmVM63oPPAO" />
@@ -35,6 +37,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -62,7 +68,6 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-
       <changelist id="a3f5c4e5-5101-48c3-96ce-52c1c213f4eb" name="Default Changelist" comment="" />
       <created>1620046936295</created>
       <option name="number" value="Default" />
@@ -81,6 +86,20 @@
       <workItem from="1620281476489" duration="1667000" />
       <workItem from="1620284581248" duration="4135000" />
       <workItem from="1620290243275" duration="4475000" />
+      <workItem from="1620385879270" duration="1000" />
+      <workItem from="1620386570232" duration="1000" />
+      <workItem from="1620388826070" duration="1000" />
+      <workItem from="1620389964784" duration="689000" />
+      <workItem from="1620390737644" duration="27000" />
+      <workItem from="1620390797987" duration="23000" />
+      <workItem from="1620390902660" duration="9000" />
+      <workItem from="1620392041798" duration="3800000" />
+      <workItem from="1620628090271" duration="548000" />
+      <workItem from="1620628780068" duration="2715000" />
+      <workItem from="1620632584271" duration="7284000" />
+      <workItem from="1620640564030" duration="11000" />
+      <workItem from="1620640650766" duration="7924000" />
+      <workItem from="1620651548327" duration="1978000" />
     </task>
     <servers />
   </component>
