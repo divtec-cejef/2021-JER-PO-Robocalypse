@@ -8,6 +8,7 @@ public class MovePlayerAndJump : MonoBehaviour
     
     public float speed;
     public bool playerIsOnTheGround = true;
+    public bool playerIsSneaking;
     public bool playerCanMove = true;
     
     private BoxCollider playerBoxCol;
@@ -34,45 +35,57 @@ public class MovePlayerAndJump : MonoBehaviour
      */
     private void PlayerMovement()
     {
-        if (playerCanMove) 
+        // Si le joueur est sur le sol permet au joueur de se déplacer
+        if (playerIsOnTheGround) 
         {
-            // déplacement haut, bas, gauche & droite
-            Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0, 0); 
-            Vector3 vertical = new Vector3(0, 0, Input.GetAxis("Vertical")); 
-
-            transform.Translate( Time.deltaTime * speed * BestAxis(horizontal,vertical));
-            
-            // le saut
-            if (Input.GetButtonDown("Jump") && playerIsOnTheGround)
+            // Si le joueur est en train de se baisser, l'empêche de pouvoir se déplacer
+            if (playerIsSneaking)
             {
-                rb.AddForce(new Vector3(0,5,0), ForceMode.Impulse);
-                playerIsOnTheGround = false;
-                playerCanMove = false;
+                if (Input.GetKeyUp("s"))
+                {
+                    playerIsSneaking = false;
+                    playerBoxCol.size = new Vector3(1, 1, 0.5f);
+                    playerTransform.localScale = new Vector3(1, 1, 1);
+                }
             }
-        
-            //s'accroupir
-            if (Input.GetKeyDown("o"))
+            else
             {
-                playerBoxCol.size = new Vector3(1, 0.5f, 0.5f);
-                playerTransform.localScale = new Vector3(1, 0.5f, 1);
-            }
+                // déplacement haut, bas, gauche & droite
+                Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0, 0); 
+                Vector3 vertical = new Vector3(0, 0, Input.GetAxis("Vertical")); 
 
-            if (Input.GetKeyUp("o"))
-            {
-                playerBoxCol.size = new Vector3(1, 1, 0.5f);
-                playerTransform.localScale = new Vector3(1, 1, 1);
+                transform.Translate( Time.deltaTime * speed * BestAxis(horizontal,vertical));
+                
+                //s'accroupir
+                if (Input.GetKeyDown("s"))
+                {
+                    playerIsSneaking = true;
+                    playerBoxCol.size = new Vector3(1, 0.5f, 0.5f);
+                    playerTransform.localScale = new Vector3(1, 0.5f, 1);
+                }
+                
+                // le saut
+                if (Input.GetButtonDown("Jump") && playerIsOnTheGround)
+                {
+                    rb.AddForce(new Vector3(0,5,0), ForceMode.Impulse);
+                    playerIsOnTheGround = false;
+                    playerCanMove = false;
+                }
             }
         }
+        // Ancienne code qui prennait en compte le saut du joueur et le temps qu'il se remette sur la wii Board
+        /*
         else
-        {
+        {  
             // Si le joueur ne peut pas se déplacer (après un saut) on attend que le joueur pose un pied sur la wii
             // Board et ensuite on met un petit temps d'attente avant de débloquer les déplacements
             if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S))
             {
                 StartCoroutine(Wait());           
                 playerCanMove = true;
-            } 
+            }
         }
+        */
     }
     
     /**
@@ -95,10 +108,14 @@ public class MovePlayerAndJump : MonoBehaviour
         // déplacement horizontal par défaut
         Vector3 meilleurAxe = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         // choix d'un des deux axes possibles
+        meilleurAxe.z = 0;
+        
+        // permet de bloquer un des axes du personnage (empêche les diagonales)
+        /*
         if (horizontal.magnitude > vertical.magnitude) 
         {
             // bloquer l'axe z
-            meilleurAxe.z = 0;
+            
         }
         else if (horizontal.magnitude < vertical.magnitude)
         { 
@@ -110,6 +127,8 @@ public class MovePlayerAndJump : MonoBehaviour
             // bloquer l'axe z
             meilleurAxe.z = 0;
         }
+        */
+        
         return meilleurAxe;
     }
 
