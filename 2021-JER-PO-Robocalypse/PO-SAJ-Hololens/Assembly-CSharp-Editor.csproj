@@ -332,16 +332,16 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.40f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="GLTFSerialization">
- <HintPath>C:/Users/admin/Documents/Unity Copie Test/PO-SAJ-Hololens/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/GLTFSerialization/GLTFSerialization.dll</HintPath>
+ <HintPath>C:/Users/admin/Desktop/ghthub hololens/robocalypse/2021-JER-PO-Robocalypse/PO-SAJ-Hololens/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/GLTFSerialization/GLTFSerialization.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/admin/Documents/Unity Copie Test/PO-SAJ-Hololens/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/admin/Desktop/ghthub hololens/robocalypse/2021-JER-PO-Robocalypse/PO-SAJ-Hololens/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="DotNetZip">
- <HintPath>C:/Users/admin/Documents/Unity Copie Test/PO-SAJ-Hololens/Assets/NuGet/Editor/DotNetZip.dll</HintPath>
+ <HintPath>C:/Users/admin/Desktop/ghthub hololens/robocalypse/2021-JER-PO-Robocalypse/PO-SAJ-Hololens/Assets/NuGet/Editor/DotNetZip.dll</HintPath>
  </Reference>
  <Reference Include="NugetForUnity">
- <HintPath>C:/Users/admin/Documents/Unity Copie Test/PO-SAJ-Hololens/Assets/NuGet/Editor/NugetForUnity.dll</HintPath>
+ <HintPath>C:/Users/admin/Desktop/ghthub hololens/robocalypse/2021-JER-PO-Robocalypse/PO-SAJ-Hololens/Assets/NuGet/Editor/NugetForUnity.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/admin/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>

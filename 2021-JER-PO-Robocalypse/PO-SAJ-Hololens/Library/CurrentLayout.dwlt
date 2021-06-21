@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
   controlID: 9
 --- !u!114 &3
@@ -206,7 +206,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 947
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
   controlID: 10
@@ -230,8 +230,8 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 543
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
   controlID: 11
 --- !u!114 &11
@@ -299,18 +299,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Script
   m_ViewMode: 1
   m_StartGridSize: 58
   m_LastFolders:
-  - Assets
+  - Assets/Script
   m_LastFoldersGridSize: 58
-  m_LastProjectPath: C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens
+  m_LastProjectPath: C:\Users\admin\Desktop\ghthub hololens\robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 543a0000
-    m_LastClickedID: 14932
+    m_SelectedIDs: ec4d0000
+    m_LastClickedID: 19948
     m_ExpandedIDs: 00000000543a0000883a0000583d0000f241000032420000b44500008046000004470000364900007a4900004e4a0000324c0000084e0000845300008653000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -366,7 +366,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000f0270000e0270000e8280000882f00007631000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -459,7 +459,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: cceeffffbaefffffdcf3ffff9cfbffff00000000
+    m_ExpandedIDs: 1cfbffff22fbffff2efbffff9cfbffff00000000b2510000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -515,9 +515,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.57435465, y: -2.91472, z: 6.4203987}
+    m_Target: {x: -0.057317913, y: -1.6570718, z: 6.614235}
     speed: 2
-    m_Value: {x: -0.57435465, y: -2.91472, z: 6.4203987}
+    m_Value: {x: -0.057317913, y: -1.6570718, z: 6.614235}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -541,13 +541,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.21860841, y: 0.03132937, z: -0.0070213904, w: -0.9752844}
+    m_Target: {x: -0.113751605, y: 0.009549583, z: -0.001092399, w: -0.9934628}
     speed: 2
-    m_Value: {x: -0.21860841, y: 0.03132937, z: -0.0070213904, w: -0.9752844}
+    m_Value: {x: -0.113751605, y: 0.009549583, z: -0.001092399, w: -0.9934628}
   m_Size:
-    m_Target: 10.676392
+    m_Target: 10.692429
     speed: 2
-    m_Value: 10.676392
+    m_Value: 10.692429
   m_Ortho:
     m_Target: 0
     speed: 2

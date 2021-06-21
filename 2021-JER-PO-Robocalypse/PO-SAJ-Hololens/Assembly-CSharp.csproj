@@ -812,7 +812,6 @@
      <Compile Include="Assets\HoloToolkit-Preview\SpectatorView\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARUserAnchor.cs" />
      <Compile Include="Assets\HoloToolkit-Preview\SpectatorView\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\UnityARSessionNativeInterface.cs" />
      <Compile Include="Assets\Script\CurrentBuff.cs" />
-     <Compile Include="Assets\Script\CurrentBuff1.cs" />
      <Compile Include="Assets\Script\CurrentWeapon.cs" />
      <Compile Include="Assets\Script\Rotate.cs" />
      <Compile Include="Assets\Script\TapResponderWeaponBuff.cs" />
@@ -1043,10 +1042,10 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.40f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="GLTFSerialization">
- <HintPath>C:/Users/admin/Documents/Unity Copie Test/PO-SAJ-Hololens/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/GLTFSerialization/GLTFSerialization.dll</HintPath>
+ <HintPath>C:/Users/admin/Desktop/ghthub hololens/robocalypse/2021-JER-PO-Robocalypse/PO-SAJ-Hololens/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/GLTFSerialization/GLTFSerialization.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/admin/Documents/Unity Copie Test/PO-SAJ-Hololens/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/admin/Desktop/ghthub hololens/robocalypse/2021-JER-PO-Robocalypse/PO-SAJ-Hololens/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Users/admin/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
