@@ -519,10 +519,12 @@ f1dddc522eb4451a473352e2116e6cff Assembly-CSharp.dll:HoloToolkit.Unity.InputModu
 1c956525f3bbc043ebd0ce75f92a03c6 Assembly-CSharp.dll:HoloToolkit.Unity.SharingWithUNET.NetworkDiscoveryWithAnchors
 ff37e04a523045f4866508e6e686c819 Assembly-CSharp.dll:HoloToolkit.Examples.Prototyping.PanelTransformSize
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.SharingWithUNET.SharedCollection
+8503942524bda1117920eb635f314b36 Assembly-CSharp.dll:.HUDCurrentWeapon
 843980f90e915da29bb6f3eadb5d5d57 Assembly-CSharp.dll:HoloToolkit.Unity.SimpleTagalong
 ca8435a0247c955e3fc71ac883949806 Assembly-CSharp.dll:HoloToolkit.Examples.UX.LoadingAnimation
 61f8aab2c3edaf29b06c5fd8624fb8f3 Assembly-CSharp.dll:HoloToolkit.Unity.HeadsetAdjustment
 6c590d89a560ff55e999caaec3baf923 Assembly-CSharp.dll:HoloToolkit.Unity.SpatialMapping.TapToPlace
+15d20f382f317333d2518b0e2b9e2ce7 Assembly-CSharp.dll:.HUDCurrentBuff
 fcd6246ea60cf9f6696ce1cd793a10e8 Assembly-CSharp.dll:HoloToolkit.Unity.FixedAngularSize
 f4447a27df83c5e0a29e17a420c80e21 Assembly-CSharp.dll:HoloToolkit.UX.ToolTips.ToolTipBackgroundBlob
 9a19040f4ee5fa0c8bbd861c5bdeb9b6 Assembly-CSharp.dll:HoloToolkit.Unity.Buttons.CompoundButtonAnim
@@ -553,5 +555,3 @@ b74d6034034deeffc1401e25ca9027a5 Assembly-CSharp.dll:HoloToolkit.Unity.Buttons.C
 391d84b859f3b155fe38f54bfce79162 Assembly-CSharp.dll:.UnityPointCloudExample
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Examples.SpatialUnderstandingFeatureOverview.ShapeDefinition
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnityARCameraNearFar
-15d20f382f317333d2518b0e2b9e2ce7 Assembly-CSharp.dll:.HUDCurrentBuff
-8503942524bda1117920eb635f314b36 Assembly-CSharp.dll:.HUDCurrentWeapon

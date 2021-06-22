@@ -457,7 +457,7 @@
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\bin\x86\Release\resources.pri">

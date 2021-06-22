@@ -5,11 +5,11 @@
 # Write a line equal to 'overwrite-all' (without quotes) to overwrite everything (preserved accross builds)
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
-PO-SAJ-Hololens.sln: 8C553F9730226442B207522ABC5B6E87
+PO-SAJ-Hololens.sln: AB2744F65E722F1B7E5C50966108B782
 GeneratedProjects\UWP\Assembly-CSharp\project.json: modified
 PO-SAJ-Hololens\App.cs: modified
-PO-SAJ-Hololens\Package.appxmanifest: 3C5C1E401425724C15FBD5EA593E9616
-PO-SAJ-Hololens\PO-SAJ-Hololens.csproj: E5E89EBE78471DD62ABD046E2AA3FE8D
+PO-SAJ-Hololens\Package.appxmanifest: F4B3D5BB3E599ED45C18D1221EB38F9F
+PO-SAJ-Hololens\PO-SAJ-Hololens.csproj: 099282C09EC17B7E4BE607B7B533F162
 PO-SAJ-Hololens\PO-SAJ-Hololens.csproj.user: modified
 PO-SAJ-Hololens\project.json: modified
 PO-SAJ-Hololens\Assets\SplashScreen.scale-200.png: A85C1D7624B6902CF8CEBD6F0200A826
