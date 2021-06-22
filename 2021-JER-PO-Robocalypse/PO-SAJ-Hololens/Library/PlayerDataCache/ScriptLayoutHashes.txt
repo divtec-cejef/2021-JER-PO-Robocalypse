@@ -1,6 +1,6 @@
 Metro
 PlayerPath?
-C:/Users/admin/Documents/Unity Copie Test/PO-SAJ-Hololens/Build
+C:/Users/admin/Desktop/Robocalypse Sync GitHub/2021-JER-PO-Robocalypse/2021-JER-PO-Robocalypse/PO-SAJ-Hololens/Build
 SceneListBegin?
 Assets/InputTapTest.unity
 SceneListEnd?
@@ -193,7 +193,6 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CurrentBuff
 98084531bd8a843e71c0cc23d5715994 Assembly-CSharp.dll:HoloToolkit.Unity.UAudioManager
 8f58a5afc906d3cd31a7c7e94317cc54 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.MixedRealityTeleport
 ba66ed51a66e14863f51781e69c657ef Assembly-CSharp.dll:HoloToolkit.UI.Keyboard.KeyboardValueKey
@@ -397,7 +396,6 @@ d7abe84a44f6aed10aea7132d8e34f79 Assembly-CSharp.dll:HoloToolkit.Unity.Boundary.
 027647ed3c077d2129efe22b6bd62a79 Assembly-CSharp.dll:HoloToolkit.Unity.AudioEmitter
 1193c002177eba10253315561d91d3d2 Assembly-CSharp.dll:HoloToolkit.Unity.UX.Parabola
 a61e5da6995674aa29ce3073ac66ed45 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.Examples.Grabbables.GrabbableFixedJoint
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CurrentBuff1
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.Preview.SpectatorView.CameraCaptureHololens
 524356edcc2977b98283bcbebbcc6c06 Assembly-CSharp.dll:HoloToolkit.Unity.UX.BoundingBox
 5affa557520c9b1ad67d2162d963829a Assembly-CSharp.dll:HoloToolkit.UI.Keyboard.UICollection
@@ -440,7 +438,6 @@ ce6c7e75053148ec4aa1b34a66396c1b Assembly-CSharp.dll:HoloToolkit.Unity.InputModu
 19d64a25ae27d745a50bc0a4f715e564 Assembly-CSharp.dll:HoloToolkit.Examples.InteractiveElements.NoteDataProvider
 82ab289784efa128d12a345757279219 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.Examples.Grabbables.RotatableObject
 944e77c5a749303cb0f26ffb94dfcbe5 Assembly-CSharp.dll:HoloToolkit.Examples.SpatialUnderstandingFeatureOverview.UI
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CurrentWeapon
 f7cf9e253f09e4ec8daa4fc98b6daae3 Assembly-CSharp.dll:HoloToolkit.UI.Keyboard.KeyboardInputField
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Examples.Prototyping.SceneSwitcher
 952bc8ce2ca727c70d8e698a24875af8 Assembly-CSharp.dll:HoloToolkit.Examples.Prototyping.CycleStatusDisplay
@@ -556,3 +553,5 @@ b74d6034034deeffc1401e25ca9027a5 Assembly-CSharp.dll:HoloToolkit.Unity.Buttons.C
 391d84b859f3b155fe38f54bfce79162 Assembly-CSharp.dll:.UnityPointCloudExample
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Examples.SpatialUnderstandingFeatureOverview.ShapeDefinition
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnityARCameraNearFar
+15d20f382f317333d2518b0e2b9e2ce7 Assembly-CSharp.dll:.HUDCurrentBuff
+8503942524bda1117920eb635f314b36 Assembly-CSharp.dll:.HUDCurrentWeapon

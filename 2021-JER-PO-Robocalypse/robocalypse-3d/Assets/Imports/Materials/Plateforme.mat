@@ -88,7 +88,7 @@ Material:
     - _DetailNormalMapScale: 6
     - _DstBlend: 10
     - _EnableExternalAlpha: 0
-    - _GlossMapScale: 1
+    - _GlossMapScale: 0.6
     - _Glossiness: 1
     - _GlossyReflections: 1
     - _Metallic: 0.599

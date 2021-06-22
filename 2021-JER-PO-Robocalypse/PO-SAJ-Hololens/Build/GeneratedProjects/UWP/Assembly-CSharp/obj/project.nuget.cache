@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JC+dw0SrA8Ntjz/Sgz5y0D938lVpaWRGgEs24ysqlWJZ3rV6G1HAvSD1xAzb+Fd/uq2Urys42S+7uXJL33GJ/g==",
+  "dgSpecHash": "kHmcMome6yI81Cw3nSMSdea0y/weQf+8hVeFD+7WzNM65EipnIPZyraE/if3h3xaQT8qpif28R3cf7pzTgGUCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Documents\\Unity Copie Test\\PO-SAJ-Hololens\\Build\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\Robocalypse Sync GitHub\\2021-JER-PO-Robocalypse\\2021-JER-PO-Robocalypse\\PO-SAJ-Hololens\\Build\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.applicationinsights\\1.0.0\\microsoft.applicationinsights.1.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.applicationinsights.persistencechannel\\1.0.0\\microsoft.applicationinsights.persistencechannel.1.0.0.nupkg.sha512",

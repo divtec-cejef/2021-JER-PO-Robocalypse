@@ -15997,12 +15997,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Documents\\Unity Copie Test\\PO-SAJ-Hololens\\Build\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Robocalypse Sync GitHub\\2021-JER-PO-Robocalypse\\2021-JER-PO-Robocalypse\\PO-SAJ-Hololens\\Build\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
       "projectName": "Assembly-CSharp",
-      "projectPath": "C:\\Users\\admin\\Documents\\Unity Copie Test\\PO-SAJ-Hololens\\Build\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
-      "projectJsonPath": "C:\\Users\\admin\\Documents\\Unity Copie Test\\PO-SAJ-Hololens\\Build\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
+      "projectPath": "C:\\Users\\admin\\Desktop\\Robocalypse Sync GitHub\\2021-JER-PO-Robocalypse\\2021-JER-PO-Robocalypse\\PO-SAJ-Hololens\\Build\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
+      "projectJsonPath": "C:\\Users\\admin\\Desktop\\Robocalypse Sync GitHub\\2021-JER-PO-Robocalypse\\2021-JER-PO-Robocalypse\\PO-SAJ-Hololens\\Build\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Documents\\Unity Copie Test\\PO-SAJ-Hololens\\Build\\GeneratedProjects\\UWP\\Assembly-CSharp\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\Robocalypse Sync GitHub\\2021-JER-PO-Robocalypse\\2021-JER-PO-Robocalypse\\PO-SAJ-Hololens\\Build\\GeneratedProjects\\UWP\\Assembly-CSharp\\obj\\",
       "projectStyle": "ProjectJson",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

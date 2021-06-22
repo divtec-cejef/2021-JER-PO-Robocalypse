@@ -4,9 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.9.28307.1525
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PO-SAJ-Hololens", "PO-SAJ-Hololens\PO-SAJ-Hololens.csproj", "{13A45C13-3265-47B8-BC48-A553B569DF55}"
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae} = {c1acb5d0-d06e-4c5e-b307-be966d5118ae}
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f} = {e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj", "{c1acb5d0-d06e-4c5e-b307-be966d5118ae}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj", "{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,24 +48,24 @@ Global
 		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.ActiveCfg = Release|x86
 		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.Build.0 = Release|x86
 		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.Deploy.0 = Release|x86
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Debug|x86.ActiveCfg = Debug|x86
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Debug|x86.Build.0 = Debug|x86
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Release|x86.ActiveCfg = Release|x86
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Release|x86.Build.0 = Release|x86
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Master|x86.ActiveCfg = Master|x86
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Master|x86.Build.0 = Master|x86
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Debug|x64.ActiveCfg = Debug|x64
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Debug|x64.Build.0 = Debug|x64
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Release|x64.ActiveCfg = Release|x64
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Release|x64.Build.0 = Release|x64
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Master|x64.ActiveCfg = Master|x64
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Master|x64.Build.0 = Master|x64
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Debug|ARM.ActiveCfg = Debug|ARM
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Debug|ARM.Build.0 = Debug|ARM
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Release|ARM.ActiveCfg = Release|ARM
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Release|ARM.Build.0 = Release|ARM
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Master|ARM.ActiveCfg = Master|ARM
-		{c1acb5d0-d06e-4c5e-b307-be966d5118ae}.Master|ARM.Build.0 = Master|ARM
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Debug|x86.ActiveCfg = Debug|x86
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Debug|x86.Build.0 = Debug|x86
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Release|x86.ActiveCfg = Release|x86
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Release|x86.Build.0 = Release|x86
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Master|x86.ActiveCfg = Master|x86
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Master|x86.Build.0 = Master|x86
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Debug|x64.ActiveCfg = Debug|x64
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Debug|x64.Build.0 = Debug|x64
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Release|x64.ActiveCfg = Release|x64
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Release|x64.Build.0 = Release|x64
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Master|x64.ActiveCfg = Master|x64
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Master|x64.Build.0 = Master|x64
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Debug|ARM.ActiveCfg = Debug|ARM
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Debug|ARM.Build.0 = Debug|ARM
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Release|ARM.ActiveCfg = Release|ARM
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Release|ARM.Build.0 = Release|ARM
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Master|ARM.ActiveCfg = Master|ARM
+		{e4a0ab5c-531f-4d5c-b9d8-0bb6498a085f}.Master|ARM.Build.0 = Master|ARM
  EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

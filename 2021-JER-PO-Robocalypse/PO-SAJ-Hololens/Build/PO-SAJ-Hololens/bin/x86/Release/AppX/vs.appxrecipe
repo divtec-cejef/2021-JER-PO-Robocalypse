@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>PO-SAJ-ROBOT</Machine>
+    <Machine>DESKTOP-1DV50A4</Machine>
     <WindowsUser>admin</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>b80e7543-8f7a-4ed3-9811-14403352d3b6</PackageIdentityName>
     <PackageIdentityPublisher>CN=DefaultCompany</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\bin\x86\Release\AppX</LayoutDir>
-    <RegisteredManifestChecksum>296D2A53682AE7CDCA1C550B98F8097EB0332B9CBCD5B7A0064F6E8661584B68</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\bin\x86\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>8BA2C95629D02421E205FD7144CD6DF2663DFCFBB17AEF00C2E7C0B9E0C7F1E8</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>PO-SAJ-Hololens_1.0.0.0_x86__pzq3xp76mxafg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>PO-SAJ-Hololens_pzq3xp76mxafg!App</RegisteredUserModeAppID>
     <RegisteredPackageID>PO-SAJ-Hololens</RegisteredPackageID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\bin\x86\Release\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-06-21T12:20:04.988</Modified>
+      <Modified>2021-06-22T09:18:12.092</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\bin\x86\Release\PO-SAJ-Hololens.exe">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\bin\x86\Release\PO-SAJ-Hololens.exe">
       <PackagePath>entrypoint\PO-SAJ-Hololens.exe</PackagePath>
-      <Modified>2021-06-21T12:19:46.439</Modified>
+      <Modified>2021-06-22T09:17:54.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -466,7 +466,7 @@
       <PackagePath>UnityEngineProxy.dll</PackagePath>
       <Modified>2020-05-15T00:52:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Unprocessed\WinRTLegacy.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Unprocessed\WinRTLegacy.dll">
       <PackagePath>WinRTLegacy.dll</PackagePath>
       <Modified>2020-05-15T00:34:38.000</Modified>
     </AppxPackagedFile>
@@ -498,347 +498,347 @@
       <PackagePath>WinRTBridge.winmd</PackagePath>
       <Modified>2020-05-15T00:53:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Resource.res">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2021-06-21T12:19:13.550</Modified>
+      <Modified>2021-06-22T09:10:40.214</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-14T10:32:44.000</Modified>
+      <Modified>2021-06-22T07:08:20.588</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-14T10:32:44.000</Modified>
+      <Modified>2021-06-22T07:08:20.589</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-14T10:32:46.000</Modified>
+      <Modified>2021-06-22T07:08:20.590</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-14T10:33:08.000</Modified>
+      <Modified>2021-06-22T07:08:20.590</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-14T10:33:10.000</Modified>
+      <Modified>2021-06-22T07:08:20.591</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-14T10:33:12.000</Modified>
+      <Modified>2021-06-22T07:08:20.592</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-05-14T23:29:56.000</Modified>
+      <Modified>2021-06-22T07:08:21.282</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\PlaneFinding.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\PlaneFinding.dll">
       <PackagePath>PlaneFinding.dll</PackagePath>
-      <Modified>2018-08-01T21:59:10.000</Modified>
+      <Modified>2021-06-22T07:08:19.363</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\MicStreamSelector.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\MicStreamSelector.dll">
       <PackagePath>MicStreamSelector.dll</PackagePath>
-      <Modified>2018-08-01T21:59:08.000</Modified>
+      <Modified>2021-06-22T07:08:18.192</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\GpuTiming.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\GpuTiming.dll">
       <PackagePath>GpuTiming.dll</PackagePath>
-      <Modified>2018-08-01T21:59:12.000</Modified>
+      <Modified>2021-06-22T07:08:20.318</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\SharingClient.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\SharingClient.dll">
       <PackagePath>SharingClient.dll</PackagePath>
-      <Modified>2018-08-01T21:59:09.000</Modified>
+      <Modified>2021-06-22T07:08:18.710</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\SpatialUnderstanding.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\SpatialUnderstanding.dll">
       <PackagePath>SpatialUnderstanding.dll</PackagePath>
-      <Modified>2018-08-01T21:59:10.000</Modified>
+      <Modified>2021-06-22T07:08:19.556</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\boot.config">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2021-06-21T12:18:25.760</Modified>
+      <Modified>2021-06-22T09:09:53.746</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\globalgamemanagers">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2021-06-21T12:18:23.291</Modified>
+      <Modified>2021-06-22T09:09:51.098</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\level0">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2021-06-21T12:18:19.451</Modified>
+      <Modified>2021-06-22T09:09:49.133</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\Resources\unity default resources">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
-      <Modified>2020-05-14T23:37:04.000</Modified>
+      <Modified>2020-05-14T23:42:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\Resources\unity_builtin_extra">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2021-06-21T12:18:25.760</Modified>
+      <Modified>2021-06-22T09:09:53.744</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\globalgamemanagers.assets">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2021-06-21T12:18:23.492</Modified>
+      <Modified>2021-06-22T09:09:51.302</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\resources.assets">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
-      <Modified>2021-06-21T12:18:23.507</Modified>
+      <Modified>2021-06-22T09:09:51.310</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\sharedassets0.assets">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2021-06-21T12:18:25.074</Modified>
+      <Modified>2021-06-22T09:09:52.990</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\level0.resS">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2021-06-21T12:18:19.451</Modified>
+      <Modified>2021-06-22T09:09:49.132</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\resources.assets.resS">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\resources.assets.resS">
       <PackagePath>Data\resources.assets.resS</PackagePath>
-      <Modified>2021-06-21T12:18:23.507</Modified>
+      <Modified>2021-06-22T09:09:51.310</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\sharedassets0.assets.resS">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2021-06-21T12:18:25.074</Modified>
+      <Modified>2021-06-22T09:09:52.990</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\managedAssemblies.txt">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2021-06-21T12:19:13.488</Modified>
+      <Modified>2021-06-22T09:10:40.166</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\nativePlugins.txt">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2021-06-21T12:19:13.488</Modified>
+      <Modified>2021-06-22T09:10:40.167</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2018-10-22T22:44:28.000</Modified>
+      <Modified>2017-09-28T15:28:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\bin\x86\Release\resources.pri">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-06-21T12:19:47.943</Modified>
+      <Modified>2021-06-22T09:17:55.609</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.TilemapModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.074</Modified>
+      <Modified>2021-06-22T09:18:09.126</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.TextRenderingModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.074</Modified>
+      <Modified>2021-06-22T09:18:09.130</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.TerrainPhysicsModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.089</Modified>
+      <Modified>2021-06-22T09:18:09.132</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.TerrainModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.089</Modified>
+      <Modified>2021-06-22T09:18:09.137</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.SharedInternalsModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.SharedInternalsModule.dll">
       <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.105</Modified>
+      <Modified>2021-06-22T09:18:09.141</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.SpriteMaskModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.105</Modified>
+      <Modified>2021-06-22T09:18:09.143</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.SpriteShapeModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.105</Modified>
+      <Modified>2021-06-22T09:18:09.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.StyleSheetsModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.120</Modified>
+      <Modified>2021-06-22T09:18:09.149</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UIElementsModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.174</Modified>
+      <Modified>2021-06-22T09:18:09.168</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UnityWebRequestWWWModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.174</Modified>
+      <Modified>2021-06-22T09:18:09.173</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.VehiclesModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.174</Modified>
+      <Modified>2021-06-22T09:18:09.176</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.VideoModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.189</Modified>
+      <Modified>2021-06-22T09:18:09.179</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.VRModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.205</Modified>
+      <Modified>2021-06-22T09:18:09.191</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.WebModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.205</Modified>
+      <Modified>2021-06-22T09:18:09.196</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.WindModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.221</Modified>
+      <Modified>2021-06-22T09:18:09.198</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UnityWebRequestTextureModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.227</Modified>
+      <Modified>2021-06-22T09:18:09.200</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UIModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.227</Modified>
+      <Modified>2021-06-22T09:18:09.204</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UNETModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.243</Modified>
+      <Modified>2021-06-22T09:18:09.212</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UnityAnalyticsModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.274</Modified>
+      <Modified>2021-06-22T09:18:09.215</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UnityConnectModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.274</Modified>
+      <Modified>2021-06-22T09:18:09.217</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UnityWebRequestAudioModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.290</Modified>
+      <Modified>2021-06-22T09:18:09.220</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UnityWebRequestModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.290</Modified>
+      <Modified>2021-06-22T09:18:09.224</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.ScreenCaptureModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.305</Modified>
+      <Modified>2021-06-22T09:18:09.227</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.AssetBundleModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.AssetBundleModule.dll">
       <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.305</Modified>
+      <Modified>2021-06-22T09:18:09.230</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.AudioModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.327</Modified>
+      <Modified>2021-06-22T09:18:09.242</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.ClothModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.339</Modified>
+      <Modified>2021-06-22T09:18:09.245</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.CoreModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.621</Modified>
+      <Modified>2021-06-22T09:18:09.625</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.CrashReportingModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.629</Modified>
+      <Modified>2021-06-22T09:18:09.629</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.DirectorModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.631</Modified>
+      <Modified>2021-06-22T09:18:09.632</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.ARModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.639</Modified>
+      <Modified>2021-06-22T09:18:09.656</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.AccessibilityModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.649</Modified>
+      <Modified>2021-06-22T09:18:09.659</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.AIModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.682</Modified>
+      <Modified>2021-06-22T09:18:09.666</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.AnimationModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.702</Modified>
+      <Modified>2021-06-22T09:18:09.693</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2021-06-21T12:18:46.766</Modified>
+      <Modified>2021-06-22T09:10:14.090</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.ParticlesLegacyModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.712</Modified>
+      <Modified>2021-06-22T09:18:09.696</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.ParticleSystemModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.722</Modified>
+      <Modified>2021-06-22T09:18:09.730</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.PerformanceReportingModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.730</Modified>
+      <Modified>2021-06-22T09:18:09.733</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.Physics2DModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.742</Modified>
+      <Modified>2021-06-22T09:18:09.771</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.PhysicsModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.760</Modified>
+      <Modified>2021-06-22T09:18:09.787</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.JSONSerializeModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.772</Modified>
+      <Modified>2021-06-22T09:18:09.790</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.GameCenterModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.780</Modified>
+      <Modified>2021-06-22T09:18:09.795</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.GridModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.790</Modified>
+      <Modified>2021-06-22T09:18:09.797</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.ImageConversionModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.792</Modified>
+      <Modified>2021-06-22T09:18:09.800</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.IMGUIModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.822</Modified>
+      <Modified>2021-06-22T09:18:09.821</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.InputModule.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.832</Modified>
+      <Modified>2021-06-22T09:18:09.824</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.903</Modified>
+      <Modified>2021-06-22T09:18:09.871</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.Timeline.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.923</Modified>
+      <Modified>2021-06-22T09:18:09.894</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\nunit.framework.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.973</Modified>
+      <Modified>2021-06-22T09:18:09.930</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UI.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2021-06-21T12:20:04.033</Modified>
+      <Modified>2021-06-22T09:18:09.992</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.SpatialTracking.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.SpatialTracking.dll">
       <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
-      <Modified>2021-06-21T12:20:04.053</Modified>
+      <Modified>2021-06-22T09:18:10.006</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.HoloLens.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2021-06-21T12:20:04.063</Modified>
+      <Modified>2021-06-22T09:18:10.014</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.StandardEvents.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.StandardEvents.dll">
       <PackagePath>UnityEngine.StandardEvents.dll</PackagePath>
-      <Modified>2021-06-21T12:20:04.074</Modified>
+      <Modified>2021-06-22T09:18:10.023</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.Networking.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2021-06-21T12:20:04.144</Modified>
+      <Modified>2021-06-22T09:18:10.069</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\GLTFSerializationUWP.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\GLTFSerializationUWP.dll">
       <PackagePath>GLTFSerializationUWP.dll</PackagePath>
-      <Modified>2021-06-21T12:20:04.174</Modified>
+      <Modified>2021-06-22T09:18:10.092</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Assembly-CSharp.dll">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2021-06-21T12:20:03.005</Modified>
+      <Modified>2021-06-22T09:18:09.049</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\bin\x86\Release\Core\PO-SAJ-Hololens.exe">
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\bin\x86\Release\Core\PO-SAJ-Hololens.exe">
       <PackagePath>PO-SAJ-Hololens.exe</PackagePath>
-      <Modified>2021-06-21T12:20:04.988</Modified>
+      <Modified>2021-06-22T09:18:12.075</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
