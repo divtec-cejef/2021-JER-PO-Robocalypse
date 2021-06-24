@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class Projectile : MonoBehaviour
 {
-    public string nomCible = "InvisibleCube";
+    public string nomCible = "Cible";
 
-    public int nbrPointsParSphere = 50;
+    // public int nbrPointsParSphere = 50;
 
-    private Text affichagePoints;
+    public Sprite messagePoints;
     
     // Start is called before the first frame update
     void Start()
@@ -31,7 +31,8 @@ public class Projectile : MonoBehaviour
             Vector3 position = transform.position;
             
             // affichagePoints.transform.position = position;
-            
+            Sprite points = Instantiate(messagePoints, position, Quaternion.identity);
+
             //Destroy this gameobject
             Destroy(gameObject);
             

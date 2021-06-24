@@ -20,12 +20,9 @@ public class LancerProjectiles : MonoBehaviour
         // yield return new WaitForSeconds(0.3f);
         Vector3 positionCible = new Vector3(cible.transform.position.x, cible.transform.position.y,
             cible.transform.position.z);
-        
-        // direction = new Vector3(direction.x, 2f, direction.z);
-        
-        
+
         // décalage du départ des projectiles
-        Vector3 positionDepartProjectiles = new Vector3 (transform.position.x, 0.5f, transform.position.z);
+        Vector3 positionDepartProjectiles = new Vector3 (transform.position.x, transform.position.y + 0.5f, transform.position.z);
         
         // définition direction projectiles
         direction = positionCible - positionDepartProjectiles;
