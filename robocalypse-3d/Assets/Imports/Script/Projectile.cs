@@ -36,7 +36,7 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
             
 
-
+        // si la collision est autre que la cible
         } else if (collision.collider.name != "Player")
         {
             Destroy(gameObject);
