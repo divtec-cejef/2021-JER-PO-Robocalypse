@@ -56,12 +56,12 @@ public class HUDCurrentWeapon : MonoBehaviour
                 break;
             case "wGreen":
                 weapon.enabled = true;
-                weapon.sprite = wGreen;
+                weapon.sprite = wGreen;  
                 break;
             default:
                 weapon.enabled = false;
                 break;
         }
-
+        
     }
 }
