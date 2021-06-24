@@ -4,7 +4,7 @@
     <list default="true" id="a3f5c4e5-5101-48c3-96ce-52c1c213f4eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.robocalypse-3d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.robocalypse-3d/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/LancerProjectiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Script/LancerProjectiles.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Script/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/UFO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Script/UFO.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +31,9 @@
       <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayer2.cs" />
       <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayer3.cs" />
       <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayerAndJump.cs" />
-      <option value="$PROJECT_DIR$/Assets/Imports/Script/LancerProjectiles.cs" />
       <option value="$PROJECT_DIR$/Assets/Imports/Script/Projectile.cs" />
+      <option value="$PROJECT_DIR$/Assets/Imports/Script/LancerProjectiles.cs" />
+      <option value="$PROJECT_DIR$/Assets/Imports/Script/UFO.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s1jLXUkjAjcg8OyHmVM63oPPAO" />
@@ -110,7 +111,7 @@
       <workItem from="1620640650766" duration="7924000" />
       <workItem from="1620651548327" duration="2588000" />
       <workItem from="1621490996803" duration="4781000" />
-      <workItem from="1624520190300" duration="4882000" />
+      <workItem from="1624520190300" duration="8647000" />
     </task>
     <servers />
   </component>

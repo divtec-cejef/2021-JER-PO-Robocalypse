@@ -22,7 +22,7 @@ public class LancerProjectiles : MonoBehaviour
             cible.transform.position.z);
 
         // décalage du départ des projectiles
-        Vector3 positionDepartProjectiles = new Vector3 (transform.position.x, transform.position.y + 0.5f, transform.position.z);
+        Vector3 positionDepartProjectiles = new Vector3 (transform.position.x, transform.position.y /*+ 0.5f*/, transform.position.z + 0.2f);
         
         // définition direction projectiles
         direction = positionCible - positionDepartProjectiles;
@@ -52,7 +52,8 @@ public class LancerProjectiles : MonoBehaviour
         }
         */
     }
-
+    
+   
    
 
     }
