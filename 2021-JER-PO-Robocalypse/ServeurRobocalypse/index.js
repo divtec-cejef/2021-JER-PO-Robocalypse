@@ -100,6 +100,11 @@ app.get('/b', (req, res) => {
     res.send(buff)
 })
 
+app.get('/reset', (req, res) => {
+    arme = "w";
+    buff = "b";
+})
+
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })

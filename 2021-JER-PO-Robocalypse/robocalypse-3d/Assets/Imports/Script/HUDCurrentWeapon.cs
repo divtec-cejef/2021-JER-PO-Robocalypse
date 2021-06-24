@@ -43,16 +43,23 @@ public class HUDCurrentWeapon : MonoBehaviour
         switch (value)
         {
             case "wRed":
+                weapon.enabled = true;
                 weapon.sprite = wRed;
                 break;
             case "wBlue":
+                weapon.enabled = true;
                 weapon.sprite = wBlue;
                 break;
             case "wYellow":
+                weapon.enabled = true;
                 weapon.sprite = wYellow;
                 break;
             case "wGreen":
+                weapon.enabled = true;
                 weapon.sprite = wGreen;
+                break;
+            default:
+                weapon.enabled = false;
                 break;
         }
 
