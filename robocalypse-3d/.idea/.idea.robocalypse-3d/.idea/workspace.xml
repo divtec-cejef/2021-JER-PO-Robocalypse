@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3f5c4e5-5101-48c3-96ce-52c1c213f4eb" name="Default Changelist" comment="" />
+    <list default="true" id="a3f5c4e5-5101-48c3-96ce-52c1c213f4eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.robocalypse-3d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.robocalypse-3d/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Materials/Plateforme.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Plateforme.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Player/projectile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Player/projectile.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/LancerProjectiles.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/LancerProjectiles.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/MovePlayerAndJump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Script/MovePlayerAndJump.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/Projectile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/Projectile.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PO-SAJ-HautBas.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PO-SAJ-HautBas.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,14 +37,15 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Imports/Script/MovePlayerAndJump.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayer2.cs" />
       <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayer3.cs" />
-      <option value="$PROJECT_DIR$/Assets/Imports/Script/Projectile.cs" />
       <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayerAndJump.cs" />
-      <option value="$PROJECT_DIR$/Assets/Imports/Script/LancerProjectiles.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s1jLXUkjAjcg8OyHmVM63oPPAO" />
@@ -102,10 +122,7 @@
       <workItem from="1620640564030" duration="11000" />
       <workItem from="1620640650766" duration="7924000" />
       <workItem from="1620651548327" duration="2588000" />
-      <workItem from="1624365301294" duration="599000" />
-      <workItem from="1624367135283" duration="1096000" />
-      <workItem from="1624368628353" duration="4167000" />
-      <workItem from="1624515479746" duration="659000" />
+      <workItem from="1621490996803" duration="4781000" />
     </task>
     <servers />
   </component>
