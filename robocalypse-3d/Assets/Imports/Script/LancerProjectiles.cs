@@ -29,7 +29,7 @@ public class LancerProjectiles : MonoBehaviour
         
         // Création d'une instance de projectile
         GameObject bullet = Instantiate(projectile, positionDepartProjectiles, Quaternion.identity) as GameObject;
-        
+
         // Le projectile se déplace jusqu'à sa cible
         bullet.GetComponent<Rigidbody>().AddForce(direction * 50);
 

@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,12 +11,14 @@ public class Projectile : MonoBehaviour
 
     // public int nbrPointsParSphere = 50;
 
-    public Sprite messagePoints;
+    private int nbrPoints;
+
+    // public GameObject messagePoints;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        // messagePoints.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Assets/Imports/HUD/score/+1.png");
     }
 
     // Update is called once per frame
@@ -28,16 +32,18 @@ public class Projectile : MonoBehaviour
         if (collision.collider.name == nomCible)
         {
             // position du projectile au moment de l'impact
-            Vector3 position = transform.position;
+            // Vector3 position = transform.position;
             
             // affichagePoints.transform.position = position;
-            Sprite points = Instantiate(messagePoints, position, Quaternion.identity);
+            // messagePoints = Instantiate(messagePoints, position, Quaternion.identity);
 
             //Destroy this gameobject
             Destroy(gameObject);
             
-
-        // si la collision est autre que la cible
+            // incrémentation points
+            nbrPoints++;
+            
+            // si la collision est autre que la cible
         } else if (collision.collider.name != "Player")
         {
             Destroy(gameObject);
