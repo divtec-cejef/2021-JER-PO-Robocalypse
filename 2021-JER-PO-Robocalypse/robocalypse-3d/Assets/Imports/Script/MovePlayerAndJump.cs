@@ -92,6 +92,24 @@ public class MovePlayerAndJump : MonoBehaviour
         }
         */
     }
+
+    /*
+    private Vector3 Levitate()
+    {
+        // lévitation
+        Vector3 posOffset = new Vector3();
+        Vector3 tempPos = new Vector3();
+        tempPos = posOffset;
+        tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * 3f) * 0.05f; // fréquence, amplitude
+
+        Vector3 position = transform.position;
+
+        // transform.position = position + choix + tempPos; // + choix au lieu de tempPos
+
+        // déplacement vers une positino différente
+        return tempPos;
+    }
+    */
     
     /**
      * Si le joueur est en contact avec un objet qui a le tag Ground, change la valeur de playerisOnGround
@@ -101,7 +119,6 @@ public class MovePlayerAndJump : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             playerIsOnTheGround = true;
-            animator.SetTrigger("Jump");
         }
     }
     
