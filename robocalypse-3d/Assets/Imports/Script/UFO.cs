@@ -38,8 +38,6 @@ public class UFO : MonoBehaviour
     {
         // position de l'UFo de départ
         choix = positionsPossibles[0];
-        // UFOposition();
-        // StartCoroutine(wait());
         InvokeRepeating(nameof(UFOposition), .1f, 1.9f);
     }
 
@@ -53,10 +51,10 @@ public class UFO : MonoBehaviour
         tempPos.y += Mathf.Sin (Time.fixedTime * Mathf.PI * 3f) * 0.05f; // fréquence, amplitude
         
         position = player.transform.position;
- 
-        // transform.position = tempPos;
         
         // transform.position = position + choix + tempPos; // + choix au lieu de tempPos
+        
+        // déplacement vers une positino différente
         transform.position = Vector3.MoveTowards(transform.position, position + choix + tempPos, 4 * Time.deltaTime);
     }
 
@@ -75,28 +73,5 @@ public class UFO : MonoBehaviour
 
         ancien = choix;
     }
-
-   
-    /*IEnumerator wait()
-    {
-            // position = player.transform.position;
-            int rand = Random.Range(0, positionsPossibles.Length);
-
-            yield return new WaitForSeconds(2f);
-
-            Debug.ClearDeveloperConsole();
-            transform.position = position + positionsPossibles[rand];
-
-            // transform.position = position + positionsPossibles[1];
-
-            yield return new WaitForSeconds(2f);
-
-            Debug.Log("OK");
-        
-        
-        // transform.position = position + positionsPossibles[1];
-        
-        // yield return new WaitForSeconds(2);
-    }*/
-
+    
 }
