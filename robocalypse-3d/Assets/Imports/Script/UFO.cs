@@ -42,11 +42,11 @@ public class UFO : MonoBehaviour
         Vector3 posOffset = new Vector3 ();
         Vector3 tempPos = new Vector3 ();
         tempPos = posOffset;
-        tempPos.y += Mathf.Sin (Time.fixedTime * Mathf.PI * 3f) * 0.1f; // fréquence, amplitude
+        tempPos.y += Mathf.Sin (Time.fixedTime * Mathf.PI * 3f) * 0.05f; // fréquence, amplitude
         
         position = player.transform.position;
  
-        transform.position = tempPos;
+        // transform.position = tempPos;
         
         transform.position = position + choix + tempPos; // + choix au lieu de tempPos
         

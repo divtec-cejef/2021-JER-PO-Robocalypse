@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a3f5c4e5-5101-48c3-96ce-52c1c213f4eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.robocalypse-3d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.robocalypse-3d/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imports/Player/player-1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Player/player-1.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/UFO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Script/UFO.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PO-SAJ-HautBas.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PO-SAJ-HautBas.unity" afterDir="false" />
     </list>
@@ -115,7 +114,8 @@
       <workItem from="1624520190300" duration="11824000" />
       <workItem from="1624535712865" duration="398000" />
       <workItem from="1624536416271" duration="422000" />
-      <workItem from="1624537394850" duration="4517000" />
+      <workItem from="1624537394850" duration="4892000" />
+      <workItem from="1624601597120" duration="973000" />
     </task>
     <servers />
   </component>
