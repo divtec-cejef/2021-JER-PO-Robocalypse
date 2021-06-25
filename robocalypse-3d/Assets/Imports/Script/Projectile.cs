@@ -11,8 +11,6 @@ public class Projectile : MonoBehaviour
 
     // public int nbrPointsParSphere = 50;
 
-    private int nbrPoints;
-
     // public GameObject messagePoints;
     
     // Start is called before the first frame update
@@ -41,8 +39,10 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
             
             // incrémentation points
-            nbrPoints++;
-            
+            // nbrPoints++;
+
+            // Debug.Log(nbrPoints);
+
             // si la collision est autre que la cible
         } else if (collision.collider.name != "Player")
         {

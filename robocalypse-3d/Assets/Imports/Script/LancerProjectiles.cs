@@ -12,8 +12,6 @@ public class LancerProjectiles : MonoBehaviour
     public GameObject cible;
 
     public Vector3 direction;
-
-    private Vector3 calibrationPositionJoueur;
     
     void ShootProjectile()
     {
@@ -32,7 +30,6 @@ public class LancerProjectiles : MonoBehaviour
 
         // Le projectile se déplace jusqu'à sa cible
         bullet.GetComponent<Rigidbody>().AddForce(direction * 50);
-
     }
 
     private void Start()
