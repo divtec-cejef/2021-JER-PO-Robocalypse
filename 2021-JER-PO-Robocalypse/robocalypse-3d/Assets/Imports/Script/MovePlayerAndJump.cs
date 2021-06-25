@@ -65,6 +65,7 @@ public class MovePlayerAndJump : MonoBehaviour
                     playerIsSneaking = true;
                     playerBoxCol.size = new Vector3(7.553771f, 12.44857f, 1);
                     playerTransform.localScale = new Vector3(0.15f, 0.075f, 0.15f);
+                    
                 }
                 
                 // le saut
