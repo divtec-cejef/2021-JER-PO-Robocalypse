@@ -21,9 +21,9 @@ public class UFO : MonoBehaviour
         (new Vector3(0.8f,0.7f,0.5f)),
         (new Vector3(1f,0.4f,0.5f)),
         // en haut à gauche
-        (new Vector3(-1f,0.2f,0.5f)),
+        (new Vector3(-0.7f,0.2f,0.5f)),
         // en bas à gauche
-        (new Vector3(-1f, -0.7f, 0.5f)),
+        (new Vector3(-0.7f, -0.7f, 0.5f)),
         // en bas à droite
         (new Vector3(1f, -0.7f, 0.5f))
 
