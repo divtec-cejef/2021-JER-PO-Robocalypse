@@ -14,6 +14,7 @@ public class MovePlayerAndJump : MonoBehaviour
     private BoxCollider playerBoxCol;
     private Transform playerTransform;
     public Rigidbody rb;
+    public Animator animator;
     
     // Start is called before the first frame update
     void Start()
@@ -44,29 +45,34 @@ public class MovePlayerAndJump : MonoBehaviour
                 if (Input.GetKeyUp("s"))
                 {
                     playerIsSneaking = false;
-                    playerBoxCol.size = new Vector3(1, 1, 0.5f);
-                    playerTransform.localScale = new Vector3(1, 1, 1);
+                    playerBoxCol.size = new Vector3(7.553771f, 12.44857f, 1);
+                    playerTransform.localScale = new Vector3(0.15f, 0.15f, 0.15f);
                 }
             }
             else
             {
                 // déplacement haut, bas, gauche & droite
                 Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0, 0); 
-                Vector3 vertical = new Vector3(0, 0, Input.GetAxis("Vertical")); 
+                Vector3 vertical = new Vector3(0, 0, Input.GetAxis("Vertical"));
 
+                //float characterVelocity = Mathf.Abs(rb.velocity.x);
+                animator.SetFloat("Speed", horizontal.x);
                 transform.Translate( Time.deltaTime * speed * BestAxis(horizontal,vertical));
                 
                 //s'accroupir
                 if (Input.GetKeyDown("s"))
                 {
                     playerIsSneaking = true;
-                    playerBoxCol.size = new Vector3(1, 0.5f, 0.5f);
-                    playerTransform.localScale = new Vector3(1, 0.5f, 1);
+                    playerBoxCol.size = new Vector3(7.553771f, 12.44857f, 1);
+                    playerTransform.localScale = new Vector3(0.15f, 0.075f, 0.15f);
+                    
                 }
                 
                 // le saut
                 if (Input.GetButtonDown("Jump") && playerIsOnTheGround)
                 {
+                    animator.SetFloat("Speed", 0);
+                    animator.SetTrigger("Jump");
                     rb.AddForce(new Vector3(0,5,0), ForceMode.Impulse);
                     playerIsOnTheGround = false;
                     playerCanMove = false;
@@ -87,6 +93,24 @@ public class MovePlayerAndJump : MonoBehaviour
         }
         */
     }
+
+    /*
+    private Vector3 Levitate()
+    {
+        // lévitation
+        Vector3 posOffset = new Vector3();
+        Vector3 tempPos = new Vector3();
+        tempPos = posOffset;
+        tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * 3f) * 0.05f; // fréquence, amplitude
+
+        Vector3 position = transform.position;
+
+        // transform.position = position + choix + tempPos; // + choix au lieu de tempPos
+
+        // déplacement vers une positino différente
+        return tempPos;
+    }
+    */
     
     /**
      * Si le joueur est en contact avec un objet qui a le tag Ground, change la valeur de playerisOnGround

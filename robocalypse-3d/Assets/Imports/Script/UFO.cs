@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Random = UnityEngine.Random;
@@ -22,9 +21,9 @@ public class UFO : MonoBehaviour
         (new Vector3(0.8f,0.7f,0.5f)),
         (new Vector3(1f,0.4f,0.5f)),
         // en haut à gauche
-        (new Vector3(-1f,0.2f,0.5f)),
+        (new Vector3(-0.7f,0.2f,0.5f)),
         // en bas à gauche
-        (new Vector3(-1f, -0.7f, 0.5f)),
+        (new Vector3(-0.7f, -0.7f, 0.5f)),
         // en bas à droite
         (new Vector3(1f, -0.7f, 0.5f))
 
@@ -39,6 +38,7 @@ public class UFO : MonoBehaviour
         // position de l'UFo de départ
         choix = positionsPossibles[0];
         InvokeRepeating(nameof(UFOposition), .1f, 1.9f);
+        
     }
 
     // Update is called once per frame

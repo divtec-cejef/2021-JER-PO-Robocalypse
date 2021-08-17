@@ -42,17 +42,24 @@ public class HUDCurrentBuff : MonoBehaviour
          switch (value)
          {
              case "bJump":
+                buff.enabled = true;
                  buff.sprite = bJump;
                  break;
              case "bSpeed":
-                 buff.sprite = bSpeed;
+                buff.enabled = true;
+                buff.sprite = bSpeed;
                  break;
              case "bPower":
-                 buff.sprite = bPower;
+                buff.enabled = true;
+                buff.sprite = bPower;
                  break;
              case "bShield":
-                 buff.sprite = bShield;
+                buff.enabled = true;
+                buff.sprite = bShield;
                  break;
+            default:
+                buff.enabled = false;
+                break;
          }
  
      }

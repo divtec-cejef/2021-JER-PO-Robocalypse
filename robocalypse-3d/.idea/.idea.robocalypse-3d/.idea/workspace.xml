@@ -2,8 +2,108 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3f5c4e5-5101-48c3-96ce-52c1c213f4eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Documentation/Matériel.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentation/PO2021-SAJ-Robocalypse-Affiche.vsdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentation/PO2021-SAJ-Robocalypse-Planning.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentation/PO2021-SAJ-Robocalypse-Présentation.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentation/PO2021-SAJ-Robocalypse-UserStory.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/bras.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/expressions/blesse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/expressions/brouillon blesse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/expressions/brouillon clin doeil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/expressions/brouillon colere.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/expressions/brouillon content.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/expressions/brouillon triste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/expressions/clin doeil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/expressions/colere.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/expressions/content.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/expressions/triste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/frigo compartiment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/frigo porte.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/frigo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/fusee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/mr.freeze.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/pince.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/mr.freeze/tete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/projectiles/beure flaque.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/projectiles/beurre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/projectiles/confiture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/projectiles/glacon flaque.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/projectiles/glacon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/projectiles/pizza.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/projectiles/tartine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/projectiles/toast.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/boss/projectiles/tomate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/fond/fond.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/armes/bleu/arme bleu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/armes/bleu/icone arme bleu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/armes/bleu/projectile bleu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/armes/jaune/arme jaune.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/armes/jaune/icone arme jaune.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/armes/jaune/projectile jaune.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/armes/magenta/amre magenta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/armes/magenta/icone projectile magenta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/armes/magenta/projectile magenta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/armes/vert/arme vert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/armes/vert/icone arme vert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/armes/vert/projectile vert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/astronaute/astronaute.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/astronaute/corps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/astronaute/sac.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/astronaute/sticker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/astronaute/tete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/boosts/boost attaque.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/boosts/boost bouclier.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/boosts/boost rapidite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/joueur/boosts/boost saut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/plans de travail/arme boost plateforme.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/plans de travail/astronaute.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/plans de travail/fond.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/plans de travail/mr.freeze.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/plans de travail/projectile mr.freeze.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/plans de travail/titre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/plateforme/plateforme.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/titre/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/exportation ai/titre/titre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphique/graphique.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.robocalypse-3d/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.robocalypse-3d/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.robocalypse-3d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.robocalypse-3d/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Background/fond.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Background/fond.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/HUD/Buff/boost attaque 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/HUD/Buff/boost attaque 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/HUD/Buff/boost bouclier 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/HUD/Buff/boost bouclier 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/HUD/Buff/boost rapidite 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/HUD/Buff/boost rapidite 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/HUD/Buff/boost saut 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/HUD/Buff/boost saut 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/HUD/Score.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/HUD/Score/+1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/HUD/Score/+1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/HUD/Weapon/bleu/arme bleu.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/HUD/Weapon/bleu/arme bleu.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/HUD/Weapon/jaune/arme jaune.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/HUD/Weapon/jaune/arme jaune.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/HUD/Weapon/magenta/amre magenta.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/HUD/Weapon/magenta/amre magenta.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Materials/Plateforme.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Materials/Plateforme.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Player/UFO.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Player/UFO.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Player/astronaute.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Player/astronaute.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Player/player-1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Player/player-1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/HUDCurrentBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Script/HUDCurrentBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/HUDCurrentWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Script/HUDCurrentWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/LancerProjectiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Script/LancerProjectiles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/LancerProjectiles.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Script/LancerProjectiles.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/MovePlayerAndJump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Script/MovePlayerAndJump.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Script/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/Projectile.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Script/Projectile.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/UFO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Script/UFO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Script/UFO.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Script/UFO.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PO-SAJ-HautBas.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PO-SAJ-HautBas.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +122,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Imports/Script/MovePlayerAndJump.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9baebf9af86541678fd15bfdbf5f26eb13a800/1f/f142a77c/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Imports/Script/lancerTomates.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Imports/Script/déplacementTomate.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -30,9 +132,6 @@
       <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayer2.cs" />
       <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayer3.cs" />
       <option value="$PROJECT_DIR$/Assets/Imports/Script/MovePlayerAndJump.cs" />
-      <option value="$PROJECT_DIR$/Assets/Imports/Script/Projectile.cs" />
-      <option value="$PROJECT_DIR$/Assets/Imports/Script/LancerProjectiles.cs" />
-      <option value="$PROJECT_DIR$/Assets/Imports/Script/UFO.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s1jLXUkjAjcg8OyHmVM63oPPAO" />
@@ -110,17 +209,16 @@
       <workItem from="1620640650766" duration="7924000" />
       <workItem from="1620651548327" duration="2588000" />
       <workItem from="1621490996803" duration="4781000" />
-      <workItem from="1624520190300" duration="11824000" />
-      <workItem from="1624535712865" duration="398000" />
-      <workItem from="1624536416271" duration="422000" />
-      <workItem from="1624537394850" duration="4892000" />
-      <workItem from="1624601597120" duration="7986000" />
+      <workItem from="1629112903498" duration="9043000" />
+      <workItem from="1629180601371" duration="17232000" />
+      <workItem from="1629201601737" duration="732000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
