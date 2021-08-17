@@ -7070,6 +7070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1088715243}
+  nbrPoints: 0
 --- !u!114 &1628910043
 MonoBehaviour:
   m_ObjectHideFlags: 0
