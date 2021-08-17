@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 using System.Security.Cryptography.X509Certificates;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
 using UnityEngine.UI;
@@ -12,12 +13,11 @@ using UnityEngine.UI;
 public class detectCollisionWithPlayer : MonoBehaviour
 {
     public int nbrPointsPenalite = 100;
-    public string nomJoueur = "astronaute";
+    public string nomCollider = "astronaute";
     private bool hasBeenTouched = false;
     private GameObject joueur;
 
     private SpriteRenderer sprite;
-    private Color original_color;
 
     private Text txt_Score;
 
@@ -25,14 +25,12 @@ public class detectCollisionWithPlayer : MonoBehaviour
 
     private bool isCoroutineFinished = false;
 
-
     // Start is called before the first frame update
     void Start()
     {
         txt_Score = GameObject.Find("txt_Score").GetComponent<Text>();
-        joueur = GameObject.Find(nomJoueur);
+        joueur = GameObject.Find(nomCollider);
         // sprite = joueur.GetComponent<SpriteRenderer>();
-        original_color = GetComponent<SpriteRenderer>().color;
         renderer = joueur.GetComponent<Renderer>();
     }
 
@@ -46,20 +44,13 @@ public class detectCollisionWithPlayer : MonoBehaviour
     {
         // décrémenter le score du joueur
         // faire clignoter le joueur (invokeRepeating)
-        // afficher "-1" ou "+1" avec animatino
-        if (collision.collider.name == nomJoueur)
+        // afficher "-1" ou "+1" avec animation
+        if (collision.collider.name == nomCollider)
         {
-            renderer.material.color = Color.red;
-            print("Couleur changée");
+            // renderer.material.color = Color.red;
 
-            // faire clignoter le joueur
-            if (!hasBeenTouched)
-            {
-                hasBeenTouched = true;
-
-                // StartCoroutine(faireClignoterJoueur());
-            }
-
+            clignoter();
+            
             // récupération de la valeur dans la textbox
             int valeurActuelle = 0;
             bool conversion = int.TryParse(txt_Score.text, out valeurActuelle);
@@ -79,10 +70,30 @@ public class detectCollisionWithPlayer : MonoBehaviour
                 txt_Score.text = "0";
             }
 
-            isCoroutineFinished = false;
         }
     }
 
+    public void clignoter()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            Invoke(nameof(clignoterRouge), .5f);
+            Invoke(nameof(clignoterBlanc), .5f);
+        }
+    }
+    public void clignoterRouge()
+    {
+        print("rouge");
+        renderer.material.color = Color.red;
+    }
+
+    public void clignoterBlanc()
+    {
+        print("blanc");
+        renderer.material.color = Color.white;
+    }
+    
+    
     /**
          * Change la couleur du cube et attend 0.5 seconde avant de le
          * rendre de nouveau cliquable
@@ -93,16 +104,16 @@ public class detectCollisionWithPlayer : MonoBehaviour
 
         for (int i = 0; i < 3; i++)
         {
-            renderer.material.color = Color.clear;
+            renderer.material.color = Color.red;
 
             print("Rouge");
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(10f);
             print("Attente");
             // rend la couleur initial à l'objet
 
             renderer.material.color = Color.white;
 
-            yield return new WaitForSeconds(0.4f);
+            yield return new WaitForSeconds(10f);
         }
 
         renderer.material.color = Color.white;
@@ -113,7 +124,7 @@ public class detectCollisionWithPlayer : MonoBehaviour
 
     private void OnCollisionExit(Collision other)
     {
-        renderer.material.color = Color.white;
+        // renderer.material.color = Color.white;
         print("exit");
     }
 }

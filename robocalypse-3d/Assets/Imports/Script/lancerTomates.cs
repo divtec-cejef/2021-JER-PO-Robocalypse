@@ -26,7 +26,7 @@ public class lancerTomates : MonoBehaviour
             alimentAInstancier = GameObject.Find("Tomate");
             print("non");
         }*/
-        InvokeRepeating("apparitionTomate", 1f, 7f);
+        InvokeRepeating("ApparitionTomate", 1f, 7f);
 
     }
 
@@ -39,7 +39,7 @@ public class lancerTomates : MonoBehaviour
 
         
     }
-    void apparitionTomate()
+    void ApparitionTomate()
     {
         int rand = Random.Range(0, positionsTuiles.Length);
 
