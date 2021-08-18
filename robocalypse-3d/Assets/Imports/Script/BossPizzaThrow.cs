@@ -8,10 +8,29 @@ public class BossPizzaThrow : MonoBehaviour
     public float vitesse = 5;
     public Vector3 direction;
 
+    public GameObject alimentAInstancier;
+
+    private GameObject modeleCarotte;
+
+    private Vector3 positionTomate;
+
+    
+
+    private Vector3[] positionsTuiles =
+{
+        (new Vector3(-4.14f, 17, 9.62f)),
+        (new Vector3(-2.2f, 17, 9.62f)),
+        (new Vector3(-0.2f, 17, 9.62f)),
+        (new Vector3(1.79f, 17, 9.62f)),
+        (new Vector3(3.79f, 17, 9.62f))
+    };
+
     void ShootProjectile()
     {
         // décalage du départ des projectiles
         Vector3 positionDepartProjectiles;
+
+
         
         switch (Random.Range(1,5))
         {
@@ -48,6 +67,32 @@ public class BossPizzaThrow : MonoBehaviour
         pizza.GetComponent<Rigidbody>().velocity = direction;
     }
 
+    void ApparitionTomate()
+    {
+        int rand = Random.Range(0, positionsTuiles.Length);
+
+        Vector3 positionDepartProjectiles = positionsTuiles[rand];
+
+        // Création d'une instance de projectile
+        GameObject tomate = Instantiate(alimentAInstancier, positionDepartProjectiles, Quaternion.identity) as GameObject;
+
+        tomate.GetComponent<Rigidbody>().useGravity = true;
+
+    }
+
+    void ApparitionCarotte()
+    {
+        Vector3 positionDepartCarotte = new Vector3(-0.17f, 17, 9.62f);
+
+        // création d'une carotte
+        GameObject carotte = Instantiate(modeleCarotte, positionDepartCarotte, Quaternion.identity);
+
+        carotte.transform.Rotate(new Vector3(0, 0, 90));
+
+        carotte.GetComponent<Rigidbody>().useGravity = true;
+    }
+
+    
     private void Start()
     {
         projectile = GameObject.Find("pizza");

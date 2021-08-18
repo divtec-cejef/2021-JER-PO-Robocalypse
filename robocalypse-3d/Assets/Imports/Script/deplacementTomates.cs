@@ -12,14 +12,13 @@ namespace Imports.Script
 
         private Rigidbody m_rigidbody;
 
-        private bool hasTouchedTheGround = false;
-
-        private bool canDelete = false;
-        
+        private bool hasTouchedTheGround;
+       
 
         // Start is called before the first frame update
         void Start()
         {
+            hasTouchedTheGround = false;
             initialPosition = transform.localScale;
             m_rigidbody = GetComponent<Rigidbody>();
         }

@@ -14,16 +14,13 @@ public class detectCollisionWithPlayer : MonoBehaviour
 {
     public int nbrPointsPenalite = 100;
     public string nomCollider = "astronaute";
-    private bool hasBeenTouched = false;
     private GameObject joueur;
 
     private SpriteRenderer sprite;
 
     private Text txt_Score;
 
-    private Renderer renderer;
-
-    private bool isCoroutineFinished = false;
+    private Renderer renderer = new Renderer();
 
     // Start is called before the first frame update
     void Start()
@@ -118,7 +115,7 @@ public class detectCollisionWithPlayer : MonoBehaviour
 
         renderer.material.color = Color.white;
 
-        hasBeenTouched = false;
-        isCoroutineFinished = true;
+        
+        
     }
 }
