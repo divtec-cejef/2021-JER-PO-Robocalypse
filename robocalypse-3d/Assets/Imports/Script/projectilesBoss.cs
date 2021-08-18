@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class lancerTomates : MonoBehaviour
+public class projectilesBoss : MonoBehaviour
 {
     public GameObject alimentAInstancier;
+
+    private GameObject modeleCarotte;
 
     private Vector3 positionTomate;
 
@@ -21,12 +23,14 @@ public class lancerTomates : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        modeleCarotte = GameObject.Find("carrot");
         /*if (alimentAInstancier)
         {
             alimentAInstancier = GameObject.Find("Tomate");
             print("non");
         }*/
-        InvokeRepeating("ApparitionTomate", 1f, 7f);
+        // InvokeRepeating("ApparitionTomate", 1f, 7f);
+        // InvokeRepeating("ApparitionCarotte", 2f, 7f);
 
     }
 
@@ -50,5 +54,22 @@ public class lancerTomates : MonoBehaviour
 
         tomate.GetComponent<Rigidbody>().useGravity = true;
 
+    }
+
+    void ApparitionCarotte()
+    {
+        Vector3 positionDepartCarotte = new Vector3(-0.17f, 17, 9.62f);
+        
+        // création d'une carotte
+        GameObject carotte = Instantiate(modeleCarotte, positionDepartCarotte, Quaternion.identity);
+        
+        carotte.transform.Rotate(new Vector3(0, 0, 90));
+
+        carotte.GetComponent<Rigidbody>().useGravity = true;
+    }
+
+    void ApparitionPizza()
+    {
+        
     }
 }

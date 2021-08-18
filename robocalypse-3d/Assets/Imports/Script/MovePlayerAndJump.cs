@@ -10,9 +10,9 @@ public class MovePlayerAndJump : MonoBehaviour
     public bool playerIsOnTheGround = true;
     public bool playerIsSneaking;
     public bool playerCanMove = true;
-    
+    public GameObject coin;
     private BoxCollider playerBoxCol;
-    private Transform playerTransform;
+    public Transform playerTransform;
     public Rigidbody rb;
     public Animator animator;
     
@@ -21,7 +21,6 @@ public class MovePlayerAndJump : MonoBehaviour
     {
         rb.GetComponent<Rigidbody>();
         playerBoxCol = GetComponent<BoxCollider>();
-        playerTransform = GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -45,8 +44,10 @@ public class MovePlayerAndJump : MonoBehaviour
                 if (Input.GetKeyUp("s"))
                 {
                     playerIsSneaking = false;
-                    playerBoxCol.size = new Vector3(7.553771f, 12.44857f, 1);
-                    playerTransform.localScale = new Vector3(0.15f, 0.15f, 0.15f);
+                    playerTransform.position = new Vector3(playerTransform.position.x, playerTransform.position.y + 0.2f,
+                        playerTransform.position.z);
+                    playerBoxCol.size = new Vector3(7.5537f, 13.4485f, 1);
+                    playerBoxCol.center = new Vector3(1.2286f, -2.5755f, 0);
                 }
             }
             else
@@ -54,18 +55,25 @@ public class MovePlayerAndJump : MonoBehaviour
                 // déplacement haut, bas, gauche & droite
                 Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0, 0); 
                 Vector3 vertical = new Vector3(0, 0, Input.GetAxis("Vertical"));
-
                 //float characterVelocity = Mathf.Abs(rb.velocity.x);
                 animator.SetFloat("Speed", horizontal.x);
-                transform.Translate( Time.deltaTime * speed * BestAxis(horizontal,vertical));
                 
-                //s'accroupir
+                // si le personnage est trop à gauche ou trop à droite l'empêche d'aller plus loin vers ces direction
+                if (!(horizontal.x >= 0 && transform.position.x >= 4))
+                {
+                    if (!(horizontal.x <= 0 && transform.position.x <= -4.7f))
+                    {
+                        // Fait avancer le personnage
+                        transform.Translate(Time.deltaTime * speed * BestAxis(horizontal, vertical));
+                    }
+                }
+
+                    //s'accroupir
                 if (Input.GetKeyDown("s"))
                 {
                     playerIsSneaking = true;
-                    playerBoxCol.size = new Vector3(7.553771f, 12.44857f, 1);
-                    playerTransform.localScale = new Vector3(0.15f, 0.075f, 0.15f);
-                    
+                    playerBoxCol.size = new Vector3(7.5537f, 10.4485f, 1);
+                    playerBoxCol.center = new Vector3(1.2286f, -0.5755f, 0);
                 }
                 
                 // le saut

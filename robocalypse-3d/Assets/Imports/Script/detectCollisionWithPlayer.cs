@@ -121,10 +121,4 @@ public class detectCollisionWithPlayer : MonoBehaviour
         hasBeenTouched = false;
         isCoroutineFinished = true;
     }
-
-    private void OnCollisionExit(Collision other)
-    {
-        // renderer.material.color = Color.white;
-        print("exit");
-    }
 }
