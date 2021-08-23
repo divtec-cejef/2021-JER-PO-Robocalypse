@@ -73,7 +73,7 @@ namespace Imports.Script
                 // décrémenter le score du joueur 
                 // faire clignoter le joueur en rouge
             }
-            else if (collision.collider.name == "Invisiblewall (2)")
+            if (collision.collider.name == "Invisiblewall (2)")
             {
                 Destroy(gameObject);
             }

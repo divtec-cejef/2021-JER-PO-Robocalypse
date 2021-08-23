@@ -17,10 +17,20 @@ public class BossAttack : MonoBehaviour
 
     private Vector3 positionTomate;
 
-    private int ancienRandTomate;
-    private int ancienRandPizza;
+    private int ancienRandAliment;
+    
+    //private ArrayList anciensRandTomates = new ArrayList(){1, 2, 3, 4};
 
-    private Vector3[] positionsTuiles =
+    /*
+    private int ancienRandPizza;
+    private int ancienRandPizza;
+    private int ancienRandPizza;
+    private int ancienRandPizza;
+    private int ancienRandPizza;
+    */
+   // private ArrayList anciensRandPizzas = new ArrayList(){ 1, 2, 3, 4, 5};
+
+    private ArrayList positionsTuiles = new ArrayList()
     {
         (new Vector3(-4.14f, 17, 9.62f)),
         (new Vector3(-2.2f, 17, 9.62f)),
@@ -28,6 +38,17 @@ public class BossAttack : MonoBehaviour
         (new Vector3(1.79f, 17, 9.62f)),
         (new Vector3(3.79f, 17, 9.62f))
     };
+
+    ArrayList positionsPizzas = new ArrayList()
+        {
+            (new Vector3(-4.12f, 1.878f, 10.44f)),
+            (new Vector3(-2.17f, 1.878f, 10.44f)),
+            (new Vector3(-0.15f, 1.878f, 10.44f)),
+            (new Vector3(1.82f, 1.878f, 10.44f)),
+            (new Vector3(3.82f, 1.878f, 10.44f)),
+            (new Vector3(-0.15f, 1.878f, 10.44f))
+        };
+
 
     public Animator animator;
 
@@ -37,15 +58,11 @@ public class BossAttack : MonoBehaviour
 
         // décalage du départ des projectiles
         Vector3 positionDepartProjectiles;
-        int rand = Random.Range(1, 5);
 
-        while (rand == ancienRandPizza)
-        {
-            rand = Random.Range(1, 5);
+        int rand = Random.Range(0, positionsTuiles.Count - 1);
 
-        }
-
-
+        positionDepartProjectiles = (Vector3)positionsPizzas[rand];
+        /*
         switch (rand)
         {
             case (1):
@@ -66,7 +83,7 @@ public class BossAttack : MonoBehaviour
             default:
                 positionDepartProjectiles = new Vector3(-0.15f, 1.878f, 10.44f);
                 break;
-        }
+        }*/
 
         Vector3 positionHorsChamp = new Vector3(positionDepartProjectiles.x, positionDepartProjectiles.y + 10,
             positionDepartProjectiles.z);
@@ -78,29 +95,32 @@ public class BossAttack : MonoBehaviour
         // Création d'une instance de projectile
         GameObject pizza = Instantiate(modelePizza, positionDepartProjectiles, Quaternion.identity) as GameObject;
         // Le projectile se déplace jusqu'à sa cible
-        pizza.GetComponent<Rigidbody>().velocity = direction;
+        // VITESSE
+        pizza.GetComponent<Rigidbody>().velocity = direction * 0.5f;
 
-        ancienRandPizza = rand;
+        if (positionsPizzas.Count != 0)
+        {
+            positionsPizzas.RemoveAt(rand);
+
+        }
+
     }
 
     void ApparitionTomate()
     {
-        int rand = Random.Range(0, positionsTuiles.Length);
+        int rand = Random.Range(0, positionsTuiles.Count - 1);
 
-        // vérification doublons
-        while (ancienRandTomate == rand)
-        {
-            rand = Random.Range(0, positionsTuiles.Length);
-        }
 
-        Vector3 positionDepartProjectiles = positionsTuiles[rand];
+        Vector3 positionDepartProjectiles = (Vector3)positionsTuiles[rand];
 
         // Création d'une instance de projectile
         GameObject tomate = Instantiate(modeleTomate, positionDepartProjectiles, Quaternion.identity) as GameObject;
 
+        positionsTuiles.RemoveAt(rand);
+
         tomate.GetComponent<Rigidbody>().useGravity = true;
 
-        ancienRandTomate = rand;
+        
 
     }
 
@@ -159,12 +179,32 @@ public class BossAttack : MonoBehaviour
 
     void SchemaAttaque()
     {
-        switch (Random.Range(0, 3))
+        // ne pas répéter deux fois de suite le même aliment 
+        int rand;
+
+        do
+        {
+            rand = Random.Range(0, 3);
+        } while (rand == ancienRandAliment);
+       
+        
+        switch (rand)
         {
             case 0:
 
-                StartCoroutine(LancerDeTomate());
+                // StartCoroutine(LancerDeTomate());
+                lancerTomateXFois(Random.Range(2,4));
 
+                // réinitialisation
+                positionsTuiles = new ArrayList()
+                    {
+                        (new Vector3(-4.14f, 17, 9.62f)),
+                        (new Vector3(-2.2f, 17, 9.62f)),
+                        (new Vector3(-0.2f, 17, 9.62f)),
+                        (new Vector3(1.79f, 17, 9.62f)),
+                        (new Vector3(3.79f, 17, 9.62f))
+                    };
+                    
                 break;
             case 1:
 
@@ -173,11 +213,27 @@ public class BossAttack : MonoBehaviour
                 break;
             case 2:
 
-                StartCoroutine(LancerDePizza());
+                // StartCoroutine(LancerDePizza());
+                lancerPizzaXFois(Random.Range(3, 5));
+
+                // réinitialisation
+                positionsPizzas = new ArrayList()
+                    {
+                        (new Vector3(-4.12f, 1.878f, 10.44f)),
+                        (new Vector3(-2.17f, 1.878f, 10.44f)),
+                        (new Vector3(-0.15f, 1.878f, 10.44f)),
+                        (new Vector3(1.82f, 1.878f, 10.44f)),
+                        (new Vector3(3.82f, 1.878f, 10.44f)),
+                        (new Vector3(-0.15f, 1.878f, 10.44f))
+                    };
+
 
                 break;
 
         }
+
+        ancienRandAliment = rand;
+        
     }
 
     private void lancerPizzaXFois(int nbrFois)
@@ -214,14 +270,14 @@ public class BossAttack : MonoBehaviour
         // Invoke("SchemaAttaque", 1);
 
 
-        // InvokeRepeating("SchemaAttaque", 1, 5f);
+        InvokeRepeating("SchemaAttaque", 1, 5f);
 
         /**InvokeRepeating("LancerDeTomate", 1, 5);
                Invoke("LancerDeTomate", 1f);
                Invoke("LancerDeTomate", 1f);
                Invoke("LancerDeTomate", 1f);
                */
-        lancerTomateXFois(4);
+        // lancerTomateXFois(4);
 
         // StartCoroutine(LancerXFois());
     }

@@ -50,7 +50,7 @@ public class LancerProjectiles : MonoBehaviour
     void ShootProjectile()
     {
         // yield return new WaitForSeconds(0.3f);
-        Vector3 positionCible = new Vector3(cible.transform.position.x, cible.transform.position.y,
+        Vector3 positionCible = new Vector3(cible.transform.position.x - 1, cible.transform.position.y + 2,
             cible.transform.position.z);
 
         // décalage du départ des projectiles
