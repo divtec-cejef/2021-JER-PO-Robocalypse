@@ -61,7 +61,10 @@ public class BossAttack : MonoBehaviour
 
         int rand = Random.Range(0, positionsTuiles.Count - 1);
 
+
         positionDepartProjectiles = (Vector3)positionsPizzas[rand];
+
+        
         /*
         switch (rand)
         {
@@ -217,7 +220,7 @@ public class BossAttack : MonoBehaviour
                 lancerPizzaXFois(Random.Range(3, 5));
 
                 // réinitialisation
-                positionsPizzas = new ArrayList()
+                /*positionsPizzas = new ArrayList()
                     {
                         (new Vector3(-4.12f, 1.878f, 10.44f)),
                         (new Vector3(-2.17f, 1.878f, 10.44f)),
@@ -226,7 +229,7 @@ public class BossAttack : MonoBehaviour
                         (new Vector3(3.82f, 1.878f, 10.44f)),
                         (new Vector3(-0.15f, 1.878f, 10.44f))
                     };
-
+                    */
 
                 break;
 
@@ -238,6 +241,16 @@ public class BossAttack : MonoBehaviour
 
     private void lancerPizzaXFois(int nbrFois)
     {
+        // réinitialisation
+        positionsPizzas = new ArrayList()
+                    {
+                        (new Vector3(-4.12f, 1.878f, 10.44f)),
+                        (new Vector3(-2.17f, 1.878f, 10.44f)),
+                        (new Vector3(-0.15f, 1.878f, 10.44f)),
+                        (new Vector3(1.82f, 1.878f, 10.44f)),
+                        (new Vector3(3.82f, 1.878f, 10.44f)),
+                        (new Vector3(-0.15f, 1.878f, 10.44f))
+                    };
         for (int i = 0; i < nbrFois; i++)
         {
             //Invoke("ApparitionTomate", 1f);
@@ -253,7 +266,6 @@ public class BossAttack : MonoBehaviour
         {
             //Invoke("ApparitionTomate", 1f);
             StartCoroutine(LancerDeTomate());
-
 
         }
     }
@@ -272,14 +284,7 @@ public class BossAttack : MonoBehaviour
 
         InvokeRepeating("SchemaAttaque", 1, 5f);
 
-        /**InvokeRepeating("LancerDeTomate", 1, 5);
-               Invoke("LancerDeTomate", 1f);
-               Invoke("LancerDeTomate", 1f);
-               Invoke("LancerDeTomate", 1f);
-               */
-        // lancerTomateXFois(4);
-
-        // StartCoroutine(LancerXFois());
+       
     }
 
     // Update is called once per frame

@@ -12,14 +12,16 @@ public class plusUn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
-        Invoke(nameof(destroyObject), 2f);
+        transform.Translate((Vector3.up + Vector3.right) * (1f * Time.deltaTime));
+
+        // Invoke(nameof(destroyObject), 10f);
         
+
     }
 
     private void destroyObject()
     {
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 
 }

@@ -38,24 +38,33 @@ public class Projectile : MonoBehaviour
         {
             // position du projectile au moment de l'impact
             // Vector3 position = transform.position;
-            
+
             // affichagePoints.transform.position = position;
             // messagePoints = Instantiate(messagePoints, position, Quaternion.identity);
 
+
+            // REMETTRE
             //Destroy this gameobject
             Destroy(gameObject);
-            
+
+
+
             // incrémentation points
+            /*
             int scoreActuel;
             bool a = int.TryParse(txt_Score.text, out scoreActuel);
             score = scoreActuel + nbrPointsParSphere;
             // nbrPoints++;
             // remplacement du score par le nouveau nombre de points
             txt_Score.text = score.ToString();
-            
+            */
+
+
             // si la collision est autre que la cible
         } else if (collision.collider.name != "Player")
         {
+
+            // remettre
             Destroy(gameObject);
         }
     }
