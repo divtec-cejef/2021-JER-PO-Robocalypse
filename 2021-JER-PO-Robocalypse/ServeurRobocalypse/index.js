@@ -100,14 +100,11 @@ app.get('/b', (req, res) => {
     res.send(buff)
 })
 
-<<<<<<< Updated upstream
-=======
 app.get('/reset', (req, res) => {
     arme = "w";
     buff = "b";
 })
 
->>>>>>> Stashed changes
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })

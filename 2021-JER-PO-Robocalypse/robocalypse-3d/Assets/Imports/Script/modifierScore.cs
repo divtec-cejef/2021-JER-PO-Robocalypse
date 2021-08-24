@@ -22,6 +22,8 @@ public class modifierScore : MonoBehaviour
 
     private int ancienRand;
 
+
+    // anciennes positions pour le plus un
     private ArrayList positionsPlusUn = new ArrayList()
     {
         new Vector3(-1.17f, 2.1f, 11.27f),
@@ -76,7 +78,6 @@ public class modifierScore : MonoBehaviour
 
         }
     }
-        
     private void inflate(GameObject objet)
     {
 

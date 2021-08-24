@@ -22,6 +22,11 @@ public class detectCollisionWithPlayer : MonoBehaviour
 
     private Renderer renderer = new Renderer();
 
+    private bool isTouched = false;
+    public int nbrPointsParSphere = 1;
+    private GameObject floatingPoints;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +34,7 @@ public class detectCollisionWithPlayer : MonoBehaviour
         joueur = GameObject.Find(nomCollider);
         // sprite = joueur.GetComponent<SpriteRenderer>();
         renderer = joueur.GetComponent<Renderer>();
+        floatingPoints = GameObject.Find("+1");
     }
 
     // Update is called once per frame
@@ -66,6 +72,23 @@ public class detectCollisionWithPlayer : MonoBehaviour
                 // hasBeenTouched = true;
                 txt_Score.text = "0";
             }
+
+            // apparition du -50.
+            isTouched = true;
+
+
+            if (isTouched && valeurActuelle % 5 == 0)
+            {
+                // faire un random
+                Instantiate(floatingPoints, transform.position + new Vector3(0, 3, -3), Quaternion.identity);
+                // revoir
+                floatingPoints.GetComponent<Animator>().SetFloat("speed", 0.5f);
+                // animator.SetTrigger("PlusUnFloating");
+
+                isTouched = false;
+
+            }
+
 
         }
     }
