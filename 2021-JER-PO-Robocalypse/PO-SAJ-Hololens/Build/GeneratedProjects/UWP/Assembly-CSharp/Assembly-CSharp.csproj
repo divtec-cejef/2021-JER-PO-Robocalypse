@@ -5,14 +5,22 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< Updated upstream
     <ProjectGuid>{c1acb5d0-d06e-4c5e-b307-be966d5118ae}</ProjectGuid>
+=======
+    <ProjectGuid>{f4e6f75f-4232-416c-b173-3b7b82820e6f}</ProjectGuid>
+>>>>>>> Stashed changes
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+<<<<<<< Updated upstream
     <TargetPlatformVersion>10.0.17763.0</TargetPlatformVersion>
+=======
+    <TargetPlatformVersion>10.0.19041.0</TargetPlatformVersion>
+>>>>>>> Stashed changes
     <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
@@ -351,9 +359,15 @@
       <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\GLTFSerializationUWP.dll</HintPath>
       <Private>False</Private>
     </Reference>
+<<<<<<< Updated upstream
     <SDKReference Include="WindowsDesktop, Version=10.0.17763.0"/>
     <SDKReference Include="WindowsMobile, Version=10.0.17763.0"/>
     <SDKReference Include="WindowsTeam, Version=10.0.17763.0"/>
+=======
+    <SDKReference Include="WindowsDesktop, Version=10.0.19041.0"/>
+    <SDKReference Include="WindowsMobile, Version=10.0.19041.0"/>
+    <SDKReference Include="WindowsTeam, Version=10.0.19041.0"/>
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Boundary\Scripts\BoundaryManager.cs">
@@ -2636,6 +2650,7 @@
     <Compile Include="$(UnityProjectDir)Assets\HoloToolkit-Preview\SpectatorView\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\UnityARSessionNativeInterface.cs">
       <Link>HoloToolkit-Preview\SpectatorView\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\UnityARSessionNativeInterface.cs</Link>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Include="$(UnityProjectDir)Assets\Script\CurrentBuff.cs">
       <Link>Script\CurrentBuff.cs</Link>
     </Compile>
@@ -2644,6 +2659,13 @@
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Script\CurrentWeapon.cs">
       <Link>Script\CurrentWeapon.cs</Link>
+=======
+    <Compile Include="$(UnityProjectDir)Assets\Script\HUDCurrentBuff.cs">
+      <Link>Script\HUDCurrentBuff.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Script\HUDCurrentWeapon.cs">
+      <Link>Script\HUDCurrentWeapon.cs</Link>
+>>>>>>> Stashed changes
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Script\Rotate.cs">
       <Link>Script\Rotate.cs</Link>
@@ -2663,7 +2685,11 @@
     <Message Importance="high" Text="Running SerializationWeaver..." />
     <Move SourceFiles="@(IntermediateAssembly)" DestinationFolder="$(TargetDir)Unprocessed" OverwriteReadOnlyFiles="true" />
     <Move SourceFiles="@(IntermediateAssembly-&gt;'%(RelativeDir)%(Filename).pdb')" DestinationFolder="$(TargetDir)Unprocessed" Condition="Exists('@(IntermediateAssembly-&gt;'%(RelativeDir)%(Filename).pdb')')" OverwriteReadOnlyFiles="true" />
+<<<<<<< Updated upstream
     <Exec Command="&quot;$(UnityWSAToolsDir)SerializationWeaver\SerializationWeaver.exe&quot; &quot;$(TargetDir)Unprocessed\$(TargetFileName)&quot; &quot;-pdb&quot; &quot;-verbose&quot; &quot;-unity-engine=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CoreModule.dll&quot; &quot;$([System.IO.Path]::GetFullPath('$(IntermediateOutputPath)').TrimEnd('\'))&quot; &quot;-lock=$([System.IO.Path]::Combine('$(ProjectDir)', 'project.lock.json'))&quot; &quot;@C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\GeneratedProjects\UWP\Assembly-CSharp\SerializationWeaverArgs.txt&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed&quot; &quot;-unity-networking=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll&quot;" />
+=======
+    <Exec Command="&quot;$(UnityWSAToolsDir)SerializationWeaver\SerializationWeaver.exe&quot; &quot;$(TargetDir)Unprocessed\$(TargetFileName)&quot; &quot;-pdb&quot; &quot;-verbose&quot; &quot;-unity-engine=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CoreModule.dll&quot; &quot;$([System.IO.Path]::GetFullPath('$(IntermediateOutputPath)').TrimEnd('\'))&quot; &quot;-lock=$([System.IO.Path]::Combine('$(ProjectDir)', 'project.lock.json'))&quot; &quot;@C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\GeneratedProjects\UWP\Assembly-CSharp\SerializationWeaverArgs.txt&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed&quot; &quot;-unity-networking=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll&quot;" />
+>>>>>>> Stashed changes
     <Message Importance="high" Text="SerializationWeaver done." />
   </Target>
   <PropertyGroup>

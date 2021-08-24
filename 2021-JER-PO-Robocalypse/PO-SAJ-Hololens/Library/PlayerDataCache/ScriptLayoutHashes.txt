@@ -1,6 +1,10 @@
 Metro
 PlayerPath?
+<<<<<<< Updated upstream
 C:/Users/admin/Documents/Unity Copie Test/PO-SAJ-Hololens/Build
+=======
+C:/Users/admin/Desktop/Robocalypse Sync GitHub/2021-JER-PO-Robocalypse/2021-JER-PO-Robocalypse/PO-SAJ-Hololens/Build
+>>>>>>> Stashed changes
 SceneListBegin?
 Assets/InputTapTest.unity
 SceneListEnd?
@@ -193,7 +197,10 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+<<<<<<< Updated upstream
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CurrentBuff
+=======
+>>>>>>> Stashed changes
 98084531bd8a843e71c0cc23d5715994 Assembly-CSharp.dll:HoloToolkit.Unity.UAudioManager
 8f58a5afc906d3cd31a7c7e94317cc54 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.MixedRealityTeleport
 ba66ed51a66e14863f51781e69c657ef Assembly-CSharp.dll:HoloToolkit.UI.Keyboard.KeyboardValueKey
@@ -397,7 +404,10 @@ d7abe84a44f6aed10aea7132d8e34f79 Assembly-CSharp.dll:HoloToolkit.Unity.Boundary.
 027647ed3c077d2129efe22b6bd62a79 Assembly-CSharp.dll:HoloToolkit.Unity.AudioEmitter
 1193c002177eba10253315561d91d3d2 Assembly-CSharp.dll:HoloToolkit.Unity.UX.Parabola
 a61e5da6995674aa29ce3073ac66ed45 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.Examples.Grabbables.GrabbableFixedJoint
+<<<<<<< Updated upstream
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CurrentBuff1
+=======
+>>>>>>> Stashed changes
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.Preview.SpectatorView.CameraCaptureHololens
 524356edcc2977b98283bcbebbcc6c06 Assembly-CSharp.dll:HoloToolkit.Unity.UX.BoundingBox
 5affa557520c9b1ad67d2162d963829a Assembly-CSharp.dll:HoloToolkit.UI.Keyboard.UICollection
@@ -440,7 +450,10 @@ ce6c7e75053148ec4aa1b34a66396c1b Assembly-CSharp.dll:HoloToolkit.Unity.InputModu
 19d64a25ae27d745a50bc0a4f715e564 Assembly-CSharp.dll:HoloToolkit.Examples.InteractiveElements.NoteDataProvider
 82ab289784efa128d12a345757279219 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.Examples.Grabbables.RotatableObject
 944e77c5a749303cb0f26ffb94dfcbe5 Assembly-CSharp.dll:HoloToolkit.Examples.SpatialUnderstandingFeatureOverview.UI
+<<<<<<< Updated upstream
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CurrentWeapon
+=======
+>>>>>>> Stashed changes
 f7cf9e253f09e4ec8daa4fc98b6daae3 Assembly-CSharp.dll:HoloToolkit.UI.Keyboard.KeyboardInputField
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Examples.Prototyping.SceneSwitcher
 952bc8ce2ca727c70d8e698a24875af8 Assembly-CSharp.dll:HoloToolkit.Examples.Prototyping.CycleStatusDisplay
@@ -522,10 +535,18 @@ f1dddc522eb4451a473352e2116e6cff Assembly-CSharp.dll:HoloToolkit.Unity.InputModu
 1c956525f3bbc043ebd0ce75f92a03c6 Assembly-CSharp.dll:HoloToolkit.Unity.SharingWithUNET.NetworkDiscoveryWithAnchors
 ff37e04a523045f4866508e6e686c819 Assembly-CSharp.dll:HoloToolkit.Examples.Prototyping.PanelTransformSize
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.SharingWithUNET.SharedCollection
+<<<<<<< Updated upstream
+=======
+8503942524bda1117920eb635f314b36 Assembly-CSharp.dll:.HUDCurrentWeapon
+>>>>>>> Stashed changes
 843980f90e915da29bb6f3eadb5d5d57 Assembly-CSharp.dll:HoloToolkit.Unity.SimpleTagalong
 ca8435a0247c955e3fc71ac883949806 Assembly-CSharp.dll:HoloToolkit.Examples.UX.LoadingAnimation
 61f8aab2c3edaf29b06c5fd8624fb8f3 Assembly-CSharp.dll:HoloToolkit.Unity.HeadsetAdjustment
 6c590d89a560ff55e999caaec3baf923 Assembly-CSharp.dll:HoloToolkit.Unity.SpatialMapping.TapToPlace
+<<<<<<< Updated upstream
+=======
+15d20f382f317333d2518b0e2b9e2ce7 Assembly-CSharp.dll:.HUDCurrentBuff
+>>>>>>> Stashed changes
 fcd6246ea60cf9f6696ce1cd793a10e8 Assembly-CSharp.dll:HoloToolkit.Unity.FixedAngularSize
 f4447a27df83c5e0a29e17a420c80e21 Assembly-CSharp.dll:HoloToolkit.UX.ToolTips.ToolTipBackgroundBlob
 9a19040f4ee5fa0c8bbd861c5bdeb9b6 Assembly-CSharp.dll:HoloToolkit.Unity.Buttons.CompoundButtonAnim

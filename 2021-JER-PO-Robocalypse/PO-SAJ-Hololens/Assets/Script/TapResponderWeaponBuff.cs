@@ -17,8 +17,13 @@ namespace HoloToolkit.Unity.InputModule.Tests
 
         private Renderer renderer;
         private Boolean IsClicked = false;
+<<<<<<< Updated upstream
         private string URL = "http://192.168.1.11:8080/";
         private string tempURL = "http://192.168.1.11:8080/";
+=======
+        private string URL = "http://192.168.1.12:8080/";
+        private string tempURL = "http://192.168.1.12:8080/";
+>>>>>>> Stashed changes
 
         public bool isWeapon;
         public string value;
