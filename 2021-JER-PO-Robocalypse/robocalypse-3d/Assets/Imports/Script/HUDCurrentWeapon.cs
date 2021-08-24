@@ -8,7 +8,7 @@ public class HUDCurrentWeapon : MonoBehaviour
 {
 
     private Image weapon;
-    private string URL = "http://192.168.1.11:8080/w/";
+    private string URL = "http://192.168.1.12:8080/w/";
 
     public Sprite wRed;
     public Sprite wBlue;

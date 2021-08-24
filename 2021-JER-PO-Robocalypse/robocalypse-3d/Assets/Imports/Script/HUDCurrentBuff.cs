@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 public class HUDCurrentBuff : MonoBehaviour
 {
      private Image buff;
-     private string URL = "http://192.168.1.11:8080/b/";
+     private string URL = "http://192.168.1.12:8080/b/";
  
      public Sprite bJump;
      public Sprite bShield;

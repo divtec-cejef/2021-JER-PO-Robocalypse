@@ -20,17 +20,18 @@ namespace Imports.Script
         {
             hasTouchedTheGround = false;
             initialPosition = transform.localScale;
-            m_rigidbody = GetComponent<Rigidbody>();
+            // m_rigidbody = transform.GetComponent<Rigidbody>();
         }
 
         // Update is called once per frame
         void Update()
         {
-            if (hasTouchedTheGround)
+            /*if (hasTouchedTheGround)
             {
                 m_rigidbody.AddForce(Vector3.back * speed);
 
-            }
+            }*/
+            transform.Translate(Vector3.back * (speed * Time.deltaTime));
             // canDelete = detectCollisionWithPlayer.Instance.Can
         
 
@@ -50,10 +51,10 @@ namespace Imports.Script
         }
         void OnCollisionEnter(Collision collision)
         {
-
             hasTouchedTheGround = true;
 
-            if (collision.collider.name.StartsWith("Ground"))
+            /*
+             * if (collision.collider.name.StartsWith("Ground"))
             {
             
                 float XScale = transform.localScale.x;
@@ -66,8 +67,9 @@ namespace Imports.Script
                 // transform.localScale = new Vector3(YScale, 0.4f, 0.05f);
 
 
-            }
-            else if (collision.collider.name == "astronaute")
+            //}
+            
+            if (collision.collider.name == "astronaute")
             {
                 Destroy(gameObject);
                 // décrémenter le score du joueur 
@@ -81,7 +83,7 @@ namespace Imports.Script
 
         private void OnCollisionExit(Collision other)
         {
-            transform.localScale = initialPosition;
+            // transform.localScale = initialPosition;
         }
 
     }

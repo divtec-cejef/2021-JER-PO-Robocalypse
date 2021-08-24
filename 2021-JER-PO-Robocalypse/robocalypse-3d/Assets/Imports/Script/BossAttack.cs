@@ -33,7 +33,7 @@ public class BossAttack : MonoBehaviour
     private ArrayList positionsTuiles = new ArrayList()
     {
         (new Vector3(-4.14f, 17, 9.62f)),
-        (new Vector3(-2.2f, 17, 9.62f)),
+        (new Vector3(-2.2f, 17, 9.62f)), // 17
         (new Vector3(-0.2f, 17, 9.62f)),
         (new Vector3(1.79f, 17, 9.62f)),
         (new Vector3(3.79f, 17, 9.62f))
@@ -41,12 +41,12 @@ public class BossAttack : MonoBehaviour
 
     ArrayList positionsPizzas = new ArrayList()
         {
-            (new Vector3(-4.12f, 1.878f, 10.44f)),
-            (new Vector3(-2.17f, 1.878f, 10.44f)),
-            (new Vector3(-0.15f, 1.878f, 10.44f)),
-            (new Vector3(1.82f, 1.878f, 10.44f)),
-            (new Vector3(3.82f, 1.878f, 10.44f)),
-            (new Vector3(-0.15f, 1.878f, 10.44f))
+            (new Vector3(-4.12f, 1.870f, 10.44f)), // 1.878F pour tous
+            (new Vector3(-2.17f, 1.870f, 10.44f)),
+            (new Vector3(-0.15f, 1.870f, 10.44f)),
+            (new Vector3(1.82f, 1.870f, 10.44f)),
+            (new Vector3(3.82f, 1.870f, 10.44f)),
+            (new Vector3(-0.15f, 1.870f, 10.44f))
         };
 
 
@@ -114,14 +114,14 @@ public class BossAttack : MonoBehaviour
         int rand = Random.Range(0, positionsTuiles.Count - 1);
 
 
-        Vector3 positionDepartProjectiles = (Vector3)positionsTuiles[rand];
+        Vector3 positionDepartProjectiles = (Vector3)positionsTuiles[rand] - new Vector3(0, 0.4f, 0);
 
         // Création d'une instance de projectile
         GameObject tomate = Instantiate(modeleTomate, positionDepartProjectiles, Quaternion.identity) as GameObject;
 
         positionsTuiles.RemoveAt(rand);
 
-        tomate.GetComponent<Rigidbody>().useGravity = true;
+        // tomate.GetComponent<Rigidbody>().useGravity = true;
 
         
 
