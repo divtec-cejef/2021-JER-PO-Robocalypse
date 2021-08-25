@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +13,7 @@ public class modifierScore : MonoBehaviour
 
     private static int score;
 
-    private Text txt_score;
+    private TextMeshProUGUI txt_score;
 
     //private GameObject floatingPoints;
 
@@ -21,6 +22,10 @@ public class modifierScore : MonoBehaviour
     private string nomProjectiles = "projectile";
 
     private int ancienRand;
+
+    private GameObject expressionBoss;
+    private GameObject projectile;
+
 
 
     // anciennes positions pour le plus un
@@ -36,8 +41,10 @@ public class modifierScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        txt_score = GameObject.Find("txt_Score").GetComponent<Text>();
+        txt_score = GameObject.Find("txt_Score").GetComponent<TextMeshProUGUI>();
         //floatingPoints = GameObject.Find("+1");
+
+        expressionBoss = GameObject.FindWithTag("expressionBoss");
     }
 
     // Update is called once per frame
@@ -51,41 +58,49 @@ public class modifierScore : MonoBehaviour
     {
         if (collision.collider.name.StartsWith("projectile"))
         {
+
+            string couleurProjectile = collision.collider.name;
+
+            // traitement chaine caract
+            couleurProjectile = couleurProjectile.Remove(0, 11); // retourne "bleu(Clone)"
+
+            string exprBoss = expressionBoss.GetComponent<SpriteRenderer>().sprite.name;
+
+            exprBoss = exprBoss.Remove(0, 7); // 7 // retourne "bleu"
+
             isTouched = true;
-            
+
             int scoreActuel;
             bool a = int.TryParse(txt_score.text, out scoreActuel);
-            score = scoreActuel + nbrPointsParSphere;
 
-            // remplacement
-            txt_score.text = score.ToString();
-           
-            
-           // if (isTouched  && scoreActuel % 5 == 0)
+            if (couleurProjectile.Contains(exprBoss))
+            {
+                // on incrémente le score uniquement si les projectiles sont de la même couleur que le visage du boss
+                score = scoreActuel + nbrPointsParSphere;
+
+                // remplacement
+                txt_score.text = score.ToString();
+            }
+
+
+            // if (isTouched  && scoreActuel % 5 == 0)
             //{
-                // faire un random
-             //   Instantiate(floatingPoints, (Vector3)positionsPlusUn[1]/*transform.position + new Vector3(0, 3, -3)*/, Quaternion.identity);
-                // revoir
-                //floatingPoints.GetComponent<Animator>().SetFloat("speed", 0.5f);
-                // animator.SetTrigger("PlusUnFloating");
+            // faire un random
+            //   Instantiate(floatingPoints, (Vector3)positionsPlusUn[1]/*transform.position + new Vector3(0, 3, -3)*/, Quaternion.identity);
+            // revoir
+            //floatingPoints.GetComponent<Animator>().SetFloat("speed", 0.5f);
+            // animator.SetTrigger("PlusUnFloating");
 
-               // isTouched = false;
+            // isTouched = false;
 
-           // }
+            // }
 
 
 
 
         }
     }
-    private void inflate(GameObject objet)
-    {
-
-        
-
-        // transform.Translate(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical") * 4 * Time.deltaTime);
-
-    }
+   
     private void destroyObject()
     {
         // Destroy(infoScore);

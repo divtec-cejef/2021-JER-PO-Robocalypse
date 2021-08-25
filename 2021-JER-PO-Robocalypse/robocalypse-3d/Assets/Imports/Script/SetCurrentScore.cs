@@ -13,7 +13,7 @@ public class SetCurrentScore : MonoBehaviour
     void Start()
     {
         nomEquipe.text = InformationJoueur.nomEquipe;
-        scoreEquipe.text =  InformationJoueur.scoreEquipe.ToString();
+        scoreEquipe.text = InformationJoueur.scoreEquipe.ToString();
         
     }
 

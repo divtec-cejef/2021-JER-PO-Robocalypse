@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 using System.Security.Cryptography.X509Certificates;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
@@ -18,7 +19,7 @@ public class detectCollisionWithPlayer : MonoBehaviour
 
     private SpriteRenderer sprite;
 
-    private Text txt_Score;
+    private TextMeshProUGUI txt_Score;
 
     private Renderer renderer = new Renderer();
 
@@ -31,7 +32,7 @@ public class detectCollisionWithPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        txt_Score = GameObject.Find("txt_Score").GetComponent<Text>();
+        txt_Score = GameObject.Find("txt_Score").GetComponent<TextMeshProUGUI>();
         joueur = GameObject.Find(nomCollider);
         // sprite = joueur.GetComponent<SpriteRenderer>();
         renderer = joueur.GetComponent<Renderer>();

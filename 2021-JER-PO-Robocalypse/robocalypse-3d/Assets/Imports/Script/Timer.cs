@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
     public float timeRemaining = 10;
     public bool timerIsRunning = false;
-    public Text timeText;
+    public TMPro.TextMeshProUGUI timeText;
+    public TextMeshProUGUI score;
 
     private void Start()
     {
@@ -26,9 +29,11 @@ public class Timer : MonoBehaviour
             }
             else
             {
+                InformationJoueur.scoreEquipe = int.Parse(score.text);
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                SceneManager.LoadScene("Scenes/Scene_Main");
             }
         }
     }
