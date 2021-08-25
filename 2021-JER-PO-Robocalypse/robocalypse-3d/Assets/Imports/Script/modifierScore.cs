@@ -14,7 +14,7 @@ public class modifierScore : MonoBehaviour
 
     private Text txt_score;
 
-    private GameObject floatingPoints;
+    //private GameObject floatingPoints;
 
     private Animator animator;
 
@@ -37,7 +37,7 @@ public class modifierScore : MonoBehaviour
     void Start()
     {
         txt_score = GameObject.Find("txt_Score").GetComponent<Text>();
-        floatingPoints = GameObject.Find("+1");
+        //floatingPoints = GameObject.Find("+1");
     }
 
     // Update is called once per frame
@@ -59,19 +59,19 @@ public class modifierScore : MonoBehaviour
 
             // remplacement
             txt_score.text = score.ToString();
-
+           
             
-            if (isTouched  && scoreActuel % 5 == 0)
-            {
+           // if (isTouched  && scoreActuel % 5 == 0)
+            //{
                 // faire un random
-                Instantiate(floatingPoints, (Vector3)positionsPlusUn[1]/*transform.position + new Vector3(0, 3, -3)*/, Quaternion.identity);
+             //   Instantiate(floatingPoints, (Vector3)positionsPlusUn[1]/*transform.position + new Vector3(0, 3, -3)*/, Quaternion.identity);
                 // revoir
-                floatingPoints.GetComponent<Animator>().SetFloat("speed", 0.5f);
+                //floatingPoints.GetComponent<Animator>().SetFloat("speed", 0.5f);
                 // animator.SetTrigger("PlusUnFloating");
 
-                isTouched = false;
+               // isTouched = false;
 
-            }
+           // }
 
 
 
