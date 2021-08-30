@@ -52,9 +52,10 @@ public class HUDCurrentBuff : MonoBehaviour
                 forme.sprite = fAnvil;
                  break;
             default:
-                forme.enabled = false;
+                forme.enabled = true;
+                forme.sprite = fHuman;
                 break;
-         }
+        }
  
      }
 }

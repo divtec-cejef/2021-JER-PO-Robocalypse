@@ -3,7 +3,9 @@ using UnityEngine;
 namespace Imports.Script
 {
     public class deplacementTomates : MonoBehaviour{
-        
+
+        private ParticleSystem tomato_particles;
+
         public float speed = 7f;
 
         private Vector3 initialPosition;
@@ -20,6 +22,10 @@ namespace Imports.Script
         {
             hasTouchedTheGround = false;
             initialPosition = transform.localScale;
+
+            tomato_particles = GameObject.Find("tomato_particles").GetComponent<ParticleSystem>();
+
+            tomato_particles.Stop();
             // m_rigidbody = transform.GetComponent<Rigidbody>();
         }
 
@@ -71,6 +77,7 @@ namespace Imports.Script
             
             if (collision.collider.name == "astronaute")
             {
+                tomato_particles.Play();
                 Destroy(gameObject);
                 // décrémenter le score du joueur 
                 // faire clignoter le joueur en rouge

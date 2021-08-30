@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class modifierScore : MonoBehaviour
 {
+    private ParticleSystem boss_particles;
 
     private bool isTouched = false;
 
@@ -45,6 +46,10 @@ public class modifierScore : MonoBehaviour
         //floatingPoints = GameObject.Find("+1");
 
         expressionBoss = GameObject.FindWithTag("expressionBoss");
+
+        boss_particles = GameObject.Find("boss_particles").GetComponent<ParticleSystem>();
+
+        boss_particles.Stop();
     }
 
     // Update is called once per frame
@@ -80,7 +85,11 @@ public class modifierScore : MonoBehaviour
 
                 // remplacement
                 txt_score.text = score.ToString();
+
+                boss_particles.Play();
             }
+
+            
 
 
             // if (isTouched  && scoreActuel % 5 == 0)

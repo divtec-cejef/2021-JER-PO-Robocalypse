@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossAttack : MonoBehaviour
 {
+    private ParticleSystem tomato_particles;
 
     private GameObject projectile;
     public float vitesse = 5;
@@ -30,6 +31,8 @@ public class BossAttack : MonoBehaviour
     */
    // private ArrayList anciensRandPizzas = new ArrayList(){ 1, 2, 3, 4, 5};
 
+    
+
     private ArrayList positionsTuiles = new ArrayList()
     {
         (new Vector3(-4.14f, 17, 9.62f)),
@@ -52,6 +55,21 @@ public class BossAttack : MonoBehaviour
 
     public Animator animator;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        modeleCarotte = GameObject.Find("carrot");
+        modeleTomate = GameObject.Find("Tomate");
+        modelePizza = GameObject.Find("pizza");
+
+        // Invoke("SchemaAttaque", 1);
+        tomato_particles = GameObject.Find("tomato_particles").GetComponent<ParticleSystem>();
+
+        tomato_particles.Stop(); // ne marche pas
+
+        InvokeRepeating("SchemaAttaque", 1, 5f);
+
+    }
 
     void ApparitionPizza()
     {
@@ -117,7 +135,9 @@ public class BossAttack : MonoBehaviour
         Vector3 positionDepartProjectiles = (Vector3)positionsTuiles[rand] - new Vector3(0, 0.4f, 0);
 
         // Création d'une instance de projectile
+        
         GameObject tomate = Instantiate(modeleTomate, positionDepartProjectiles, Quaternion.identity) as GameObject;
+        
 
         positionsTuiles.RemoveAt(rand);
 
@@ -162,6 +182,7 @@ public class BossAttack : MonoBehaviour
     {
 
         yield return StartCoroutine(AnimationTomate());
+        
         ApparitionTomate();
         animator.Play("static_fly_1");
     }
@@ -272,20 +293,7 @@ public class BossAttack : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        modeleCarotte = GameObject.Find("carrot");
-        modeleTomate = GameObject.Find("Tomate");
-        modelePizza = GameObject.Find("pizza");
-
-        // Invoke("SchemaAttaque", 1);
-
-
-        InvokeRepeating("SchemaAttaque", 1, 5f);
-
-       
-    }
+    
 
     // Update is called once per frame
     void Update()

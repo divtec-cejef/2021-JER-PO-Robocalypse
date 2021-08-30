@@ -49,7 +49,8 @@ public class HUDCurrentWeapon : MonoBehaviour
                 weapon.sprite = wBlue;
                 break;
             default:
-                weapon.enabled = false;
+                weapon.enabled = true;
+                weapon.sprite = wBlue;
                 break;
         }
         

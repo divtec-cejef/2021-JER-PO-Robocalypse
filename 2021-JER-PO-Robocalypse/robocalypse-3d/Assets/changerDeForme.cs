@@ -5,11 +5,14 @@ using UnityEngine.Networking;
 
 public class changerDeForme : MonoBehaviour
 {
+    private ParticleSystem transformation_particles;
+
     private Sprite ballon;
     private Sprite enclume;
     public Sprite astronauteSprite;
     // private Sprite astronaute;
     private GameObject astronaute;
+    private Sprite spriteActuel;
 
     private string URL = "http://192.168.1.12:8080/f/";
 
@@ -23,13 +26,17 @@ public class changerDeForme : MonoBehaviour
 
         astronaute = GameObject.Find("astronaute");
         formeAstronaute = astronaute.GetComponent<SpriteRenderer>();
-        
+
+        transformation_particles = GameObject.Find("transformation_particles").GetComponent<ParticleSystem>();
+
+        transformation_particles.Stop();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        spriteActuel = formeAstronaute.sprite;
         //formeAstronaute.sprite = astronauteSprite;
         StartCoroutine(changeForme());
     }
@@ -45,13 +52,31 @@ public class changerDeForme : MonoBehaviour
 
         if (value == "fBallon")
         {
-            formeAstronaute.sprite = ballon;
+            if (spriteActuel.name != "ballon")
+            {
+                formeAstronaute.sprite = ballon;
+                //formeAstronaute.size
+                transformation_particles.Play();
+
+            }
         } else if(value == "fAnvil")
         {
-            formeAstronaute.sprite = enclume;
+            if (spriteActuel.name != "enclume")
+            {
+                formeAstronaute.sprite = enclume;
+                //astronaute.transform.localScale = 
+                //formeAstronaute.size = new Vector3(0.5f, 0.5f, 1.2f);
+                //formeAstronaute.size = new Vector3(10f, 5f, 1f);
+                transformation_particles.Play();
+            }
         } else if(value == "fHuman")
         {
-            formeAstronaute.sprite = astronauteSprite;
+            if (spriteActuel.name != "astronaute")
+            {
+                formeAstronaute.sprite = astronauteSprite;
+                transformation_particles.Play();
+            }
         }
+        
     }
 }

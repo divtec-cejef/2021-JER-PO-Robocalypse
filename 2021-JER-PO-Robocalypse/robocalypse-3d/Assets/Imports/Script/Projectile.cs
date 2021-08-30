@@ -7,7 +7,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Projectile : MonoBehaviour
-{
+{ 
+
     public string nomCible = "Cible";
 
     public int nbrPointsParSphere = 1;
@@ -22,6 +23,8 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         txt_Score = GameObject.Find("txt_Score").GetComponent<Text>();
+
+       
 
         // messagePoints.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Assets/Imports/HUD/score/+1.png");
     }
@@ -45,8 +48,9 @@ public class Projectile : MonoBehaviour
 
             // REMETTRE
             //Destroy this gameobject
+            
             Destroy(gameObject);
-
+            
 
 
             // incrémentation points

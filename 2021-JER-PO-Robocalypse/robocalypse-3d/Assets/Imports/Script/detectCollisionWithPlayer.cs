@@ -13,6 +13,7 @@ using UnityEngine.UI;
 
 public class detectCollisionWithPlayer : MonoBehaviour
 {
+
     public int nbrPointsPenalite = 100;
     public string nomCollider = "astronaute";
     private GameObject joueur;
@@ -38,6 +39,10 @@ public class detectCollisionWithPlayer : MonoBehaviour
         renderer = joueur.GetComponent<Renderer>();
         floatingPoints = GameObject.Find("-50");
         posAstronaute = GameObject.Find(nomCollider);
+
+        
+
+
     }
 
     // Update is called once per frame
@@ -53,6 +58,10 @@ public class detectCollisionWithPlayer : MonoBehaviour
         // afficher "-1" ou "+1" avec animation
         if (collision.collider.name == nomCollider)
         {
+            
+               
+            
+
             // renderer.material.color = Color.red;
 
             clignoter();

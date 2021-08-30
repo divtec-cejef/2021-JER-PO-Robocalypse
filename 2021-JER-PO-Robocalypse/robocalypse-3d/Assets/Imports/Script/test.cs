@@ -6,10 +6,20 @@ public class test : MonoBehaviour
 {
 
     public Renderer renderer;
-    
+
+    public ParticleSystem tomato_particles;
+    private ParticleSystem carrot_particles;
+    private ParticleSystem pizza_particles;
+
     // Start is called before the first frame update
     void Start()
     {
+        carrot_particles = GameObject.Find("carrot_particles").GetComponent<ParticleSystem>();
+        pizza_particles = GameObject.Find("pizza_particles").GetComponent<ParticleSystem>();
+
+        tomato_particles.Stop();
+        carrot_particles.Stop();
+        pizza_particles.Stop();
     }
 
     // Update is called once per frame
@@ -46,8 +56,21 @@ public class test : MonoBehaviour
             // messagePoints = Instantiate(messagePoints, position, Quaternion.identity);
 
             //Destroy this gameobject
+            if (collision.gameObject.name == "pizza(Clone)")
+            {
+                pizza_particles.Play();
+            }
+            else if (collision.gameObject.name == "Tomate(Clone)")
+            {
+                tomato_particles.Play();
+            }
+            else if (collision.gameObject.name == "carrot(Clone)")
+            {
+                carrot_particles.Play();
+            }
             StartCoroutine(ClignoterJoueur());
 
+          
             // incrémentation points
             // nbrPoints++;
 
