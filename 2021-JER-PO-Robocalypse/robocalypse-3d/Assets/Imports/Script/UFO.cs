@@ -38,7 +38,10 @@ public class UFO : MonoBehaviour
         // position de l'UFo de départ
         choix = positionsPossibles[0];
         InvokeRepeating(nameof(UFOposition), .1f, 1.9f);
-        
+
+        // rafraîchissement UFO (éviter bug)
+        this.enabled = false;
+        this.enabled = true;
     }
 
     // Update is called once per frame
