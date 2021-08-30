@@ -14,6 +14,8 @@ public class UFO : MonoBehaviour
     private Vector3 choix;
     private Vector3 ancien;
 
+    private SpriteRenderer formeAstronaute;
+
     // Positions où l'UFO se déplacera la prochaine fois
     // private Vector3 futurePosition;
     Vector3[] positionsPossibles = {(new Vector3(-0.8f, 0.7f, 0.5f)),
@@ -42,6 +44,8 @@ public class UFO : MonoBehaviour
         // rafraîchissement UFO (éviter bug)
         this.enabled = false;
         this.enabled = true;
+
+        formeAstronaute = GameObject.Find("astronaute").GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -67,6 +71,11 @@ public class UFO : MonoBehaviour
     void UFOposition()
     {
         int rand = Random.Range(0, positionsPossibles.Length);
+
+        if (formeAstronaute.sprite.name == "enclume")
+        {
+            rand = Random.Range(0, positionsPossibles.Length - 4);
+        }
         
         choix = positionsPossibles[rand];
         if (choix == ancien)

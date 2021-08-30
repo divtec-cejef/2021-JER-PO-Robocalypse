@@ -1016,6 +1016,7 @@
     <Compile Include="Assets\Script\HUDCurrentBuff.cs" />
     <Compile Include="Assets\Script\HUDCurrentWeapon.cs" />
     <Compile Include="Assets\Script\Rotate.cs" />
+    <Compile Include="Assets\Script\TapPractice.cs" />
     <Compile Include="Assets\Script\TapResponderWeaponBuff.cs" />
   </ItemGroup>
   <ItemGroup>

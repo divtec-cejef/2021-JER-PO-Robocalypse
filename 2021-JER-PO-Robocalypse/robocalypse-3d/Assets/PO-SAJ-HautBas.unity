@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12e51a9a4504cc040acdb393d905ee24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 120
+  timeRemaining: 10
   timerIsRunning: 0
   timeText: {fileID: 46961601}
   score: {fileID: 1493671980}
@@ -8409,7 +8409,7 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 14.22, y: 15.27}
-  m_AdaptiveModeThreshold: 0.584
+  m_AdaptiveModeThreshold: 0.556
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
@@ -8527,6 +8527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   astronauteSprite: {fileID: 21300000, guid: d8a935f8a580ddb49ae31252b5a99901, type: 3}
+  boxCollider: {fileID: 1238766527}
 --- !u!1 &1269200005
 GameObject:
   m_ObjectHideFlags: 0

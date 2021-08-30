@@ -13,6 +13,7 @@ public class changerDeForme : MonoBehaviour
     // private Sprite astronaute;
     private GameObject astronaute;
     private Sprite spriteActuel;
+    public BoxCollider boxCollider;
 
     private string URL = "http://192.168.1.12:8080/f/";
 
@@ -30,7 +31,7 @@ public class changerDeForme : MonoBehaviour
         transformation_particles = GameObject.Find("transformation_particles").GetComponent<ParticleSystem>();
 
         transformation_particles.Stop();
-
+        
     }
 
     // Update is called once per frame
@@ -52,8 +53,12 @@ public class changerDeForme : MonoBehaviour
 
         if (value == "fBallon")
         {
+            astronaute.transform.localScale = new Vector3(0.25f, 0.25f, 0.15f);
+            boxCollider.center = new Vector3(0f, 0f, 0f);
+            boxCollider.size = new Vector3(5f, 8f, 1f);
             if (spriteActuel.name != "ballon")
             {
+                
                 formeAstronaute.sprite = ballon;
                 //formeAstronaute.size
                 transformation_particles.Play();
@@ -61,18 +66,27 @@ public class changerDeForme : MonoBehaviour
             }
         } else if(value == "fAnvil")
         {
+            astronaute.transform.localScale = new Vector3(0.35f, 0.3f, 0.15f);
+            boxCollider.center = new Vector3(0f, 0f, 0f);
+            boxCollider.size = new Vector3(5f, 4f, 1f);
             if (spriteActuel.name != "enclume")
             {
+
                 formeAstronaute.sprite = enclume;
                 //astronaute.transform.localScale = 
                 //formeAstronaute.size = new Vector3(0.5f, 0.5f, 1.2f);
-                //formeAstronaute.size = new Vector3(10f, 5f, 1f);
+                formeAstronaute.size = new Vector3(10f, 5f, 1f);
                 transformation_particles.Play();
             }
         } else if(value == "fHuman")
         {
+            boxCollider.center = new Vector3(1.2286f, -2.57f, 0);
+            boxCollider.size = new Vector3(7.5537f, 13.44f, 1);
+            astronaute.transform.localScale = new Vector3(0.15f, 0.15f, 0.15f);
             if (spriteActuel.name != "astronaute")
             {
+
+                astronaute.transform.position += new Vector3(0f, 1f, 0f);
                 formeAstronaute.sprite = astronauteSprite;
                 transformation_particles.Play();
             }

@@ -98,7 +98,7 @@ public class MovePlayerAndJump : MonoBehaviour
 
                 if (formeAstronaute.sprite.name == "ballon")
                 {
-                    playerTransform.position = new Vector3(playerTransform.position.x, 3f, playerTransform.position.z);
+                    playerTransform.position = new Vector3(playerTransform.position.x, 2.5f, playerTransform.position.z);
                     //rb.constraints = RigidbodyConstraints.FreezeAll;
                 } else
                 {
