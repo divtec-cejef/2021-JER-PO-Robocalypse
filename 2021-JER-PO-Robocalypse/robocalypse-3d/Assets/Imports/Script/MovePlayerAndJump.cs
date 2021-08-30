@@ -15,12 +15,17 @@ public class MovePlayerAndJump : MonoBehaviour
     public Transform playerTransform;
     public Rigidbody rb;
     public Animator animator;
+
+    private SpriteRenderer formeAstronaute;
+    private GameObject astronaute;
     
     // Start is called before the first frame update
     void Start()
     {
         rb.GetComponent<Rigidbody>();
         playerBoxCol = GetComponent<BoxCollider>();
+        astronaute = GameObject.Find("astronaute");
+        formeAstronaute = astronaute.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -41,7 +46,7 @@ public class MovePlayerAndJump : MonoBehaviour
             // Si le joueur est en train de se baisser, l'empêche de pouvoir se déplacer
             if (playerIsSneaking)
             {
-                if (Input.GetKeyUp("s"))
+                if (formeAstronaute.sprite.name != "enclume")
                 {
                     playerIsSneaking = false;
                     playerTransform.position = new Vector3(playerTransform.position.x, playerTransform.position.y + 0.2f,
@@ -63,19 +68,23 @@ public class MovePlayerAndJump : MonoBehaviour
                 {
                     if (!(horizontal.x <= 0 && transform.position.x <= -4.7f))
                     {
-                        // Fait avancer le personnage
-                        transform.Translate(Time.deltaTime * speed * BestAxis(horizontal, vertical));
+                        if (formeAstronaute.sprite.name != "ballon")
+                        {
+                            // Fait avancer le personnage
+                            transform.Translate(Time.deltaTime * speed * BestAxis(horizontal, vertical));
+                        }
                     }
                 }
 
                     //s'accroupir
-                if (Input.GetKeyDown("s"))
+                if (formeAstronaute.sprite.name == "enclume")
                 {
                     playerIsSneaking = true;
                     playerBoxCol.size = new Vector3(7.5537f, 10.4485f, 1);
                     playerBoxCol.center = new Vector3(1.2286f, -0.5755f, 0);
                 }
                 
+                /*
                 // le saut
                 if (Input.GetButtonDown("Jump") && playerIsOnTheGround)
                 {
@@ -84,6 +93,18 @@ public class MovePlayerAndJump : MonoBehaviour
                     rb.AddForce(new Vector3(0,5,0), ForceMode.Impulse);
                     playerIsOnTheGround = false;
                     playerCanMove = false;
+                }
+                */
+
+                if (formeAstronaute.sprite.name == "ballon")
+                {
+                    playerTransform.position = new Vector3(playerTransform.position.x, 3.5f, playerTransform.position.z);
+                    //rb.constraints = RigidbodyConstraints.FreezeAll;
+                    Physics.IgnoreLayerCollision(3, 8, true);
+                } else
+                {
+                    //rb.constraints = RigidbodyConstraints.None;
+                    Physics.IgnoreLayerCollision(3, 8, false);
                 }
             }
         }

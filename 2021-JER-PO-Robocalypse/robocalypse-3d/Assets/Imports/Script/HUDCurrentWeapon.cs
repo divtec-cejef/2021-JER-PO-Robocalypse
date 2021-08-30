@@ -12,8 +12,6 @@ public class HUDCurrentWeapon : MonoBehaviour
 
     public Sprite wRed;
     public Sprite wBlue;
-    public Sprite wYellow;
-    public Sprite wGreen;
 
 
     // Start is called before the first frame update
@@ -49,14 +47,6 @@ public class HUDCurrentWeapon : MonoBehaviour
             case "wBlue":
                 weapon.enabled = true;
                 weapon.sprite = wBlue;
-                break;
-            case "wYellow":
-                weapon.enabled = true;
-                weapon.sprite = wYellow;
-                break;
-            case "wGreen":
-                weapon.enabled = true;
-                weapon.sprite = wGreen;  
                 break;
             default:
                 weapon.enabled = false;

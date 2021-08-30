@@ -1010,6 +1010,9 @@
     <Compile Include="Assets\HoloToolkit-Preview\SpectatorView\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARTrackingStateReason.cs" />
     <Compile Include="Assets\HoloToolkit-Preview\SpectatorView\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARUserAnchor.cs" />
     <Compile Include="Assets\HoloToolkit-Preview\SpectatorView\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\UnityARSessionNativeInterface.cs" />
+    <Compile Include="Assets\Script\CurrentBuff.cs" />
+    <Compile Include="Assets\Script\CurrentBuff1.cs" />
+    <Compile Include="Assets\Script\CurrentWeapon.cs" />
     <Compile Include="Assets\Script\HUDCurrentBuff.cs" />
     <Compile Include="Assets\Script\HUDCurrentWeapon.cs" />
     <Compile Include="Assets\Script\Rotate.cs" />

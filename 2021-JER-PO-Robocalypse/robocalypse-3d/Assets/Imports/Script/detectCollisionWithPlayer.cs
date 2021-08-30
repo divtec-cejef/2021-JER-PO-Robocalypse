@@ -23,7 +23,7 @@ public class detectCollisionWithPlayer : MonoBehaviour
 
     private Renderer renderer = new Renderer();
 
-    private bool isTouched = false;
+    private bool isTouched;
     public int nbrPointsParSphere = 1;
     private GameObject floatingPoints;
     private GameObject posAstronaute;

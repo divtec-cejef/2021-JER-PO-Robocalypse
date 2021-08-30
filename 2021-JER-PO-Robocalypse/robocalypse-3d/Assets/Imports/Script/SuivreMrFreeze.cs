@@ -18,6 +18,9 @@ public class SuivreMrFreeze : MonoBehaviour
         visageBossSprite = angryFace.GetComponent<SpriteRenderer>();
 
         visageBossSprite.transform.Rotate(0, 0, 90F);
+
+        StartCoroutine(changeFace());
+
     }
 
     // Update is called once per frame
@@ -31,5 +34,18 @@ public class SuivreMrFreeze : MonoBehaviour
         transform.localRotation = mrFreeze.transform.localRotation /** Quaternion.Euler(0f, 0f, -90f)*/;
         transform.rotation *= Quaternion.Euler(0f, 0f, -90f);
 
+
+
+    }
+
+    IEnumerator changeFace()
+    {
+        while (true)
+        {
+            visageBossSprite.sprite = Resources.Load<Sprite>("Boss/visages/visage bleu");
+            yield return new WaitForSeconds(Random.Range(10, 20));
+            visageBossSprite.sprite = Resources.Load<Sprite>("Boss/visages/visage magenta");
+            yield return new WaitForSeconds(Random.Range(10, 20));
+        }
     }
 }

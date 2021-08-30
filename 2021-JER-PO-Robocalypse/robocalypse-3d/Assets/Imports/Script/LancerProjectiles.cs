@@ -9,7 +9,7 @@ public class LancerProjectiles : MonoBehaviour
 {
     private GameObject projectile;
 
-    private string URL = "http://192.168.1.11:8080/w/";
+    private string URL = "http://192.168.1.12:8080/w/";
 
     public GameObject cible;
 

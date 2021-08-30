@@ -6,31 +6,29 @@ using UnityEngine.Networking;
 
 public class HUDCurrentBuff : MonoBehaviour
 {
-     private Image buff;
-     private string URL = "http://192.168.1.12:8080/b/";
+     private Image forme;
+     private string URL = "http://192.168.1.12:8080/f";
  
-     public Sprite bJump;
-     public Sprite bShield;
-     public Sprite bPower;
-     public Sprite bSpeed;
- 
+     public Sprite fBallon;
+     public Sprite fAnvil;
+     public Sprite fHuman;
  
      // Start is called before the first frame update
      void Start()
      {
-         buff = GetComponent<Image>();
+         forme = GetComponent<Image>();
      }
  
      // Update is called once per frame
      void Update () {
          // Lance la requette
-         StartCoroutine(ShowBuff());
+         StartCoroutine(ShowForme());
      }
  
      /**
  	 * Lance une requette pour récupérer la valeur de l'arme sur le serveur
  	 */
-     IEnumerator ShowBuff()
+     IEnumerator ShowForme()
      {
          // Lance la requette
          UnityWebRequest www = UnityWebRequest.Get(URL);
@@ -41,24 +39,20 @@ public class HUDCurrentBuff : MonoBehaviour
         
          switch (value)
          {
-             case "bJump":
-                buff.enabled = true;
-                 buff.sprite = bJump;
+             case "fBallon":
+                forme.enabled = true;
+                 forme.sprite = fBallon;
                  break;
-             case "bSpeed":
-                buff.enabled = true;
-                buff.sprite = bSpeed;
+             case "fHuman":
+                forme.enabled = true;
+                forme.sprite = fHuman;
                  break;
-             case "bPower":
-                buff.enabled = true;
-                buff.sprite = bPower;
-                 break;
-             case "bShield":
-                buff.enabled = true;
-                buff.sprite = bShield;
+             case "fAnvil":
+                forme.enabled = true;
+                forme.sprite = fAnvil;
                  break;
             default:
-                buff.enabled = false;
+                forme.enabled = false;
                 break;
          }
  
