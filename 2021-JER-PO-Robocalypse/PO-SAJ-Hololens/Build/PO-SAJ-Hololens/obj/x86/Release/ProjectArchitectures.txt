@@ -1,0 +1,7 @@
+<<<<<<< Updated upstream
+C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\admin\Documents\Unity Copie Test\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\PO-SAJ-Hololens.csproj;x86
+=======
+C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\admin\Desktop\Robocalypse Sync GitHub\2021-JER-PO-Robocalypse\2021-JER-PO-Robocalypse\PO-SAJ-Hololens\Build\PO-SAJ-Hololens\PO-SAJ-Hololens.csproj;x86
+>>>>>>> Stashed changes
