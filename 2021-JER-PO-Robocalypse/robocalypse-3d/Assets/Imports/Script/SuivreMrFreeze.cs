@@ -33,9 +33,6 @@ public class SuivreMrFreeze : MonoBehaviour
         transform.position = mrFreeze.transform.position + new Vector3(0, 1.3f, -0.3f/*3f, 1f, -2f*/); // -1.3f // MODIFIER VALEURS
         transform.localRotation = mrFreeze.transform.localRotation /** Quaternion.Euler(0f, 0f, -90f)*/;
         transform.rotation *= Quaternion.Euler(0f, 0f, -90f);
-
-
-
     }
 
     IEnumerator changeFace()
@@ -46,6 +43,7 @@ public class SuivreMrFreeze : MonoBehaviour
             if (Timer.timerIsRunning)
             {
                 visageBossSprite.sprite = Resources.Load<Sprite>("Boss/visages/visage bleu");
+                transform.position = mrFreeze.transform.position + new Vector3(0, 1.3f, -0.3f/*3f, 1f, -2f*/); // -1.3f // MODIFIER VALEURS
             }
 
             yield return new WaitForSeconds(Random.Range(10, 20));
@@ -53,12 +51,13 @@ public class SuivreMrFreeze : MonoBehaviour
             if (Timer.timerIsRunning)
             {
                 visageBossSprite.sprite = Resources.Load<Sprite>("Boss/visages/visage magenta");
+                transform.position = mrFreeze.transform.position + new Vector3(0, 1.3f, -0.3f/*3f, 1f, -2f*/); // -1.3f // MODIFIER VALEURS
 
             }
 
             yield return new WaitForSeconds(Random.Range(10, 20));
 
-            print("vsage rose");
+            
 
         }   
         

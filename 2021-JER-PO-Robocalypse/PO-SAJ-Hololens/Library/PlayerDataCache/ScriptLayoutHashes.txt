@@ -2,6 +2,7 @@ Metro
 PlayerPath?
 C:/Users/admin/Desktop/Build Hololens
 SceneListBegin?
+Assets/InputTapTestt.unity
 Assets/InputTapTest.unity
 SceneListEnd?
 7abde016883951c4ca4e7c44ce6adb2c Assembly-CSharp.dll:HoloToolkit.Unity.SceneLauncher
@@ -295,6 +296,7 @@ bffc879e328df7088b4672067d06833b Assembly-CSharp.dll:HoloToolkit.Unity.UX.LinePa
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.SharingWithUNET.ResetAnchorButton
 7af9546644a163574e9d4ff26d86b8f2 Assembly-CSharp.dll:HoloToolkit.Unity.FadeManager
 c33d01c4bc5af79105f862d8a2f08cdf Assembly-CSharp.dll:HoloToolkit.Unity.Buttons.ButtonIconProfileTexture
+3ff96bed0f1cd26436f5dabe5792f1d9 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.Tests.TapPractice
 e6b6c5b4f33ac63d83fafeb518c1c236 Assembly-CSharp.dll:HoloToolkit.Unity.RestrictToBounds
 f3585fe689e113d5dc542e3a9dbf08d0 Assembly-CSharp.dll:HoloToolkit.Unity.SpatialMapping.Tests.PlaneFindingTest
 82ab289784efa128d12a345757279219 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.Examples.Grabbables.UsableObject

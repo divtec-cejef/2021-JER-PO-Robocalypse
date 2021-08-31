@@ -16,6 +16,9 @@ public class Timer : MonoBehaviour
     private ParticleSystem TOMATO;
     private ParticleSystem PIZZA;
     private ParticleSystem BOOM;
+    private ParticleSystem SMOKE;
+
+    private bool isSmoking = false;
 
     public Renderer renderer;
 
@@ -42,6 +45,9 @@ public class Timer : MonoBehaviour
         PIZZA = GameObject.Find("BOUM PIZZA").GetComponent<ParticleSystem>();
         PIZZA.Stop();
 
+        SMOKE = GameObject.Find("SMOKE").GetComponent<ParticleSystem>();
+        SMOKE.Stop();
+
         BOOM = GameObject.Find("BOUM").GetComponent<ParticleSystem>();
         BOOM.Stop();
 
@@ -67,6 +73,13 @@ public class Timer : MonoBehaviour
                 StartCoroutine(finalDance());
 
                 
+            }
+            if (timeRemaining <= 60 && !isSmoking)
+            {
+                SMOKE.Play();
+                BOOM.Play();
+
+                isSmoking = true;
             }
         }
 
@@ -96,6 +109,7 @@ public class Timer : MonoBehaviour
         visageBoss.sprite = visageBossFin;
         yield return StartCoroutine(wait(5f));
 
+        SMOKE.Stop();
         BOOM.Play();
         StartCoroutine(clignoterBoss());
         yield return StartCoroutine(wait(2f));

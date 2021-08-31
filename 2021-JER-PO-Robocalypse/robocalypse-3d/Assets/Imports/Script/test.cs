@@ -11,15 +11,21 @@ public class test : MonoBehaviour
     private ParticleSystem carrot_particles;
     private ParticleSystem pizza_particles;
 
+    private RippleProcess camRipple;
+
     // Start is called before the first frame update
     void Start()
     {
+
+
         carrot_particles = GameObject.Find("carrot_particles").GetComponent<ParticleSystem>();
         pizza_particles = GameObject.Find("pizza_particles").GetComponent<ParticleSystem>();
 
         tomato_particles.Stop();
         carrot_particles.Stop();
         pizza_particles.Stop();
+
+        camRipple = Camera.main.GetComponent<RippleProcess>();
     }
 
     // Update is called once per frame
@@ -68,6 +74,7 @@ public class test : MonoBehaviour
             {
                 carrot_particles.Play();
             }
+            camRipple.RippleEffect();
             StartCoroutine(ClignoterJoueur());
 
           
