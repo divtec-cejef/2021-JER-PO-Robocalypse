@@ -40,12 +40,27 @@ public class SuivreMrFreeze : MonoBehaviour
 
     IEnumerator changeFace()
     {
+
         while (true)
         {
-            visageBossSprite.sprite = Resources.Load<Sprite>("Boss/visages/visage bleu");
+            if (Timer.timerIsRunning)
+            {
+                visageBossSprite.sprite = Resources.Load<Sprite>("Boss/visages/visage bleu");
+            }
+
             yield return new WaitForSeconds(Random.Range(10, 20));
-            visageBossSprite.sprite = Resources.Load<Sprite>("Boss/visages/visage magenta");
+
+            if (Timer.timerIsRunning)
+            {
+                visageBossSprite.sprite = Resources.Load<Sprite>("Boss/visages/visage magenta");
+
+            }
+
             yield return new WaitForSeconds(Random.Range(10, 20));
-        }
+
+            print("vsage rose");
+
+        }   
+        
     }
 }

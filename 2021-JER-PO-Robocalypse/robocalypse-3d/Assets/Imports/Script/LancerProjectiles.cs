@@ -49,26 +49,31 @@ public class LancerProjectiles : MonoBehaviour
 
     void ShootProjectile()
     {
-        // yield return new WaitForSeconds(0.3f);
-        Vector3 positionCible = new Vector3(cible.transform.position.x - 1, cible.transform.position.y + 2,
-            cible.transform.position.z);
+        if (Timer.timerIsRunning)
+        {
 
-        // décalage du départ des projectiles
-        Vector3 positionDepartProjectiles = new Vector3 (transform.position.x, transform.position.y /*+ 0.5f*/, transform.position.z + 0.2f);
-        
-        // définition direction projectiles
-        direction = positionCible - positionDepartProjectiles;
-        
-        // Création d'une instance de projectile
-        GameObject bullet = Instantiate(projectile, positionDepartProjectiles, Quaternion.identity) as GameObject;
+            // yield return new WaitForSeconds(0.3f);
+            Vector3 positionCible = new Vector3(cible.transform.position.x - 1, cible.transform.position.y + 2,
+                cible.transform.position.z);
 
-        // Le projectile se déplace jusqu'à sa cible
-        bullet.GetComponent<Rigidbody>().AddForce(direction * 50);
+            // décalage du départ des projectiles
+            Vector3 positionDepartProjectiles = new Vector3(transform.position.x, transform.position.y /*+ 0.5f*/, transform.position.z + 0.2f);
+
+            // définition direction projectiles
+            direction = positionCible - positionDepartProjectiles;
+
+            // Création d'une instance de projectile
+            GameObject bullet = Instantiate(projectile, positionDepartProjectiles, Quaternion.identity) as GameObject;
+
+            // Le projectile se déplace jusqu'à sa cible
+            bullet.GetComponent<Rigidbody>().AddForce(direction * 50);
+        }
     }
 
     private void Start()
     {
         projectile = GameObject.Find("projectile bleu");
+
         // StartCoroutine(ShootProjectile());
         InvokeRepeating("ShootProjectile", 1f, .09f);
         // InvokeRepeating("ShowWeapon", 0f, .01f);

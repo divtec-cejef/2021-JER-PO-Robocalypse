@@ -169,7 +169,7 @@ public class BossAttack : MonoBehaviour
     {
         yield return StartCoroutine(AnimationCarotte());
         ApparitionCarotte();
-        animator.Play("static_fly_1");
+        animator.Play("static_fly_2");
     }
 
     IEnumerator AnimationTomate()
@@ -184,7 +184,7 @@ public class BossAttack : MonoBehaviour
         yield return StartCoroutine(AnimationTomate());
         
         ApparitionTomate();
-        animator.Play("static_fly_1");
+        animator.Play("static_fly_2");
     }
 
     IEnumerator AnimationPizza()
@@ -198,7 +198,7 @@ public class BossAttack : MonoBehaviour
 
         yield return StartCoroutine(AnimationPizza());
         ApparitionPizza();
-        animator.Play("static_fly_1");
+        animator.Play("static_fly_2");
     }
 
     void SchemaAttaque()
@@ -211,16 +211,17 @@ public class BossAttack : MonoBehaviour
             rand = Random.Range(0, 3);
         } while (rand == ancienRandAliment);
        
-        
-        switch (rand)
+        if (Timer.timerIsRunning)
         {
-            case 0:
+            switch (rand)
+            {
+                case 0:
 
-                // StartCoroutine(LancerDeTomate());
-                lancerTomateXFois(Random.Range(2,4));
+                    // StartCoroutine(LancerDeTomate());
+                    lancerTomateXFois(Random.Range(2, 4));
 
-                // réinitialisation
-                positionsTuiles = new ArrayList()
+                    // réinitialisation
+                    positionsTuiles = new ArrayList()
                     {
                         (new Vector3(-4.14f, 17, 9.62f)),
                         (new Vector3(-2.2f, 17, 9.62f)),
@@ -228,33 +229,35 @@ public class BossAttack : MonoBehaviour
                         (new Vector3(1.79f, 17, 9.62f)),
                         (new Vector3(3.79f, 17, 9.62f))
                     };
-                    
-                break;
-            case 1:
 
-                StartCoroutine(LancerDeCarotte());
+                    break;
+                case 1:
 
-                break;
-            case 2:
+                    StartCoroutine(LancerDeCarotte());
 
-                // StartCoroutine(LancerDePizza());
-                lancerPizzaXFois(Random.Range(3, 5));
+                    break;
+                case 2:
 
-                // réinitialisation
-                /*positionsPizzas = new ArrayList()
-                    {
-                        (new Vector3(-4.12f, 1.878f, 10.44f)),
-                        (new Vector3(-2.17f, 1.878f, 10.44f)),
-                        (new Vector3(-0.15f, 1.878f, 10.44f)),
-                        (new Vector3(1.82f, 1.878f, 10.44f)),
-                        (new Vector3(3.82f, 1.878f, 10.44f)),
-                        (new Vector3(-0.15f, 1.878f, 10.44f))
-                    };
-                    */
+                    // StartCoroutine(LancerDePizza());
+                    lancerPizzaXFois(Random.Range(3, 5));
 
-                break;
+                    // réinitialisation
+                    /*positionsPizzas = new ArrayList()
+                        {
+                            (new Vector3(-4.12f, 1.878f, 10.44f)),
+                            (new Vector3(-2.17f, 1.878f, 10.44f)),
+                            (new Vector3(-0.15f, 1.878f, 10.44f)),
+                            (new Vector3(1.82f, 1.878f, 10.44f)),
+                            (new Vector3(3.82f, 1.878f, 10.44f)),
+                            (new Vector3(-0.15f, 1.878f, 10.44f))
+                        };
+                        */
 
+                    break;
+
+            }
         }
+        
 
         ancienRandAliment = rand;
         

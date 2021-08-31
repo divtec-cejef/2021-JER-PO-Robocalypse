@@ -20,6 +20,7 @@ const app = express()
 const port = 8080
 const path = require('path')
 
+let pret = false;
 let forme = "f";
 let arme = "w";
 
@@ -56,6 +57,19 @@ app.get('/wRed', (req, res) => {
     res.send(arme)
 })
 
+app.get('/ready', (req, res) => {
+    res.send(pret)
+})
+
+app.get('/isReady', (req, res) => {
+    pret = true
+    res.send(pret)
+})
+
+app.get('/isNotReady', (req, res) => {
+    pret = false
+    res.send(pret)
+})
 /*
 app.get('/wA', (req, res) => {
     arme = "wA"

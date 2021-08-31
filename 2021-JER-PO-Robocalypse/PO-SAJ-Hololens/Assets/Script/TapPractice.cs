@@ -13,6 +13,8 @@ public class TapPractice : MonoBehaviour, IInputClickHandler
         private Renderer renderer;
         private Boolean IsClicked = false;
 
+        private string URL = "http://192.168.1.12:8080/isReady";
+
         int nbreClics = 0;
 
         public Text txt_nbreClics; 
@@ -77,13 +79,21 @@ public class TapPractice : MonoBehaviour, IInputClickHandler
 
             if (nbreClics == 3)
             {
+                StartCoroutine(isReady());
                 // erreurs au lancement de cette ligne
                 SceneManager.LoadScene("InputTapTest");
             }
         }
 
-        
 
-        
+        IEnumerator isReady()
+        {
+            UnityWebRequest www = UnityWebRequest.Get(URL);
+            yield return www.SendWebRequest();
+
+            // affiche la valeur retourné
+            string value = (string)www.downloadHandler.text;
+        }
+
     }
 }
