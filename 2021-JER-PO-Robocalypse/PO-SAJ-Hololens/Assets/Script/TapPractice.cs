@@ -77,7 +77,7 @@ public class TapPractice : MonoBehaviour, IInputClickHandler
 
             IsClicked = false;
 
-            if (nbreClics == 3)
+            if (nbreClics >= 3)
             {
                 StartCoroutine(isReady());
                 // erreurs au lancement de cette ligne

@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 
 public class Timer : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Timer : MonoBehaviour
     public static bool timerIsRunning = false;
     public TMPro.TextMeshProUGUI timeText;
     public TextMeshProUGUI score;
+    private string URL = "http://192.168.1.12:8080/gameIsOver";
 
     private ParticleSystem CARROT;
     private ParticleSystem TOMATO;
@@ -28,8 +30,14 @@ public class Timer : MonoBehaviour
     private SpriteRenderer visageBoss;
     private Sprite visageBossFin;
 
+    private Animator transition;
+
     private void Start()
     {
+
+        transition = GameObject.Find("fermeture").GetComponent<Animator>();
+        transition.enabled = false;
+
         visageBossFin = Resources.Load<Sprite>("boss/visages/visage jaune");
         visageBoss = GameObject.FindWithTag("expressionBoss").GetComponent<SpriteRenderer>();
 
@@ -69,7 +77,7 @@ public class Timer : MonoBehaviour
                 InformationJoueur.scoreEquipe = int.Parse(score.text);
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
-
+                
                 StartCoroutine(finalDance());
 
                 
@@ -144,8 +152,16 @@ public class Timer : MonoBehaviour
 
         yield return StartCoroutine(wait(2f));*/
 
+        transition.enabled = true;
+        transition.Play("transition_rond_start");
+
+        yield return StartCoroutine(wait(2f));
+
         animationFin = true;
 
+
+        animationFin = true;
+        StartCoroutine(gameIsOver());
 
     }
 
@@ -171,4 +187,15 @@ public class Timer : MonoBehaviour
         renderer.enabled = false;
         visageBoss.enabled = false;
     }
+
+    IEnumerator gameIsOver()
+    {
+        UnityWebRequest www = UnityWebRequest.Get(URL);
+        yield return www.SendWebRequest();
+
+        // affiche la valeur retourné
+        string value = (string)www.downloadHandler.text;
+        
+    }
+
 }

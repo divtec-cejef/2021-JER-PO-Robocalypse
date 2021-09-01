@@ -14,7 +14,13 @@ public class SetCurrentScore : MonoBehaviour
     {
         nomEquipe.text = InformationJoueur.nomEquipe;
         scoreEquipe.text = InformationJoueur.scoreEquipe.ToString();
-        
+
+        nomEquipe.text = "";
+        scoreEquipe.text = "";
+
+        nomEquipe.text = InformationJoueur.nomEquipe;
+        scoreEquipe.text = InformationJoueur.scoreEquipe.ToString();
+
     }
 
     // Update is called once per frame
