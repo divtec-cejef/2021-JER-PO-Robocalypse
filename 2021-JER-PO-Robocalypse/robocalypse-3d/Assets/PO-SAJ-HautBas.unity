@@ -8758,7 +8758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nbrPointsPenalite: 100
   nomCollider: Tomate
-  nbrPointsParSphere: 1
+  nbrPointsParSphere: 2
 --- !u!114 &1238766531
 MonoBehaviour:
   m_ObjectHideFlags: 0

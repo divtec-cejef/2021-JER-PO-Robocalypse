@@ -21,6 +21,7 @@ const port = 8080
 const path = require('path')
 
 let pret = false;
+let etatPartie = "pas commencé";
 let forme = "f";
 let arme = "w";
 
@@ -70,6 +71,26 @@ app.get('/isNotReady', (req, res) => {
     pret = false
     res.send(pret)
 })
+
+app.get('/game', (req, res) => {
+    res.send(etatPartie)
+})
+
+app.get('/gameIsStarted', (req, res) => {
+    etatPartie = "commencé"
+    res.send(etatPartie)
+})
+
+app.get('/gameIsOver', (req, res) => {
+    etatPartie = "fini"
+    res.send(etatPartie)
+})
+
+app.get('/gameIsWaiting', (req, res) => {
+    etatPartie = "pas commencé"
+    res.send(etatPartie)
+})
+
 /*
 app.get('/wA', (req, res) => {
     arme = "wA"

@@ -208,7 +208,7 @@ public class BossAttack : MonoBehaviour
 
         do
         {
-            rand = Random.Range(0, 3);
+            rand = Random.Range(0, 4);
         } while (rand == ancienRandAliment);
        
         if (Timer.timerIsRunning)
@@ -235,11 +235,14 @@ public class BossAttack : MonoBehaviour
 
                     StartCoroutine(LancerDeCarotte());
 
+                    ancienRandAliment = rand;
+
                     break;
                 case 2:
 
                     // StartCoroutine(LancerDePizza());
                     lancerPizzaXFois(Random.Range(3, 5));
+                    ancienRandAliment = rand;
 
                     // réinitialisation
                     /*positionsPizzas = new ArrayList()
@@ -254,12 +257,57 @@ public class BossAttack : MonoBehaviour
                         */
 
                     break;
+                case 3:
+                    // StartCoroutine(LancerDeTomate());
+                    lancerTomateXFois(Random.Range(2, 4));
+
+                    // réinitialisation
+                    positionsTuiles = new ArrayList()
+                    {
+                        (new Vector3(-4.14f, 17, 9.62f)),
+                        (new Vector3(-2.2f, 17, 9.62f)),
+                        (new Vector3(-0.2f, 17, 9.62f)),
+                        (new Vector3(1.79f, 17, 9.62f)),
+                        (new Vector3(3.79f, 17, 9.62f))
+                    };
+
+                    break;
+                case 4:
+                    // StartCoroutine(LancerDeTomate());
+                    lancerTomateXFois(Random.Range(2, 4));
+
+                    // réinitialisation
+                    positionsTuiles = new ArrayList()
+                    {
+                        (new Vector3(-4.14f, 17, 9.62f)),
+                        (new Vector3(-2.2f, 17, 9.62f)),
+                        (new Vector3(-0.2f, 17, 9.62f)),
+                        (new Vector3(1.79f, 17, 9.62f)),
+                        (new Vector3(3.79f, 17, 9.62f))
+                    };
+
+                    break;
+                default:
+                    // StartCoroutine(LancerDeTomate());
+                    lancerTomateXFois(Random.Range(2, 4));
+
+                    // réinitialisation
+                    positionsTuiles = new ArrayList()
+                    {
+                        (new Vector3(-4.14f, 17, 9.62f)),
+                        (new Vector3(-2.2f, 17, 9.62f)),
+                        (new Vector3(-0.2f, 17, 9.62f)),
+                        (new Vector3(1.79f, 17, 9.62f)),
+                        (new Vector3(3.79f, 17, 9.62f))
+                    };
+
+                    break;
 
             }
         }
         
 
-        ancienRandAliment = rand;
+        // ancienRandAliment = rand;
         
     }
 

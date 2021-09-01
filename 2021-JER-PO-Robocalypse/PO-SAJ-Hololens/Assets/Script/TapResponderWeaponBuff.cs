@@ -5,6 +5,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 namespace HoloToolkit.Unity.InputModule.Tests
 {
@@ -17,6 +18,7 @@ namespace HoloToolkit.Unity.InputModule.Tests
 
         private Renderer renderer;
         private Boolean IsClicked = false;
+        private bool loading = false;
 
         private string URL = "http://192.168.1.12:8080/";
         private string tempURL = "http://192.168.1.12:8080/";
