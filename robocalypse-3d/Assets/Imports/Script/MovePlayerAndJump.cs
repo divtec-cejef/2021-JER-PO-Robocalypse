@@ -10,17 +10,33 @@ public class MovePlayerAndJump : MonoBehaviour
     public bool playerIsOnTheGround = true;
     public bool playerIsSneaking;
     public bool playerCanMove = true;
+<<<<<<< Updated upstream
     
     private BoxCollider playerBoxCol;
     private Transform playerTransform;
     public Rigidbody rb;
+=======
+    public GameObject coin;
+    private BoxCollider playerBoxCol;
+    public Transform playerTransform;
+    public Rigidbody rb;
+    public Animator animator;
+
+    private SpriteRenderer formeAstronaute;
+    private GameObject astronaute;
+>>>>>>> Stashed changes
     
     // Start is called before the first frame update
     void Start()
     {
         rb.GetComponent<Rigidbody>();
         playerBoxCol = GetComponent<BoxCollider>();
+<<<<<<< Updated upstream
         playerTransform = GetComponent<Transform>();
+=======
+        astronaute = GameObject.Find("astronaute");
+        formeAstronaute = astronaute.GetComponent<SpriteRenderer>();
+>>>>>>> Stashed changes
     }
 
     // Update is called once per frame
@@ -41,17 +57,28 @@ public class MovePlayerAndJump : MonoBehaviour
             // Si le joueur est en train de se baisser, l'empêche de pouvoir se déplacer
             if (playerIsSneaking)
             {
+<<<<<<< Updated upstream
                 if (Input.GetKeyUp("s"))
                 {
                     playerIsSneaking = false;
                     playerBoxCol.size = new Vector3(1, 1, 0.5f);
                     playerTransform.localScale = new Vector3(1, 1, 1);
+=======
+                if (formeAstronaute.sprite.name != "enclume")
+                {
+                    playerIsSneaking = false;
+                    playerTransform.position = new Vector3(playerTransform.position.x, playerTransform.position.y + 0.2f,
+                        playerTransform.position.z);
+                    playerBoxCol.size = new Vector3(7.5537f, 13.4485f, 1);
+                    playerBoxCol.center = new Vector3(1.2286f, -2.5755f, 0);
+>>>>>>> Stashed changes
                 }
             }
             else
             {
                 // déplacement haut, bas, gauche & droite
                 Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0, 0); 
+<<<<<<< Updated upstream
                 Vector3 vertical = new Vector3(0, 0, Input.GetAxis("Vertical")); 
 
                 transform.Translate( Time.deltaTime * speed * BestAxis(horizontal,vertical));
@@ -67,10 +94,56 @@ public class MovePlayerAndJump : MonoBehaviour
                 // le saut
                 if (Input.GetButtonDown("Jump") && playerIsOnTheGround)
                 {
+=======
+                Vector3 vertical = new Vector3(0, 0, Input.GetAxis("Vertical"));
+                //float characterVelocity = Mathf.Abs(rb.velocity.x);
+                animator.SetFloat("Speed", horizontal.x);
+                
+                // si le personnage est trop à gauche ou trop à droite l'empêche d'aller plus loin vers ces direction
+                if (!(horizontal.x >= 0 && transform.position.x >= 4))
+                {
+                    if (!(horizontal.x <= 0 && transform.position.x <= -4.7f))
+                    {
+                        if (formeAstronaute.sprite.name != "ballon")
+                        {
+                            // Fait avancer le personnage
+                            transform.Translate(Time.deltaTime * speed * BestAxis(horizontal, vertical));
+                        }
+                    }
+                }
+
+                    //s'accroupir
+                if (formeAstronaute.sprite.name == "enclume")
+                {
+                    playerIsSneaking = true;
+                    playerBoxCol.size = new Vector3(7.5537f, 10.4485f, 1);
+                    playerBoxCol.center = new Vector3(1.2286f, -0.5755f, 0);
+                }
+                
+                /*
+                // le saut
+                if (Input.GetButtonDown("Jump") && playerIsOnTheGround)
+                {
+                    animator.SetFloat("Speed", 0);
+                    animator.SetTrigger("Jump");
+>>>>>>> Stashed changes
                     rb.AddForce(new Vector3(0,5,0), ForceMode.Impulse);
                     playerIsOnTheGround = false;
                     playerCanMove = false;
                 }
+<<<<<<< Updated upstream
+=======
+                */
+
+                if (formeAstronaute.sprite.name == "ballon")
+                {
+                    playerTransform.position = new Vector3(playerTransform.position.x, 2.5f, playerTransform.position.z);
+                    //rb.constraints = RigidbodyConstraints.FreezeAll;
+                } else
+                {
+                    //rb.constraints = RigidbodyConstraints.None;
+                }
+>>>>>>> Stashed changes
             }
         }
         // Ancienne code qui prennait en compte le saut du joueur et le temps qu'il se remette sur la wii Board
@@ -87,6 +160,27 @@ public class MovePlayerAndJump : MonoBehaviour
         }
         */
     }
+<<<<<<< Updated upstream
+=======
+
+    /*
+    private Vector3 Levitate()
+    {
+        // lévitation
+        Vector3 posOffset = new Vector3();
+        Vector3 tempPos = new Vector3();
+        tempPos = posOffset;
+        tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * 3f) * 0.05f; // fréquence, amplitude
+
+        Vector3 position = transform.position;
+
+        // transform.position = position + choix + tempPos; // + choix au lieu de tempPos
+
+        // déplacement vers une positino différente
+        return tempPos;
+    }
+    */
+>>>>>>> Stashed changes
     
     /**
      * Si le joueur est en contact avec un objet qui a le tag Ground, change la valeur de playerisOnGround
