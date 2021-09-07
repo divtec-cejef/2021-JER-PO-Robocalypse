@@ -27,9 +27,9 @@ public class changerDeForme : MonoBehaviour
 
         astronaute = GameObject.Find("astronaute");
         formeAstronaute = astronaute.GetComponent<SpriteRenderer>();
-
+        /*
         transformation_particles = GameObject.Find("transformation_particles").GetComponent<ParticleSystem>();
-
+        */
         transformation_particles.Stop();
         
     }

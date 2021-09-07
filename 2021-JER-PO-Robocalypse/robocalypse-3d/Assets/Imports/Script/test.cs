@@ -7,24 +7,25 @@ public class test : MonoBehaviour
 
     public Renderer renderer;
 
-    public ParticleSystem tomato_particles;
+    /*
     private ParticleSystem carrot_particles;
     private ParticleSystem pizza_particles;
-
+    public ParticleSystem tomato_particles;
+    */
     private RippleProcess camRipple;
 
     // Start is called before the first frame update
     void Start()
     {
 
-
+        /*
         carrot_particles = GameObject.Find("carrot_particles").GetComponent<ParticleSystem>();
         pizza_particles = GameObject.Find("pizza_particles").GetComponent<ParticleSystem>();
 
-        tomato_particles.Stop();
         carrot_particles.Stop();
         pizza_particles.Stop();
-
+        tomato_particles.Stop();
+        */
         camRipple = Camera.main.GetComponent<RippleProcess>();
     }
 
@@ -62,6 +63,7 @@ public class test : MonoBehaviour
             // messagePoints = Instantiate(messagePoints, position, Quaternion.identity);
 
             //Destroy this gameobject
+            /*
             if (collision.gameObject.name == "pizza(Clone)")
             {
                 pizza_particles.Play();
@@ -74,6 +76,7 @@ public class test : MonoBehaviour
             {
                 carrot_particles.Play();
             }
+            */
             camRipple.RippleEffect();
             StartCoroutine(ClignoterJoueur());
 
