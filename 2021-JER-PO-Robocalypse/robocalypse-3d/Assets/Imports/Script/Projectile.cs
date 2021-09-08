@@ -24,8 +24,6 @@ public class Projectile : MonoBehaviour
     {
         txt_Score = GameObject.Find("txt_Score").GetComponent<Text>();
 
-        //GameObject.Find("pizza(Clone)").layer = 0;
-
        
 
         // messagePoints.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Assets/Imports/HUD/score/+1.png");

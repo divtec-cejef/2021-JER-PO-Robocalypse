@@ -23,7 +23,7 @@ public class moveCarrot : MonoBehaviour
     {
         //horizontalInput = Input.GetAxis("Horizontal");
         //verticalInput = Input.GetAxis("Vertical");
-        transform.RotateAround(transform.position, transform.up, Time.deltaTime * 500f);
+        transform.RotateAround(transform.position, transform.up, Time.deltaTime * 350f);
     }
 
     private void FixedUpdate()

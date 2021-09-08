@@ -350,6 +350,5 @@ public class BossAttack : MonoBehaviour
     void Update()
     {
 
-
     }
 }

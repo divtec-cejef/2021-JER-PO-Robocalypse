@@ -30,9 +30,8 @@ public class MovePlayerAndJump : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-
-        PlayerMovement();
+    { 
+       PlayerMovement();
     }
 
     /**

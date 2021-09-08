@@ -12,11 +12,8 @@ public class LancerProjectiles : MonoBehaviour
     private string URL = "http://192.168.1.12:8080/w/";
 
     public GameObject cible;
-    private GameObject UFO;
 
     public Vector3 direction;
-
-    private bool peutTirer = false;
 
 
     IEnumerator ShowWeapon()
@@ -52,15 +49,12 @@ public class LancerProjectiles : MonoBehaviour
 
     void ShootProjectile()
     {
-        int positionBaseUFO = (int)-2.57f;
-        if (Timer.timerIsRunning && UFO.transform.position.z <= -2.57f)
+        if (Timer.timerIsRunning)
         {
 
-           // yield return new WaitForSeconds(0.3f);
-           Vector3 positionCible = new Vector3(cible.transform.position.x - 1, cible.transform.position.y /*+ 2*/,
-           cible.transform.position.z);
-
-            // positionCible = new Vector3();
+            // yield return new WaitForSeconds(0.3f);
+            Vector3 positionCible = new Vector3(cible.transform.position.x - 1, cible.transform.position.y + 2,
+                cible.transform.position.z);
 
             // décalage du départ des projectiles
             Vector3 positionDepartProjectiles = new Vector3(transform.position.x, transform.position.y /*+ 0.5f*/, transform.position.z + 0.2f);
@@ -72,33 +66,22 @@ public class LancerProjectiles : MonoBehaviour
             GameObject bullet = Instantiate(projectile, positionDepartProjectiles, Quaternion.identity) as GameObject;
 
             // Le projectile se déplace jusqu'à sa cible
-            // transform.Rotate(new Vector3(0, 0, -90), Space.Self);
             bullet.GetComponent<Rigidbody>().AddForce(direction * 50);
-
-            
         }
     }
 
     private void Start()
     {
         projectile = GameObject.Find("projectile bleu");
-        UFO = GameObject.Find("UFO");
-        
-
 
         // StartCoroutine(ShootProjectile());
-        
         InvokeRepeating("ShootProjectile", 1f, .09f);
-
-        
         // InvokeRepeating("ShowWeapon", 0f, .01f);
     }
 
     private void Update()
     {
-        
-        
-        StartCoroutine(ShowWeapon ());
+        StartCoroutine(ShowWeapon());
 
         /*if (Input.GetKeyDown(KeyCode.A))
         {
