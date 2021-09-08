@@ -2,11 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UIElements;
 using Random = UnityEngine.Random;
 
 public class UFO : MonoBehaviour
 {
+
+    private string URL = "http://192.168.1.12:8080/target";
+
+
     private ParticleSystem LASER;
     private ParticleSystem LASER1;
     private ParticleSystem LASER2;
@@ -22,7 +27,11 @@ public class UFO : MonoBehaviour
 
     private SpriteRenderer formeAstronaute;
 
-    public bool test = false;
+    public bool peutTirerLaser = false;
+
+    public string alimentAeliminer;
+
+    Color orange;
 
     /*
      * positions des tuiles
@@ -63,11 +72,7 @@ public class UFO : MonoBehaviour
         LASER2 = GameObject.Find("LASER 2").GetComponent<ParticleSystem>();
         LASER2.Stop();
 
-        // vert
-        Color greenColor;
-        ColorUtility.TryParseHtmlString("#00FF6C", out greenColor);
-
-        LASER1.startColor = greenColor;
+        ColorUtility.TryParseHtmlString("#FBB03B", out orange);
 
 
         // position de l'UFo de départ
@@ -85,6 +90,8 @@ public class UFO : MonoBehaviour
 
         InvokeRepeating("SchemaDeplacement", 1f, .04f);
 
+
+
     }
 
     // Update is called once per frame
@@ -95,8 +102,10 @@ public class UFO : MonoBehaviour
 
     void  SchemaDeplacement()
     {
+        StartCoroutine(GetTarget());
+
         // test serveur
-        if (test)
+        if (peutTirerLaser && alimentAeliminer != "boss")
         {
             // faire se déplacer l'UFO vers le centre de l'astronaute
             Vector3.MoveTowards(transform.position, player.transform.position, 4 * Time.deltaTime);
@@ -105,7 +114,7 @@ public class UFO : MonoBehaviour
 
             // destruction carottes ou pizzas
             moveTowards();
-            
+
         }
         else
         {
@@ -114,11 +123,14 @@ public class UFO : MonoBehaviour
             LASER1.Stop();
             LASER2.Stop();
 
+
             if (hasMovedForward && transform.position.z > -2.66f)
             {
                 transform.Translate(Vector3.back * (30f * Time.deltaTime));
-                
-            } else
+                StartCoroutine(SetBossTarger());
+
+            }
+            else
             {
                 hasMovedForward = false;
                 
@@ -188,7 +200,8 @@ public class UFO : MonoBehaviour
              * LASER1.Stop();
              * LASER2.Stop();
             */
-            test = false;
+            peutTirerLaser = false;
+            
             
         }
         
@@ -228,12 +241,12 @@ public class UFO : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         //Check for a match with the specific tag on any GameObject that collides with your GameObject
-        if (collision.gameObject.name == "pizza(Clone)")
+        if (collision.gameObject.name == "pizza(Clone)" && LASER1.startColor == Color.yellow)
         {
             //If the GameObject has the same tag as specified, output this message in the console
             Destroy(collision.gameObject);
         }
-        else if(collision.gameObject.name == "carrot(Clone)")
+        else if(collision.gameObject.name == "carrot(Clone)" && LASER1.startColor == orange)
         {
             Destroy(collision.gameObject);
         }
@@ -241,6 +254,50 @@ public class UFO : MonoBehaviour
         {
             GameObject.Find("UFO").GetComponent<Collider>().enabled = false;
         }
+    }
+
+IEnumerator GetTarget()
+    {
+        // Lance la requette
+        UnityWebRequest www = UnityWebRequest.Get(URL);
+        yield return www.SendWebRequest();
+
+        // Selon la valeur affiche l'arme associé
+        string value = www.downloadHandler.text;
+
+        switch (value)
+        {
+            case "boss":
+                peutTirerLaser = false;
+                alimentAeliminer = "boss";
+                LASER1.startColor = Color.white;
+
+                break;
+            case "carrot":
+                peutTirerLaser = true;
+                alimentAeliminer = "carrot";
+                
+                LASER1.startColor = orange;
+                //aModifieCarotte = true;
+                break;
+            case "pizza":
+                peutTirerLaser = true;
+                alimentAeliminer = "pizza";
+                LASER1.startColor = Color.yellow;
+                break;
+        }
+    }
+
+    IEnumerator SetBossTarger()
+    {
+        string tempURL = "http://192.168.1.12:8080/targetBoss";
+        // Lance la requette
+        UnityWebRequest www = UnityWebRequest.Get(tempURL);
+        yield return www.SendWebRequest();
+
+        // Selon la valeur affiche l'arme associé
+        string value = www.downloadHandler.text;
+
     }
 
 }

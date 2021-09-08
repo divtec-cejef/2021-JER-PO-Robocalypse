@@ -22,26 +22,27 @@ const path = require('path')
 
 let pret = false;
 let etatPartie = "pas commencé";
-let forme = "f";
 let arme = "w";
+let forme = "f";
+let target = "boss";
 
-app.get('/f', (req, res) => {
-    res.send(forme)
+app.get('/target', (req, res) => {
+    res.send(target)
 })
 
-app.get('/fBallon', (req, res) => {
-    forme = "fBallon"
-    res.send(forme)
+app.get('/targetPizza', (req, res) => {
+    target = "pizza"
+    res.send(target)
 })
 
-app.get('/fAnvil', (req, res) => {
-    forme = "fAnvil"
-    res.send(forme)
+app.get('/targetCarrot', (req, res) => {
+    target = "carrot"
+    res.send(target)
 })
 
-app.get('/fHuman', (req, res) => {
-    forme = "fHuman"
-    res.send(forme)
+app.get('/targetBoss', (req, res) => {
+    target = "boss"
+    res.send(target)
 })
 
 app.get('/w', (req, res) => {
@@ -92,6 +93,26 @@ app.get('/gameIsWaiting', (req, res) => {
 })
 
 /*
+
+app.get('/f', (req, res) => {
+    res.send(forme)
+})
+
+app.get('/fBallon', (req, res) => {
+    forme = "fBallon"
+    res.send(forme)
+})
+
+app.get('/fAnvil', (req, res) => {
+    forme = "fAnvil"
+    res.send(forme)
+})
+
+app.get('/fHuman', (req, res) => {
+    forme = "fHuman"
+    res.send(forme)
+})
+
 app.get('/wA', (req, res) => {
     arme = "wA"
     res.send(arme)

@@ -88,7 +88,7 @@ namespace HoloToolkit.Unity.InputModule.Tests
             }
             else
             {
-                tempURL += "f";
+                tempURL += "target";
             }
             tempURL += value + "/";
 
