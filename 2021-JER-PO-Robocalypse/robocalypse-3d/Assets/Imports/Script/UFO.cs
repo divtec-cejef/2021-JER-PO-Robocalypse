@@ -63,6 +63,13 @@ public class UFO : MonoBehaviour
         LASER2 = GameObject.Find("LASER 2").GetComponent<ParticleSystem>();
         LASER2.Stop();
 
+        // vert
+        Color greenColor;
+        ColorUtility.TryParseHtmlString("#00FF6C", out greenColor);
+
+        LASER1.startColor = greenColor;
+
+
         // position de l'UFo de départ
         choix = positionsPossibles[0];
         InvokeRepeating(nameof(UFOposition), .1f, 1.9f);

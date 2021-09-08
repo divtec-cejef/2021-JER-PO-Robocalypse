@@ -15,6 +15,7 @@ public class LancerProjectiles : MonoBehaviour
 
     public Vector3 direction;
 
+    private GameObject UFO;
 
     IEnumerator ShowWeapon()
     {
@@ -49,7 +50,7 @@ public class LancerProjectiles : MonoBehaviour
 
     void ShootProjectile()
     {
-        if (Timer.timerIsRunning)
+        if (Timer.timerIsRunning && UFO.transform.position.z <= -2.57f)
         {
 
             // yield return new WaitForSeconds(0.3f);
@@ -73,6 +74,9 @@ public class LancerProjectiles : MonoBehaviour
     private void Start()
     {
         projectile = GameObject.Find("projectile bleu");
+
+        UFO = GameObject.Find("UFO");
+
 
         // StartCoroutine(ShootProjectile());
         InvokeRepeating("ShootProjectile", 1f, .09f);
