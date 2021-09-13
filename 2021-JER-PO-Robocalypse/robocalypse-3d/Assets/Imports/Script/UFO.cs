@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UIElements;
@@ -19,8 +20,10 @@ public class UFO : MonoBehaviour
     private bool hasMovedForward = false;
 
     public GameObject player;
+    private GameObject modifPoints; // +20 à chaque collision du laser
+    private TextMeshProUGUI txt_Score;
 
-    public int nbrPoints;
+    public int nbrPointsParCollision = 20; // +20
 
     private Vector3 choix;
     private Vector3 ancien;
@@ -85,11 +88,16 @@ public class UFO : MonoBehaviour
         this.enabled = true;
 
         formeAstronaute = GameObject.Find("astronaute").GetComponent<SpriteRenderer>();
+        modifPoints = GameObject.Find("+20");
 
         // InvokeRepeating("deplacementNormal", .1f, .1f);
         // InvokeRepeating("deplacementNormal", 1, 1f);
 
         InvokeRepeating("SchemaDeplacement", 1f, .02f);
+
+        //modifierScore.score
+        txt_Score = GameObject.Find("txt_Score").GetComponent<TextMeshProUGUI>();
+
 
 
 
@@ -160,6 +168,7 @@ public class UFO : MonoBehaviour
         Vector3 tempPos = new Vector3();
         tempPos = posOffset;
         tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * 3f) * 0.05f; // fréquence, amplitude
+
 
         position = player.transform.position;
 
@@ -246,14 +255,35 @@ public class UFO : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        int valeurActuelle = 0;
+        bool conversion = int.TryParse(txt_Score.text, out valeurActuelle);
+
+        // score après collision
+        int score = (valeurActuelle + nbrPointsParCollision);
+
+        // ne peut pas descendre en-dessous de zéro
+        if (score > 0)
+        {
+            // hasBeenTouched = true;
+            txt_Score.text = score.ToString();
+        }
+        else
+        {
+            // hasBeenTouched = true;
+            txt_Score.text = "0";
+        }
+
+
         //Check for a match with the specific tag on any GameObject that collides with your GameObject
         if (collision.gameObject.name == "pizza(Clone)" && LASER1.startColor == Color.yellow)
         {
-            //If the GameObject has the same tag as specified, output this message in the console
+            GameObject clonePlus20 = Instantiate(modifPoints, collision.gameObject.transform.position /*+ new Vector3(-1, 0.5f, 2) */, Quaternion.identity);
+
             Destroy(collision.gameObject);
         }
         else if(collision.gameObject.name == "carrot(Clone)" && LASER1.startColor == orange)
         {
+            GameObject clonePlus20 = Instantiate(modifPoints, collision.gameObject.transform.position /*+ new Vector3(-1, 0.5f, 2) */, Quaternion.identity);
             Destroy(collision.gameObject);
         }
         else
@@ -262,7 +292,12 @@ public class UFO : MonoBehaviour
         }
     }
 
-IEnumerator GetTarget()
+    private void OnCollisionExit(Collision collision)
+    {
+        Destroy(GameObject.Find("+20(Clone)"));
+    }
+
+    IEnumerator GetTarget()
     {
         // Lance la requette
         UnityWebRequest www = UnityWebRequest.Get(URL);
