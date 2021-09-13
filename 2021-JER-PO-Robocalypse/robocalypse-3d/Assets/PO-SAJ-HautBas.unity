@@ -1020,7 +1020,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomCible: mr.freeze
-  nbrPointsParSphere: 50
   txt_Score: {fileID: 0}
 --- !u!212 &112933014
 SpriteRenderer:
@@ -2110,7 +2109,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomCible: mr.freeze
-  nbrPointsParSphere: 1
   txt_Score: {fileID: 0}
 --- !u!212 &261495313
 SpriteRenderer:
@@ -2963,7 +2961,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nbrPointsPenalite: 100
   nomCollider: astronaute
-  nbrPointsParSphere: 1
 --- !u!1 &376152794
 GameObject:
   m_ObjectHideFlags: 0
@@ -4064,6 +4061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LASER
       objectReference: {fileID: 0}
+    - target: {fileID: 3232879689950372773, guid: a5f338f7a7356d445b71c78210470912, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3232879689950372776, guid: a5f338f7a7356d445b71c78210470912, type: 3}
       propertyPath: looping
       value: 0
@@ -4131,6 +4132,10 @@ PrefabInstance:
     - target: {fileID: 3232879689950372778, guid: a5f338f7a7356d445b71c78210470912, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3232879689950372779, guid: a5f338f7a7356d445b71c78210470912, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5f338f7a7356d445b71c78210470912, type: 3}
@@ -5568,6 +5573,10 @@ PrefabInstance:
     - target: {fileID: 530929980939906388, guid: 3b593d62661c1794db67065ce98e4a37, type: 3}
       propertyPath: m_Name
       value: LASER 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 530929980939906388, guid: 3b593d62661c1794db67065ce98e4a37, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b593d62661c1794db67065ce98e4a37, type: 3}
@@ -7703,7 +7712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acab1d400cc769d4eb51515a63fc6c89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nbrPointsParSphere: 1
+  nbrPointsParSphere: 2
 --- !u!1001 &1084293770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8650,7 +8659,7 @@ GameObject:
   - component: {fileID: 1220071502}
   - component: {fileID: 1220071501}
   - component: {fileID: 1220071505}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UFO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8726,7 +8735,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 756798192ccb0e14e8c6c00a08a50141, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8942,7 +8951,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: d8a935f8a580ddb49ae31252b5a99901, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9039,7 +9048,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nbrPointsPenalite: 100
   nomCollider: Tomate
-  nbrPointsParSphere: 2
 --- !u!114 &1238766531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10275,7 +10283,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomCible: mr.freeze
-  nbrPointsParSphere: 50
   txt_Score: {fileID: 0}
 --- !u!212 &1423538344
 SpriteRenderer:
@@ -10353,6 +10360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LASER 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8406539632759823362, guid: 082bdbe5a0d2ac0438e4feef93a3fd9f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8406539632759823363, guid: 082bdbe5a0d2ac0438e4feef93a3fd9f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10396,6 +10407,10 @@ PrefabInstance:
     - target: {fileID: 8406539632759823363, guid: 082bdbe5a0d2ac0438e4feef93a3fd9f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8406539632759823364, guid: 082bdbe5a0d2ac0438e4feef93a3fd9f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8406539632759823365, guid: 082bdbe5a0d2ac0438e4feef93a3fd9f, type: 3}
       propertyPath: looping
@@ -10594,7 +10609,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nbrPointsPenalite: 50
   nomCollider: astronaute
-  nbrPointsParSphere: 1
 --- !u!114 &1453931974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10734,7 +10748,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: f0e493556698dff45b44f1b4a8a4c043, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10772,8 +10786,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.0690813, y: 42.065273, z: 0.11}
-  m_Center: {x: -0.6345406, y: -19.02138, z: 0}
+  m_Size: {x: 2.8273451, y: 42.065273, z: 0.11}
+  m_Center: {x: -0.013672709, y: -19.02138, z: 0}
 --- !u!54 &1477480537
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10857,7 +10871,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nbrPointsPenalite: 100
   nomCollider: astronaute
-  nbrPointsParSphere: 1
 --- !u!1 &1478544184
 GameObject:
   m_ObjectHideFlags: 0
@@ -12277,7 +12290,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomCible: mr.freeze
-  nbrPointsParSphere: 50
   txt_Score: {fileID: 0}
 --- !u!212 &1631841664
 SpriteRenderer:

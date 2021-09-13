@@ -11,8 +11,6 @@ public class Projectile : MonoBehaviour
 
     public string nomCible = "Cible";
 
-    public int nbrPointsParSphere = 1;
-
     private static int score;
 
     public Text txt_Score;

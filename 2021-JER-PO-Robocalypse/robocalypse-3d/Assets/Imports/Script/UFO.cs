@@ -73,7 +73,8 @@ public class UFO : MonoBehaviour
         LASER2.Stop();
 
         ColorUtility.TryParseHtmlString("#FBB03B", out orange);
-
+        
+        StartCoroutine(SetBossTarger());
 
         // position de l'UFo de départ
         choix = positionsPossibles[0];
@@ -88,7 +89,7 @@ public class UFO : MonoBehaviour
         // InvokeRepeating("deplacementNormal", .1f, .1f);
         // InvokeRepeating("deplacementNormal", 1, 1f);
 
-        InvokeRepeating("SchemaDeplacement", 1f, .04f);
+        InvokeRepeating("SchemaDeplacement", 1f, .02f);
 
 
 
@@ -122,11 +123,14 @@ public class UFO : MonoBehaviour
             LASER.Stop();
             LASER1.Stop();
             LASER2.Stop();
+            
 
+            Physics.IgnoreLayerCollision(9, 10, true);
+            Physics.IgnoreLayerCollision(8, 10, true);
 
             if (hasMovedForward && transform.position.z > -2.66f)
             {
-                transform.Translate(Vector3.back * (30f * Time.deltaTime));
+                transform.Translate(Vector3.back * (30f/*30f*/ * Time.deltaTime));
                 StartCoroutine(SetBossTarger());
 
             }
@@ -150,6 +154,7 @@ public class UFO : MonoBehaviour
     */
     IEnumerator deplacementNormal()
     {
+        int speed = 4;
         // lévitation
         Vector3 posOffset = new Vector3();
         Vector3 tempPos = new Vector3();
@@ -161,9 +166,9 @@ public class UFO : MonoBehaviour
         // transform.position = position + choix + tempPos; // + choix au lieu de tempPos
 
         // déplacement vers une positino différente
-        transform.position = Vector3.MoveTowards(transform.position, position + choix + tempPos, 4 * Time.deltaTime); // revoir
+        transform.position = Vector3.MoveTowards(transform.position, position + choix + tempPos, speed * Time.deltaTime); // revoir
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0);
         
     }
 
@@ -182,7 +187,7 @@ public class UFO : MonoBehaviour
             
 
         // si l'UFO n'est pas au bout des tuiles
-        } else if (transform.position.z < 10f)
+        } else if (transform.position.z <= 10f)
         {
             //transform.Rotate(0, 0, 90);
             LASER.Play();
@@ -191,18 +196,19 @@ public class UFO : MonoBehaviour
             GameObject.Find("UFO").GetComponent<Collider>().enabled = true;
             transform.Translate(Vector3.forward * (10f * Time.deltaTime));
         }
+        else { 
         // si l'UFO est au bout des tuiles
-        else
-        {
+       
             hasMovedForward = true;
+            StartCoroutine(SetBossTarger());
             /*
-             * LASER.Stop();
-             * LASER1.Stop();
-             * LASER2.Stop();
+            LASER.Stop();
+            LASER1.Stop();
+            LASER2.Stop();
             */
             peutTirerLaser = false;
-            
-            
+
+
         }
         
     }
@@ -220,7 +226,7 @@ public class UFO : MonoBehaviour
     /**
      * Choisit la prochaine position de l'UFO aléatoirement.
      */
-            void UFOposition()
+    void UFOposition()
     {
         int rand = Random.Range(0, positionsPossibles.Length);
 
@@ -276,14 +282,17 @@ IEnumerator GetTarget()
             case "carrot":
                 peutTirerLaser = true;
                 alimentAeliminer = "carrot";
-                
+                Physics.IgnoreLayerCollision(9,10, false);
                 LASER1.startColor = orange;
+                LASER.startColor = orange;
                 //aModifieCarotte = true;
                 break;
             case "pizza":
                 peutTirerLaser = true;
                 alimentAeliminer = "pizza";
+                Physics.IgnoreLayerCollision(8, 10, false);
                 LASER1.startColor = Color.yellow;
+                LASER.startColor = Color.yellow;
                 break;
         }
     }
