@@ -120,12 +120,21 @@ public class UFO : MonoBehaviour
         if (peutTirerLaser && alimentAeliminer != "boss")
         {
             // faire se déplacer l'UFO vers le centre de l'astronaute
-            Vector3.MoveTowards(transform.position, player.transform.position, 4 * Time.deltaTime);
+            // transform.Translate(transform.position, player.transform.position, 4 * Time.deltaTime);
+            if (transform.position.x != player.transform.position.x)
+            {
+                
+            } else
+            {
+             
+            }
+            // destruction carottes ou pizzas
+             moveTowards();
+            //transform.position += Vector3.MoveTowards(new Vector3(transform.position.x, 0, 0), new Vector3(player.transform.position.x, 0, 0), 4F * Time.deltaTime);
 
             // animation laser
 
-            // destruction carottes ou pizzas
-            moveTowards();
+           
 
         }
         else
@@ -196,8 +205,17 @@ public class UFO : MonoBehaviour
         // tant que l'UFO n'est pas à la hauteur max
         if (transform.position.y < 3f)
         {
-            
+            // transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 4 * Time.deltaTime);
+
+            // transform.position += new Vector3(player.transform.position.x, 0, 0) - new Vector3(transform.position.x, 0, 0) * 4 * Time.deltaTime;
+
+            //transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 4 * Time.deltaTime);
+
+
+
             transform.Translate((Vector3.up) *(4 * Time.deltaTime));
+            
+           
             
 
         // si l'UFO n'est pas au bout des tuiles
@@ -208,6 +226,13 @@ public class UFO : MonoBehaviour
             LASER1.Play();
             LASER2.Play();
             GameObject.Find("UFO").GetComponent<Collider>().enabled = true;
+            /*if (transform.position.x != player.transform.position.x)
+            {*/
+            // transform.Translate(new Vector3(player.transform.position.x, 0, 0));
+            //}
+
+            
+
             transform.Translate(Vector3.forward * (10f * Time.deltaTime));
         }
         else { 
