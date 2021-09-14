@@ -34,6 +34,9 @@ public class UFO : MonoBehaviour
 
     public string alimentAeliminer;
 
+    public GameObject pizzaEffect;
+    public GameObject carrotEffect;
+
     Color orange;
 
     /*
@@ -140,7 +143,9 @@ public class UFO : MonoBehaviour
             {
                 transform.Translate(Vector3.back * (30f/*30f*/ * Time.deltaTime));
                 StartCoroutine(SetBossTarger());
-
+                Destroy(GameObject.Find("+20(Clone)"));
+                Destroy(GameObject.Find("carrot_particles(Clone)"));
+                Destroy(GameObject.Find("pizza_particles(Clone)"));
             }
             else
             {
@@ -259,9 +264,10 @@ public class UFO : MonoBehaviour
         bool conversion = int.TryParse(txt_Score.text, out valeurActuelle);
 
         // score après collision
-        int score = (valeurActuelle + nbrPointsParCollision);
+        int score = (valeurActuelle + 
+              nbrPointsParCollision);
 
-        // ne peut pas descendre en-dessous de zéro
+        // ne  peut pas descendre en-dessous de zéro
         if (score > 0)
         {
             // hasBeenTouched = true;
@@ -270,7 +276,7 @@ public class UFO : MonoBehaviour
         else
         {
             // hasBeenTouched = true;
-            txt_Score.text = "0";
+            txt_Score.text = "0"; 
         }
 
 
@@ -278,12 +284,13 @@ public class UFO : MonoBehaviour
         if (collision.gameObject.name == "pizza(Clone)" && LASER1.startColor == Color.yellow)
         {
             GameObject clonePlus20 = Instantiate(modifPoints, collision.gameObject.transform.position /*+ new Vector3(-1, 0.5f, 2) */, Quaternion.identity);
-
+            Instantiate(pizzaEffect, transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
         }
         else if(collision.gameObject.name == "carrot(Clone)" && LASER1.startColor == orange)
         {
             GameObject clonePlus20 = Instantiate(modifPoints, collision.gameObject.transform.position /*+ new Vector3(-1, 0.5f, 2) */, Quaternion.identity);
+            Instantiate(carrotEffect, transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
         }
         else
@@ -295,6 +302,7 @@ public class UFO : MonoBehaviour
     private void OnCollisionExit(Collision collision)
     {
         Destroy(GameObject.Find("+20(Clone)"));
+        Destroy(GameObject.Find("pizza_particles()"));
     }
 
     IEnumerator GetTarget()

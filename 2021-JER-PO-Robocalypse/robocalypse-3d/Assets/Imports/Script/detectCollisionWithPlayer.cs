@@ -17,6 +17,8 @@ public class detectCollisionWithPlayer : MonoBehaviour
     public int nbrPointsPenalite = 100;
     public string nomCollider = "astronaute";
     private GameObject joueur;
+    
+
 
     private SpriteRenderer sprite;
 
@@ -27,7 +29,6 @@ public class detectCollisionWithPlayer : MonoBehaviour
     private bool isTouched;
     private GameObject floatingPoints;
     private GameObject posAstronaute;
-
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +42,6 @@ public class detectCollisionWithPlayer : MonoBehaviour
 
         
 
-
     }
 
     // Update is called once per frame
@@ -52,19 +52,22 @@ public class detectCollisionWithPlayer : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
+        /*if (collision.collider.name == "UFO")
+        {
+            pizza_particles.Play();
+            print("!");
+
+        }*/
+
         // décrémenter le score du joueur
         // faire clignoter le joueur (invokeRepeating)
         // afficher "-1" ou "+1" avec animation
         if (collision.collider.name == nomCollider)
         {
-            
-               
-            
-
             // renderer.material.color = Color.red;
 
             clignoter();
-            
+
             // récupération de la valeur dans la textbox
             int valeurActuelle = 0;
             bool conversion = int.TryParse(txt_Score.text, out valeurActuelle);
@@ -92,26 +95,23 @@ public class detectCollisionWithPlayer : MonoBehaviour
             // faire un random
             // Instantiate(floatingPoints, transform.position + new Vector3(0, 3, -3), Quaternion.identity);
             GameObject cloneMoins50 = Instantiate(floatingPoints, posAstronaute.transform.position /*+ new Vector3(-1, 0.5f, 2) */, Quaternion.identity);
-            
+
             isTouched = false;
-
-
-            
         }
+
     }
     void OnCollisionExit()
     {
         Destroy(GameObject.Find("-50(Clone)"));
     }
 
-    IEnumerator destroyGameObj(GameObject gameobj)
+    IEnumerator destroyGameObj(GameObject gameobj) 
     {
         yield return new WaitForSeconds(10f);
-
-        Destroy(gameobj);
+          
         yield return new WaitForSeconds(10f);
 
-    }
+    } 
 
     public void clignoter()
     {
@@ -158,7 +158,6 @@ public class detectCollisionWithPlayer : MonoBehaviour
 
         renderer.material.color = Color.white;
 
-        
-        
     }
+
 }

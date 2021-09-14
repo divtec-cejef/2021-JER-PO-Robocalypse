@@ -10,6 +10,9 @@ public class BossAttack : MonoBehaviour
     public float vitesse = 5;
     public Vector3 direction;
 
+    //private ParticleSystem pizza_particles;
+    
+
     private GameObject modelePizza;
 
     private GameObject modeleTomate;
@@ -58,6 +61,9 @@ public class BossAttack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /*pizza_particles = GameObject.Find("pizza_pizza_particles").GetComponent<ParticleSystem>();
+        pizza_particles.Stop();*/
+
         modeleCarotte = GameObject.Find("carrot");
         modeleTomate = GameObject.Find("Tomate");
         modelePizza = GameObject.Find("pizza");
@@ -115,6 +121,8 @@ public class BossAttack : MonoBehaviour
 
         // Création d'une instance de projectile
         GameObject pizza = Instantiate(modelePizza, positionDepartProjectiles, Quaternion.identity) as GameObject;
+
+
         // Le projectile se déplace jusqu'à sa cible
         // VITESSE
         pizza.GetComponent<Rigidbody>().velocity = direction * 0.5f;
