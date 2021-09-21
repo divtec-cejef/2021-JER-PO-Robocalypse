@@ -17,6 +17,8 @@ public class Menu : MonoBehaviour
     private string URL = "http://192.168.1.12:8080/ready";
     private string URLGameState = "http://192.168.1.12:8080/gameIsStarted";
 
+   // public static bool onePlayer = false;
+
     private Animator transition;
 
     /*public void Start()
@@ -61,7 +63,8 @@ public class Menu : MonoBehaviour
 
             InformationJoueur.nomEquipe = NomEquipe.text.ToString();
             NomEquipe.text = "";
-            
+
+            Cursor.visible = false;
             SceneManager.LoadScene("PO-SAJ-HautBas");
             print("loaded");
         }
