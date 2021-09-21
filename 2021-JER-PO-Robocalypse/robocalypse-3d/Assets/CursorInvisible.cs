@@ -10,4 +10,5 @@ public class CursorInvisible : MonoBehaviour
     {
         Cursor.visible = false;
     }
+   
 }

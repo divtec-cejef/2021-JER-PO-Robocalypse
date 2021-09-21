@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -55,8 +55,8 @@ public class modifierScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
+
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -78,9 +78,10 @@ public class modifierScore : MonoBehaviour
             int scoreActuel;
             bool a = int.TryParse(txt_score.text, out scoreActuel);
 
-            if (couleurProjectile.Contains(exprBoss))
+            if (couleurProjectile.Contains(exprBoss) || OnePlayerOption.onePlayer)
             {
-                // on incrémente le score uniquement si les projectiles sont de la même couleur que le visage du boss
+                // on incrï¿½mente le score uniquement si les projectiles sont de la mï¿½me couleur que le visage du boss
+                // ou si le joueur joue seul
                 score = scoreActuel + nbrPointsParSphere;
 
                 // remplacement
@@ -89,7 +90,7 @@ public class modifierScore : MonoBehaviour
                 boss_particles.Play();
             }
 
-            
+
 
 
             // if (isTouched  && scoreActuel % 5 == 0)
@@ -109,7 +110,7 @@ public class modifierScore : MonoBehaviour
 
         }
     }
-   
+
     private void destroyObject()
     {
         // Destroy(infoScore);

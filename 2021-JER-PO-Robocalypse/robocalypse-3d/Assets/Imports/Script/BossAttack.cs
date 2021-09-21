@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +11,7 @@ public class BossAttack : MonoBehaviour
     public Vector3 direction;
 
     //private ParticleSystem pizza_particles;
-    
+
 
     private GameObject modelePizza;
 
@@ -22,7 +22,7 @@ public class BossAttack : MonoBehaviour
     private Vector3 positionTomate;
 
     private int ancienRandAliment;
-    
+
     //private ArrayList anciensRandTomates = new ArrayList(){1, 2, 3, 4};
 
     /*
@@ -32,9 +32,9 @@ public class BossAttack : MonoBehaviour
     private int ancienRandPizza;
     private int ancienRandPizza;
     */
-   // private ArrayList anciensRandPizzas = new ArrayList(){ 1, 2, 3, 4, 5};
+    // private ArrayList anciensRandPizzas = new ArrayList(){ 1, 2, 3, 4, 5};
 
-    
+
 
     private ArrayList positionsTuiles = new ArrayList()
     {
@@ -80,13 +80,13 @@ public class BossAttack : MonoBehaviour
     void ApparitionPizza()
     {
 
-        // décalage du départ des projectiles
+        // dï¿½calage du dï¿½part des projectiles
         Vector3 positionDepartProjectiles;
 
-        int rand = Random.Range(0, positionsTuiles.Count - 1);
+        int rand = Random.Range(0, positionsTuiles.Count - 1); // .count - 1? mieux maintenant
 
         positionDepartProjectiles = (Vector3)positionsPizzas[rand];
-        
+
         /*
         switch (rand)
         {
@@ -114,14 +114,14 @@ public class BossAttack : MonoBehaviour
             positionDepartProjectiles.z);
 
 
-        // définition direction projectiles
+        // dï¿½finition direction projectiles
         direction = new Vector3(0f, 0f, -(vitesse));
 
-        // Création d'une instance de projectile
+        // Crï¿½ation d'une instance de projectile
         GameObject pizza = Instantiate(modelePizza, positionDepartProjectiles, Quaternion.identity) as GameObject;
 
 
-        // Le projectile se déplace jusqu'à sa cible
+        // Le projectile se dï¿½place jusqu'ï¿½ sa cible
         // VITESSE
         pizza.GetComponent<Rigidbody>().velocity = direction * 0.5f;
 
@@ -135,21 +135,19 @@ public class BossAttack : MonoBehaviour
 
     void ApparitionTomate()
     {
-        int rand = Random.Range(0, positionsTuiles.Count - 1);
-
+        int rand = Random.Range(0, positionsTuiles.Count); // marche mieux comme Ã§a (-1?)
 
         Vector3 positionDepartProjectiles = (Vector3)positionsTuiles[rand] - new Vector3(0, 0.4f, 0);
 
-        // Création d'une instance de projectile
-        
+        // Crï¿½ation d'une instance de projectile
+
         GameObject tomate = Instantiate(modeleTomate, positionDepartProjectiles, Quaternion.identity) as GameObject;
-        
 
         positionsTuiles.RemoveAt(rand);
 
         // tomate.GetComponent<Rigidbody>().useGravity = true;
 
-        
+
 
     }
 
@@ -157,7 +155,7 @@ public class BossAttack : MonoBehaviour
     {
         Vector3 positionDepartCarotte = new Vector3(-0.17f, 17, 9.62f);
 
-        // création d'une carotte
+        // crï¿½ation d'une carotte
         GameObject carotte = Instantiate(modeleCarotte, positionDepartCarotte, Quaternion.identity);
 
         carotte.transform.Rotate(new Vector3(0, 0, 90));
@@ -188,7 +186,7 @@ public class BossAttack : MonoBehaviour
     {
 
         yield return StartCoroutine(AnimationTomate());
-        
+
         ApparitionTomate();
         animator.Play("static_fly_2");
     }
@@ -209,24 +207,40 @@ public class BossAttack : MonoBehaviour
 
     void SchemaAttaque()
     {
-        // ne pas répéter deux fois de suite le même aliment 
+        // ne pas rï¿½pï¿½ter deux fois de suite le mï¿½me aliment 
         int rand;
+        int limite = 4;
+
+        if (OnePlayerOption.onePlayer)
+        {
+            // pas de carottes
+            limite = 2;
+        }
 
         do
         {
-            rand = Random.Range(0, 3);
+            rand = Random.Range(0, limite);
         } while (rand == ancienRandAliment);
-       
+
         if (Timer.timerIsRunning)
         {
             switch (rand)
             {
                 case 0:
 
-                    // StartCoroutine(LancerDeTomate());
-                    lancerTomateXFois(Random.Range(3, 4));
+                    // toujours 4 tomates si un seul joueur
+                    if (OnePlayerOption.onePlayer)
+                    {
+                        lancerTomateXFois(4); // 3, 4
+                    }
+                    else
+                    {
+                        lancerTomateXFois(Random.Range(3, 4)); // 3, 4
+                    }
 
-                    // réinitialisation
+                    // StartCoroutine(LancerDeTomate());
+
+                    // rÃ©initialisation
                     positionsTuiles = new ArrayList()
                     {
                         (new Vector3(-4.14f, 17, 9.62f)),
@@ -238,19 +252,11 @@ public class BossAttack : MonoBehaviour
 
                     break;
                 case 1:
-
-                    StartCoroutine(LancerDeCarotte());
-
-                    ancienRandAliment = rand;
-
-                    break;
-                case 2:
-
                     // StartCoroutine(LancerDePizza());
                     lancerPizzaXFois(Random.Range(4, 5));
                     ancienRandAliment = rand;
 
-                    // réinitialisation
+                    // rï¿½initialisation
                     /*positionsPizzas = new ArrayList()
                         {
                             (new Vector3(-4.12f, 1.878f, 10.44f)),
@@ -263,13 +269,12 @@ public class BossAttack : MonoBehaviour
                         */
 
                     break;
-                
-               
-                default:
+
+                case 2:
                     // StartCoroutine(LancerDeTomate());
                     lancerTomateXFois(Random.Range(4, 5));
 
-                    // réinitialisation
+                    // rï¿½initialisation
                     positionsTuiles = new ArrayList()
                     {
                         (new Vector3(-4.14f, 17, 9.62f)),
@@ -277,21 +282,31 @@ public class BossAttack : MonoBehaviour
                         (new Vector3(-0.2f, 17, 9.62f)),
                         (new Vector3(1.79f, 17, 9.62f)),
                         (new Vector3(3.79f, 17, 9.62f))
+
                     };
 
                     break;
 
+
+                default:
+                    StartCoroutine(LancerDeCarotte());
+
+                    ancienRandAliment = rand;
+
+                    break;
+
+
             }
         }
-        
+
 
         // ancienRandAliment = rand;
-        
+
     }
 
     private void lancerPizzaXFois(int nbrFois)
     {
-        // réinitialisation
+        // rï¿½initialisation
         positionsPizzas = new ArrayList()
                     {
                         (new Vector3(-4.12f, 1.878f, 10.44f)),
@@ -322,7 +337,7 @@ public class BossAttack : MonoBehaviour
 
 
 
-    
+
 
     // Update is called once per frame
     void Update()

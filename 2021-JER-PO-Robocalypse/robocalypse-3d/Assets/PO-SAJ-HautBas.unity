@@ -479,7 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12e51a9a4504cc040acdb393d905ee24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 5.34
+  timeRemaining: 90
   timeText: {fileID: 46961601}
   score: {fileID: 1493671980}
   renderer: {fileID: 1052680934}
@@ -13671,6 +13671,7 @@ GameObject:
   - component: {fileID: 1663219316}
   - component: {fileID: 1663219315}
   - component: {fileID: 1663219318}
+  - component: {fileID: 1663219319}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -13775,6 +13776,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8860320b9d3c7444cb5822507e84134b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1663219319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663219313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 448b1a0e13cb6cf40a6c33545903f4e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!43 &1680756803

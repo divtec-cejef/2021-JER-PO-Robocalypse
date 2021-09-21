@@ -17,8 +17,6 @@ public class Menu : MonoBehaviour
     private string URL = "http://192.168.1.12:8080/ready";
     private string URLGameState = "http://192.168.1.12:8080/gameIsStarted";
 
-   // public static bool onePlayer = false;
-
     private Animator transition;
 
     /*public void Start()
@@ -27,20 +25,24 @@ public class Menu : MonoBehaviour
         // transition.enabled = false;
     }*/
 
-    public void ExitButton() { 
+    public void ExitButton()
+    {
 
         Application.Quit();
 
         Debug.Log("Game closed");
 
     }
-    
+
     public void StartGame()
     {
         transition = GameObject.FindWithTag("transition").GetComponent<Animator>();
-        
+
         // NomEquipe.color = Color.black;
-        StartCoroutine(gameIsStarted());
+        if (!OnePlayerOption.onePlayer)
+        {
+            StartCoroutine(gameIsStarted());
+        }
 
         StartCoroutine(isReady());
 
@@ -51,10 +53,10 @@ public class Menu : MonoBehaviour
         UnityWebRequest www = UnityWebRequest.Get(URL);
         yield return www.SendWebRequest();
 
-        // affiche la valeur retourné
+        // affiche la valeur retournée
         string value = (string)www.downloadHandler.text;
 
-        if (value == "true")
+        if (value == "true" || OnePlayerOption.onePlayer) //== true
         {
             transition.enabled = true;
             transition.Play("transition_rond_ecran_accueil");
@@ -68,11 +70,15 @@ public class Menu : MonoBehaviour
             SceneManager.LoadScene("PO-SAJ-HautBas");
             print("loaded");
         }
+        else
+        {
+            print("Could not be loaded. Server not ready");
+        }
     }
 
     IEnumerator gameIsStarted()
     {
-        
+
 
         UnityWebRequest www = UnityWebRequest.Get(URLGameState);
         yield return www.SendWebRequest();
@@ -80,7 +86,7 @@ public class Menu : MonoBehaviour
         // affiche la valeur retourné
         string value = (string)www.downloadHandler.text;
 
-       
+
 
     }
 
