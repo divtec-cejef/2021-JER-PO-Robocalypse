@@ -6,6 +6,6 @@ public class InformationJoueur : MonoBehaviour
 {
 
     static public string nomEquipe = "Default Name";
-    static public int scoreEquipe = 1;
+    static public int scoreEquipe = 50;
 
 }

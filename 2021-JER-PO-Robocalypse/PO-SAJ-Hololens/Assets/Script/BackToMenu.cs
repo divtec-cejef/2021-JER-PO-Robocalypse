@@ -8,6 +8,7 @@ public class BackToMenu : MonoBehaviour {
 
     private bool loading = false;
     private string URL = "http://192.168.1.12:8080/game";
+    private string URLisNotReady = "http://192.168.1.12:8080/isNotReady";
 
     private Scene scene;
 
@@ -24,6 +25,7 @@ public class BackToMenu : MonoBehaviour {
     void backToMenu()
     {
         StartCoroutine(gameIsOver());
+        StartCoroutine(gameIsNotReady());
     }
 
     IEnumerator gameIsOver()
@@ -39,5 +41,14 @@ public class BackToMenu : MonoBehaviour {
             loading = true;
             SceneManager.LoadScene("InputPractice Test");
         }
+    }
+
+    IEnumerator gameIsNotReady()
+    {
+        UnityWebRequest www = UnityWebRequest.Get(URLisNotReady);
+        yield return www.SendWebRequest();
+
+        // affiche la valeur retourné
+        string value = (string)www.downloadHandler.text;
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 
+[RequireComponent(typeof(AudioSource))]
 public class Timer : MonoBehaviour
 {
     public float timeRemaining = 10;
@@ -21,6 +22,7 @@ public class Timer : MonoBehaviour
     private ParticleSystem SMOKE;
 
     private bool isSmoking = false;
+    private bool isCountdown = false;
 
     public Renderer renderer;
 
@@ -31,6 +33,9 @@ public class Timer : MonoBehaviour
     private Sprite visageBossFin;
 
     private Animator transition;
+
+    public AudioClip sound;
+    public AudioClip sound2;
 
     private void Start()
     {
@@ -74,7 +79,6 @@ public class Timer : MonoBehaviour
             {
 
                 timerIsRunning = false;
-                InformationJoueur.scoreEquipe = int.Parse(score.text);
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 
@@ -82,12 +86,21 @@ public class Timer : MonoBehaviour
 
                 
             }
-            if (timeRemaining <= 60 && !isSmoking)
+            if (timeRemaining <= 45 && !isSmoking)
             {
+                AudioSource.PlayClipAtPoint(sound, transform.position);
+
                 SMOKE.Play();
                 BOOM.Play();
 
                 isSmoking = true;
+            }
+            if (timeRemaining <= 10 && !isCountdown)
+            {
+                print("YEET");
+                AudioSource.PlayClipAtPoint(sound2, transform.position);
+
+                isCountdown = true;
             }
         }
 
@@ -118,20 +131,22 @@ public class Timer : MonoBehaviour
         yield return StartCoroutine(wait(5f));
 
         SMOKE.Stop();
+        AudioSource.PlayClipAtPoint(sound, transform.position);
         BOOM.Play();
         StartCoroutine(clignoterBoss());
         yield return StartCoroutine(wait(2f));
-
+        AudioSource.PlayClipAtPoint(sound, transform.position);
         BOOM.Play();
 
         yield return StartCoroutine(wait(2f));
-
+        AudioSource.PlayClipAtPoint(sound, transform.position);
         CARROT.Play();
         PIZZA.Play();
         TOMATO.Play();
         BOOM.Play();
 
         yield return StartCoroutine(wait(0.5f));
+        AudioSource.PlayClipAtPoint(sound, transform.position);
         BOOM.Play();
         BOOM.Play();
         BOOM.Play();
@@ -161,6 +176,8 @@ public class Timer : MonoBehaviour
 
 
         animationFin = true;
+
+        InformationJoueur.scoreEquipe = int.Parse(score.text);
         StartCoroutine(gameIsOver());
 
     }

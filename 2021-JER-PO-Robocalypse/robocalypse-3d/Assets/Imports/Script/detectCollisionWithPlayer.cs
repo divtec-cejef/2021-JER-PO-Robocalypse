@@ -10,7 +10,6 @@ using UnityEngine.Assertions.Must;
 using UnityEngine.UI;
 
 // Détecte si un projectile ennemi a touché le joueur et décrémente des points à son score.
-
 public class detectCollisionWithPlayer : MonoBehaviour
 {
 
@@ -30,6 +29,8 @@ public class detectCollisionWithPlayer : MonoBehaviour
     private GameObject floatingPoints;
     private GameObject posAstronaute;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,8 +40,6 @@ public class detectCollisionWithPlayer : MonoBehaviour
         renderer = joueur.GetComponent<Renderer>();
         floatingPoints = GameObject.Find("-50");
         posAstronaute = GameObject.Find(nomCollider);
-
-        
 
     }
 
@@ -64,8 +63,9 @@ public class detectCollisionWithPlayer : MonoBehaviour
         // afficher "-1" ou "+1" avec animation
         if (collision.collider.name == nomCollider)
         {
-            // renderer.material.color = Color.red;
 
+            // renderer.material.color = Color.red;
+           
             clignoter();
 
             // récupération de la valeur dans la textbox
@@ -140,6 +140,7 @@ public class detectCollisionWithPlayer : MonoBehaviour
          */
     IEnumerator faireClignoterJoueur()
     {
+
         Material mat = GetComponent<Renderer>().material;
 
         for (int i = 0; i < 3; i++)

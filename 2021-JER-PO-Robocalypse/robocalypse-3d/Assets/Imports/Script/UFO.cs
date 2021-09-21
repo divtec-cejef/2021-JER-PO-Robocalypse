@@ -7,11 +7,15 @@ using UnityEngine.Networking;
 using UnityEngine.UIElements;
 using Random = UnityEngine.Random;
 
+
+
+[RequireComponent(typeof(AudioSource))]
 public class UFO : MonoBehaviour
 {
 
     private string URL = "http://192.168.1.12:8080/target";
 
+    public AudioClip sound;
 
     private ParticleSystem LASER;
     private ParticleSystem LASER1;
@@ -310,12 +314,18 @@ public class UFO : MonoBehaviour
         {
             GameObject clonePlus20 = Instantiate(modifPoints, collision.gameObject.transform.position /*+ new Vector3(-1, 0.5f, 2) */, Quaternion.identity);
             Instantiate(pizzaEffect, transform.position, Quaternion.identity);
+
+            AudioSource.PlayClipAtPoint(sound, transform.position);
+
             Destroy(collision.gameObject);
         }
         else if(collision.gameObject.name == "carrot(Clone)" && LASER1.startColor == orange)
         {
             GameObject clonePlus20 = Instantiate(modifPoints, collision.gameObject.transform.position /*+ new Vector3(-1, 0.5f, 2) */, Quaternion.identity);
             Instantiate(carrotEffect, transform.position, Quaternion.identity);
+
+            AudioSource.PlayClipAtPoint(sound, transform.position);
+
             Destroy(collision.gameObject);
         }
         else

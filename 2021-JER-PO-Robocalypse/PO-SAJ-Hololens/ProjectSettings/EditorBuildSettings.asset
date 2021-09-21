@@ -20,9 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/InputTapTestt.unity
     guid: 5d5e766eff0983f409bba9e9e894f654
-  - enabled: 1
+  - enabled: 0
     path: Assets/InputTapTest.unity
     guid: c2504b566837cce4ea5358f19d481adb
-  - enabled: 1
+  - enabled: 0
     path: Assets/InputPractice Test.unity
     guid: 880ed7df1cc18604aa85ffe634611057

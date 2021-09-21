@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.Networking;
 
+[RequireComponent(typeof(AudioSource))]
 public class LancerProjectiles : MonoBehaviour
 {
     private GameObject projectile;
@@ -16,6 +17,8 @@ public class LancerProjectiles : MonoBehaviour
     public Vector3 direction;
 
     private GameObject UFO;
+
+    public AudioClip sound;
 
     IEnumerator ShowWeapon()
     {
@@ -69,6 +72,9 @@ public class LancerProjectiles : MonoBehaviour
             // Le projectile se déplace jusqu'à sa cible
             bullet.GetComponent<Rigidbody>().AddForce(direction * 50);
 
+            //sound
+            AudioSource.PlayClipAtPoint(sound, transform.position, 0.05f);
+
         }
     }
 
@@ -80,7 +86,7 @@ public class LancerProjectiles : MonoBehaviour
 
 
         // StartCoroutine(ShootProjectile());
-        InvokeRepeating("ShootProjectile", 1f, .09f);
+        InvokeRepeating("ShootProjectile", 1f, .15f);// .09
         // InvokeRepeating("ShowWeapon", 0f, .01f);
     }
 

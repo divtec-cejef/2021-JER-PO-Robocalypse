@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class SuivreMrFreeze : MonoBehaviour
 {
     private GameObject mrFreeze;
 
     private GameObject angryFace;
+
+    public AudioClip sound;
+
 
     private SpriteRenderer visageBossSprite;
     // Start is called before the first frame update
@@ -42,6 +46,7 @@ public class SuivreMrFreeze : MonoBehaviour
         {
             if (Timer.timerIsRunning)
             {
+                AudioSource.PlayClipAtPoint(sound, transform.position);
                 visageBossSprite.sprite = Resources.Load<Sprite>("Boss/visages/visage bleu");
                 transform.position = mrFreeze.transform.position + new Vector3(0, 1.3f, -0.3f/*3f, 1f, -2f*/); // -1.3f // MODIFIER VALEURS
             }
@@ -50,6 +55,7 @@ public class SuivreMrFreeze : MonoBehaviour
 
             if (Timer.timerIsRunning)
             {
+                AudioSource.PlayClipAtPoint(sound, transform.position);
                 visageBossSprite.sprite = Resources.Load<Sprite>("Boss/visages/visage magenta");
                 transform.position = mrFreeze.transform.position + new Vector3(0, 1.3f, -0.3f/*3f, 1f, -2f*/); // -1.3f // MODIFIER VALEURS
 

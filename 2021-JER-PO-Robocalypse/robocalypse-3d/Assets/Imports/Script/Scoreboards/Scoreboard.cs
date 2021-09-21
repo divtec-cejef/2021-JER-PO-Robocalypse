@@ -5,7 +5,7 @@ namespace DapperDino.Scoreboards
 {
     public class Scoreboard : MonoBehaviour
     {
-        [SerializeField] private int maxScoreboardEntries = 5;
+        [SerializeField] private int maxScoreboardEntries = 3;
         [SerializeField] private Transform highscoresHolderTransform = null;
         [SerializeField] private GameObject scoreboardEntryObject = null;
 
@@ -31,8 +31,8 @@ namespace DapperDino.Scoreboards
         {
             AddEntry(new ScoreboardEntryData()
             {
-                entryName = testEntryName,
-                entryScore = testEntryScore
+                entryName = InformationJoueur.nomEquipe,
+                entryScore = InformationJoueur.scoreEquipe
             });
         }
 
@@ -45,7 +45,7 @@ namespace DapperDino.Scoreboards
             //Check if the score is high enough to be added.
             for (int i = 0; i < savedScores.highscores.Count; i++)
             {
-                if (testEntryScore > savedScores.highscores[i].entryScore)
+                if (InformationJoueur.scoreEquipe > savedScores.highscores[i].entryScore)
                 {
                     savedScores.highscores.Insert(i, scoreboardEntryData);
                     scoreAdded = true;
