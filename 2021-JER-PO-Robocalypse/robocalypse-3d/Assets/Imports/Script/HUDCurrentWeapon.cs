@@ -18,6 +18,8 @@ public class HUDCurrentWeapon : MonoBehaviour
     void Start()
     {
         weapon = GetComponent<Image>();
+        weapon.enabled = true;
+        weapon.sprite = wBlue;
     }
 
     // Update is called once per frame

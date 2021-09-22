@@ -19,11 +19,12 @@ public class Menu : MonoBehaviour
 
     private Animator transition;
 
-    /*public void Start()
+    public void Start()
     {
+        OnePlayerOption.onePlayer = false;
         // transition = GameObject.FindWithTag("transition").GetComponent<Animator>();
         // transition.enabled = false;
-    }*/
+    }
 
     public void ExitButton()
     {
