@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/SampleScene.unity
+    guid: 164215a97d38c3b42aa9b0d745311ba4
+  - enabled: 0
+    path: Assets/HoloToolkit-Examples/Input/Scenes/InputManagerTest.unity
+    guid: bbb7f726308ba4b4e8ef592af9332ab4
+  - enabled: 0
+    path: Assets/HoloToolkit-Examples/Input/Scenes/TwoHandManipulationTest.unity
+    guid: 1af37bd294e891849ac89f7e7c534fef
+  - enabled: 0
+    path: Assets/HoloToolkit-Examples/Input/Scenes/InputTapTestt.unity
+    guid: fc69f7c82d7c3e74baa3f1a6c33b3ee0
+  - enabled: 1
+    path: Assets/InputTapTestt.unity
+    guid: 5d5e766eff0983f409bba9e9e894f654
+  - enabled: 0
+    path: Assets/InputTapTest.unity
+    guid: c2504b566837cce4ea5358f19d481adb
+  - enabled: 0
+    path: Assets/InputPractice Test.unity
+    guid: 880ed7df1cc18604aa85ffe634611057
