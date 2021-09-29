@@ -23,7 +23,7 @@ public class demo_robocalypse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.V) && !isVideoActive)
+        if (Input.GetKeyUp(KeyCode.CapsLock) && !isVideoActive)
         {
             mainMenuBackground.enabled = false;
             mainMenu.enabled = false;
@@ -33,7 +33,7 @@ public class demo_robocalypse : MonoBehaviour
             {
                 isVideoActive = true;
             }*/
-        } else if (Input.GetKeyUp(KeyCode.V) && isVideoActive)
+        } else if (Input.GetKeyUp(KeyCode.CapsLock) && isVideoActive)
         {
             mainMenuBackground.enabled = true;
             mainMenu.enabled = true;
